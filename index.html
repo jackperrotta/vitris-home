@@ -1,12 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Vitris IO</title>
-<meta name="google-site-verification" content="e6UewuaWV3-Fw1B4ZkEHazReT5i-zJdjKaMxcHLretw" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="google-site-verification" content="e6UewuaWV3-Fw1B4ZkEHazReT5i-zJdjKaMxcHLretw" />
+    <title>Vitris IO</title>
+
+    <link rel="stylesheet" href="./dependencies/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="./dependencies/css/animate.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./styles/main.css" rel="stylesheet">
+
+    
 </head>
 <body>
 
-<h1>This is the new Vitris landing page</h1>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top bg-light navbar-expand-md" style="z-index: 10;">
+    
+        <a class="navbar-brand" href="#">VITRIS</a>
+        
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="material-icons">menu</i>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">GET VITRIS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OUR PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-auto" href="#"><i class="material-icons">help</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Head Section -->
+    <section id="head">
+        <div class="container d-flex flex-column align-items-center justify-content-center head" style="min-height: 100vh;">
+            <div class="row my-auto text-center">
+                <h2 class="wow fadeInDownBig">
+                    Small businesses rule the world. We're here to help you conquer.
+                </h2>
+            </div>
+            <div class="row text-center">
+                <h4 class="wow fadeIn">
+                    Build and manage your website,<br>
+                    track sales, schedule appointments,<br>
+                    manage inventory and orders, rule the world
+                </h4>
+            </div>
+            <div class="row mt-auto mb-5 ">
+                <a class="btn btn-primary btn-raised wow fadeInUpBig" href="#how-it-works">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Transition -->
+    <div class="container-fluid transition" id="how-it-works">
+    </div>
+
+    <!-- 3 box section -->
+    <div class="container-fuild d-flex flex-column align-items-center justify-content-center">
+        <div class="row mt-5 mx-auto">
+            <h3 class="wow slideInDown">How It Works</h3>
+        </div>
+        <div class="row my-5 mx-5">
+            <div class="card-deck">
+                <div class="card p-5 wow slideInLeft">
+                    <div class="card-body text-center">
+                        <i class="material-icons" style="font-size: 4em;">web</i>
+                        <h5 class="card-text">Build and manage your website</h5>
+                    </div>
+                </div>
+                <div class="card p-5 wow slideInUp">
+                    <div class="card-body text-center">
+                        <i class="material-icons" style="font-size: 4em;">assignment</i>
+                        <h5 class="card-text">Manage appointments, orders, and inventory</h5>
+                    </div>
+                </div>
+                <div class="card p-5 wow slideInRight">
+                    <div class="card-body text-center">
+                        <i class="material-icons" style="font-size: 4em;">insert_chart</i>
+                        <h5 class="card-text">Track and analyze your sales</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transition -->
+    <div class="container-fluid transition" id="about-products">
+    </div>
+
+    <!-- About the Product -->
+    <section  class="py-5">
+        <div class="container">
+            <div class="row">
+                <h3 class="wow slideInDown">Building an empire just got a whole lot easier.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="wow fadeInLeftBig"></p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-responsive wow fadeInRightBig" src="" alt="">
+                </div>
+            </div>
+        </div>        
+    </section>
+    <script src="./dependencies/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./dependencies/js/popper.min.js"></script>
+    <script src="./dependencies/js/bootstrap-material-design.min.js"></script>
+    <script src="./dependencies/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./scripts/smoothscroll.js"></script>
 </body>
 </html>
