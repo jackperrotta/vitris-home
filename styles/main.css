@@ -21,6 +21,9 @@ body {
 
 #head {
     background: linear-gradient(rgba(38,147,164,.5), rgba(38,147,164,.5)), url("../img/md-bg1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
@@ -28,4 +31,8 @@ body {
 .transition {
     background: linear-gradient(rgba(38,147,164,.8), rgba(38,147,164,1)); 
     height: 2.5em;
+}
+
+.list-group-item {
+    padding: .25em !important;
 }
