@@ -1,0 +1,44 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#head {
+    background: linear-gradient(rgba(38,147,164,.5), rgba(38,147,164,.5)), url("../img/md-bg1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+}
+
+.transition {
+    background: linear-gradient(rgba(38,147,164,.8), rgba(38,147,164,1)); 
+    height: 2.5em;
+}
+
+.list-group-item {
+    padding: .25em !important;
+}
+
+/* Pricing */
+.price-card {
+    box-shadow: 0 0 0 .25em rgba(255,213,73,0.4), 0 0 0 .25em rgba(255,213,73,0.4); 
+    outline-color: gold; 
+    outline-style: solid; 
+    outline-width: .15em;
+}
+
+@media only screen and (max-width: 991px) {
+    .hide-md {
+        display: none;
+    }
+}
+
+.golden {
+    color: gold;
+}
+
+.active-item:hover {
+    background-color: rgb(192,192,192);
+}
