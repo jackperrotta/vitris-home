@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 #head {
@@ -43,15 +44,12 @@ body {
 }
 
 .home-product {
-    background: linear-gradient(to bottom, rgba(38,147,164,.25), rgba(38,147,164,.5));
+    background: linear-gradient(to bottom, rgba(38,147,164,.25), rgba(38,147,164,.4));
 }
 
 #testimonials {
-    height: 0;
-    width: 0;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    border-bottom: 4em solid #f7f7f7;
+    background: linear-gradient(rgba(38,147,164,0), rgba(247,247,247,1)); 
+    height: 2.5em;
 }
 
 .home-testimonials {
