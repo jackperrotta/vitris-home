@@ -12,6 +12,31 @@ body {
     min-height: 100vh;
 }
 
+#how-it-works {
+    height: 0;
+    width: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: 4em solid #f7f7f7;
+}
+
+.how-hr {
+    background: rgb(51, 102, 255);
+    width: 3em;
+    height: .1em;
+}
+
+.how-card:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    color: bisque;
+}
+
+.how-href:link, .how-href:visited, .how-href:hover, .how-card:active {
+    text-decoration: none;
+    color: black;
+}
+
 .transition {
     background: linear-gradient(rgba(38,147,164,.8), rgba(38,147,164,1)); 
     height: 2.5em;
@@ -58,4 +83,11 @@ body {
     margin: -1em 0 1em 0;
 }
 
+.triangle {
+    height: 0;
+    width: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: 4em solid #ff4136;
+}
 /* Blog */
