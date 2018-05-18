@@ -47,13 +47,18 @@ body {
     background: linear-gradient(to bottom, rgba(38,147,164,.25), rgba(38,147,164,.4));
 }
 
-#testimonials {
+/* #testimonials {
     background: linear-gradient(rgba(38,147,164,0), rgba(247,247,247,1)); 
     height: 2.5em;
-}
+} */
 
 .home-testimonials {
-    background: linear-gradient(to bottom, rgba(247,247,247,1), rgba(38,147,164,.25));
+    background: rgba(247,247,247,1);
+}
+
+#philosophy {
+    background: linear-gradient(rgba(247,247,247,1), rgba(38,147,164,.25)); 
+    height: 2.5em;
 }
 
 .home-phil {
