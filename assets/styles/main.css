@@ -156,3 +156,9 @@ body {
     border-bottom: 4em solid #ff4136;
 }
 /* Blog */
+
+
+/* Demo & Contact */
+#returnHome {
+    display: none;
+}
