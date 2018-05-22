@@ -96,6 +96,11 @@ body {
     height: .1em;
 }
 
+.how-card {
+    background-color: rgba(62,90,245,1);
+    color: whitesmoke;
+}
+
 .how-card:hover {
     cursor: pointer;
     background-color: #00c9cf;
@@ -124,9 +129,9 @@ body {
     background-color: rgba(62,90,245,1);
 }
 
-.pricing {
+/* .pricing {
     
-}
+} */
 
 /* .price-card {
     box-shadow: 0 0 0 .25em rgba(255,213,73,0.4), 0 0 0 .25em rgba(255,213,73,0.4); 
