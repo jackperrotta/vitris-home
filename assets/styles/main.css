@@ -125,10 +125,10 @@ body {
 }
 
 .pricing {
-    background: linear-gradient(to bottom, rgba(46,153,232,.5), rgba(46,153,232,0));
+    
 }
 
-.price-card {
+/* .price-card {
     box-shadow: 0 0 0 .25em rgba(255,213,73,0.4), 0 0 0 .25em rgba(255,213,73,0.4); 
     outline-color: gold; 
     outline-style: solid; 
@@ -139,7 +139,7 @@ body {
     .hide-md {
         display: none;
     }
-}
+} */
 
 .active-item:hover {
     background-color: rgb(192,192,192);
