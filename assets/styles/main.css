@@ -46,16 +46,9 @@ body {
 .header-shadow {
     text-shadow: 2px 2px 4px #000000;
 }
-  .vitrisSlides {
-      display: none;
-  }
 
-#how-it-works {
-    height: 0;
-    width: 0;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    border-bottom: 4em solid #f7f7f7;
+.vitrisSlides {
+    display: none;
 }
 
 .how-hr {
