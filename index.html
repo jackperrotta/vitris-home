@@ -32,33 +32,32 @@
     
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link nav-text" href="https://portal.tryvitris.com/">TRY VITRIS</a>
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://portal.tryvitris.com/">TRY VITRIS</a>
+                    <a class="nav-link nav-text" href="./pricing/">PRICING</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pricing/">PRICING</a>
+                    <a class="nav-link nav-text" href="./features/">FEATURES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./features/">FEATURES</a>
+                    <a class="nav-link nav-text" href="./about/">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./about/">ABOUT</a>
+                    <a class="nav-link nav-text" href="./blog/">BLOG</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./blog/">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mb-auto" href="#"><i class="far fa-question-circle"></i></a>
-                </li>
+                <button class="btn btn-v-blue btn-raised ml-md-1 mr-md-2 my-2 my-sm-0">try vitris</button>
+                <button class="btn btn-blue-outline my-2 my-sm-0">Login</button>
             </ul>
         </div>
     </nav>
 
     <!-- Head Section -->
-    <div class="vitrisSlides">
+    <div class="vitrisSlides" style="display: block;">
         <div class="header-1">
-            <div class="container h-100 d-flex">
-                <div class="row mx-auto w-100 align-self-center text-center">
+            <div class="container h-100 d-flex align-items-center flex-column">
+                <div class="row mx-auto my-auto text-center">
                     <div class="col-lg-10 mx-auto">
                         <h2 class="mx-auto my-3 header-shadow">
                             SMALL BUSINESS RUNS ON VITRIS
@@ -68,10 +67,16 @@
                             From building your website to managing appointments 
                             and inventory, we’ve got you covered.    
                         </h5>
-                        <a class="btn btn-primary btn-raised btn-lg mt-3 mx-auto" href="#how-it-works">
-                            LEARN MORE
-                        </a>
+                        <a class="btn btn-v-blue btn-lg mt-3 mx-auto" href="./demo/">
+                            GET STARTED
+                        </a>           
                     </div>
+                </div>
+                <div class="row mx-auto text-center">
+                    <a href="#how-it-works" class="mb-2 header-arrow">
+                        <i class="fas fa-chevron-down fa-3x"></i>
+                    </a>
+                    <div id="how-it-works"></div>
                 </div>
             </div>
         </div>
@@ -143,17 +148,15 @@
         </div>
     </div>
 
-    <div id="how-it-works"></div>
-
     <!-- 3 box section -->
     <div class="container-fuild" style="background-color: #f7f7f7">
         <div class="row pt-5">
             <div class="col-lg-10 mx-auto text-center">
-                <h3>AT A GLANCE</h3>
+                <h3>WHAT'S VITRIS</h3>
                 <div class="how-hr mx-auto"></div>
             </div>
         </div>
-        <div class="row my-5 mx-md-5">
+        <div class="row my-5 mx-5">
             <div class="col-lg-4 pb-3">
                 <a class="how-href" href="./features/">
                 <div class="card how-card h-100 p-5 wow slideInUp">
@@ -199,8 +202,8 @@
                             the weight off your shoulders. Our software makes it simple to build a high-
                             quality website with custom components, schedule appointments with
                             customers, manage orders and inventory, and track sales.</p>
-                    <a class="btn btn-primary btn-raised wow fadeInUp" href="./features/">
-                        Learn More
+                    <a class="btn btn-v-blue btn-raised wow fadeInUp" href="./features/">
+                        Features
                     </a>
                 </div>
                 <div class="col-lg-6">
@@ -256,9 +259,9 @@
                             technology that is simple, practical, and transparent. We believe that being an
                             entrepreneur is one of the most important jobs out there, so we place a lot of
                             importance on being an ongoing source of value for our users, both on and off the
-                            screen. To learn more about our team and our company, click here!</p>
-                    <a class="btn btn-primary btn-raised wow fadeInUp float-right" href="./about/#philosophy">
-                        Learn More
+                            screen.</p>
+                    <a class="btn btn-v-blue btn-raised wow fadeInUp float-right" href="./about/">
+                        ABOUT US
                     </a>
                 </div>
             </div>
@@ -266,7 +269,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="pt-3" style="background-color: aqua;">
+    <footer class="pt-3" style="background-color: #3e5af5; color: white;">
         <div class="container">
             <div class="row mb-3">
                 <div class="col-md-3 col-sm-6">
@@ -308,7 +311,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid bg-info py-3">
+        <div class="container-fluid bg-dark text-light py-3">
             <div class="row">
                 <div class="col ml-4 mt-auto">
                     <p><a href="./legal/terms-of-service/">Terms of Service</a> | <a href="./legal/privacy-policy/">Privacy Policy</a></p>
@@ -326,7 +329,7 @@
             </div>
         </div>     
     </footer>
-    <script src="./assets/scripts/head-slider.js"></script>
+    <!-- <script src="./assets/scripts/head-slider.js"></script> -->
     <script src="./assets/venders/js/jquery-3.3.1.slim.min.js"></script>
     <script src="./assets/venders/js/popper.min.js"></script>
     <script src="./assets/venders/js/bootstrap-material-design.min.js"></script>

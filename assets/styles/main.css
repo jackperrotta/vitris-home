@@ -3,6 +3,14 @@ body {
     overflow-x: hidden !important;
 }
 
+.nav-text {
+    color: rgb(62,90,245);
+}
+
+.nav-text:hover {
+    color: rgb(37, 50, 124);
+}
+
 .header-1 {
     background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/Vitris-cover.jpg");
     background-attachment: fixed;
@@ -47,6 +55,37 @@ body {
     text-shadow: 2px 2px 4px #000000;
 }
 
+.btn-v-blue {
+    background-color: rgba(62,90,245,.85);
+    color: white;
+}
+
+.btn-v-blue:hover {
+    background-color: rgba(62,90,245,1);
+    color: white;
+}
+
+.btn-blue-outline {
+    color: rgba(62,90,245,1);
+    border: 1px solid rgba(62,90,245,1);
+
+}
+
+.btn-blue-outline:hover {
+    background-color: rgba(62,90,245,1);
+    color: white;
+}
+
+.header-arrow {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.header-arrow:hover {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 .vitrisSlides {
     display: none;
 }
@@ -59,8 +98,8 @@ body {
 
 .how-card:hover {
     cursor: pointer;
-    background-color: aquamarine;
-    color: bisque;
+    background-color: #00c9cf;
+    color: whitesmoke;
 }
 
 .how-href:link, .how-href:visited, .how-href:hover, .how-card:active {
@@ -68,36 +107,12 @@ body {
     color: black;
 }
 
-.home-product-trans {
-    background: linear-gradient(rgba(247,247,247,1), rgba(38,147,164,.25)); 
-    height: 2.5em;
-}
-
 .home-product {
-    background: linear-gradient(to bottom, rgba(38,147,164,.25), rgba(38,147,164,.4));
-}
-
-/* #testimonials {
-    background: linear-gradient(rgba(38,147,164,0), rgba(247,247,247,1)); 
-    height: 2.5em;
-} */
-
-.home-testimonials {
-    background: rgba(247,247,247,1);
-}
-
-#philosophy {
-    background: linear-gradient(rgba(247,247,247,1), rgba(38,147,164,.25)); 
-    height: 2.5em;
+    background: rgb(245,245,245);
 }
 
 .home-phil {
-    background: linear-gradient(to bottom, rgba(38,147,164,.25), rgba(38,147,164,.5));
-}
-
-.transition {
-    background: linear-gradient(rgba(38,147,164,.8), rgba(38,147,164,1)); 
-    height: 2.5em;
+    background: rgb(245,245,245);
 }
 
 .list-group-item {
@@ -106,7 +121,7 @@ body {
 
 /* Pricing */
 .pricing-head {
-    background: linear-gradient(to bottom, rgba(46,153,232,1), rgba(46,153,232,.5));
+    background-color: rgba(62,90,245,1);
 }
 
 .pricing {
@@ -126,10 +141,6 @@ body {
     }
 }
 
-.golden {
-    color: gold;
-}
-
 .active-item:hover {
     background-color: rgb(192,192,192);
 }
@@ -141,13 +152,13 @@ body {
     margin: -1em 0 1em 0;
 }
 
-.triangle {
+/* .triangle {
     height: 0;
     width: 0;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-bottom: 4em solid #ff4136;
-}
+} */
 /* Blog */
 
 
