@@ -1,37 +1,25 @@
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "item": {
-      "@id": "https://example.com/books",
-      "name": "Books",
-      "image": "http://example.com/images/icon-book.png"
-    }
-  },{
-    "@type": "ListItem",
-    "position": 2,
-    "item": {
-      "@id": "https://example.com/books/authors",
-      "name": "Authors",
-      "image": "http://example.com/images/icon-author.png"
-    }
-  },{
-    "@type": "ListItem",
-    "position": 3,
-    "item": {
-      "@id": "https://example.com/books/authors/annleckie",
-      "name": "Ann Leckie",
-      "image": "http://example.com/images/author-leckie-ann.png"
-    }
-  },{
-    "@type": "ListItem",
-    "position": 4,
-    "item": {
-      "@id": "https://example.com/books/authors/ancillaryjustice",
-      "name": "Ancillary Justice",
-      "image": "http://example.com/images/cover-ancillary-justice.png"
-    }
-  }]
-}
+[ {
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "VITRIS",
+  "image" : "http://vitris.io/assets/img/vitris-full.png",
+  "telephone" : "215) 595-8457",
+  "email" : "hi@tryvitris.com",
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "1635 Market Street",
+    "addressLocality" : "Philadelphia"
+  }
+}, {
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "VITRIS",
+  "image" : "http://vitris.io/assets/img/vitris-full.png",
+  "telephone" : "215) 595-8457",
+  "email" : "hi@tryvitris.com",
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "1635 Market Street",
+    "addressLocality" : "Pa"
+  }
+} ]

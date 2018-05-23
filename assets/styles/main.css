@@ -120,6 +120,14 @@ body {
     background: rgb(245,245,245);
 }
 
+.footer-text {
+    color: white;
+}
+
+.footer-text:hover {
+    color: aqua;
+}
+
 .list-group-item {
     padding: .25em !important;
 }
