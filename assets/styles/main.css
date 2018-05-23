@@ -11,6 +11,10 @@ body {
     color: rgb(37, 50, 124);
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .header-1 {
     background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/Vitris-cover.jpg");
     background-attachment: fixed;
