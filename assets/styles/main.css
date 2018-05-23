@@ -171,3 +171,8 @@ body {
 #returnHome {
     display: none;
 }
+
+.feature-head {
+    background-color: rgba(62,90,245,1);
+    color: white;
+}
