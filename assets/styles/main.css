@@ -173,6 +173,12 @@ body {
     border-right: 50vw solid transparent;
     border-bottom: 4em solid #ff4136;
 } */
+
+/* Features */
+.grey-bg {
+    background-color: rgb(245,245,245);
+}
+
 /* Blog */
 
 
