@@ -137,29 +137,26 @@ body {
 }
 
 /* Pricing */
+#pricing-cards {
+    background: linear-gradient(rgba(41, 193, 216,.6), rgba(38,147,164,.65)), url("../img/md-bg1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .pricing-head {
     background-color: rgba(62,90,245,1);
 }
+ .card-header {
+    background-color: rgba(62,90,245,1) !important; 
+ }
 
-/* .pricing {
-    
-} */
+ .card-footer {
+    background: rgb(245,245,245);
+ }
 
-/* .price-card {
-    box-shadow: 0 0 0 .25em rgba(255,213,73,0.4), 0 0 0 .25em rgba(255,213,73,0.4); 
-    outline-color: gold; 
-    outline-style: solid; 
-    outline-width: .15em;
-}
-
-@media only screen and (max-width: 991px) {
-    .hide-md {
-        display: none;
-    }
-} */
-
-.active-item:hover {
-    background-color: rgb(192,192,192);
+.pricing-service {
+    background-color: rgb(245,245,245);
 }
 
 .desc-hr {
