@@ -1,25 +1,13 @@
-[ {
+{
   "@context" : "http://schema.org",
   "@type" : "LocalBusiness",
   "name" : "VITRIS",
   "image" : "http://vitris.io/assets/img/vitris-full.png",
-  "telephone" : "215) 595-8457",
+  "telephone" : "215 595-8457",
   "email" : "hi@tryvitris.com",
   "address" : {
     "@type" : "PostalAddress",
     "streetAddress" : "1635 Market Street",
     "addressLocality" : "Philadelphia"
   }
-}, {
-  "@context" : "http://schema.org",
-  "@type" : "LocalBusiness",
-  "name" : "VITRIS",
-  "image" : "http://vitris.io/assets/img/vitris-full.png",
-  "telephone" : "215) 595-8457",
-  "email" : "hi@tryvitris.com",
-  "address" : {
-    "@type" : "PostalAddress",
-    "streetAddress" : "1635 Market Street",
-    "addressLocality" : "Pa"
-  }
-} ]
+}
