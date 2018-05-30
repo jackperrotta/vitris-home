@@ -1,30 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
-  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url> 
-    <loc>http://www.example.com/foo.html</loc>
-    <lastmod>2005-01-01</lastmod>
+    <loc>https://tryvitris.com/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/about/</loc>
+    <lastmod>2018-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-       <image:loc>http://example.com/image.jpg</image:loc>
-       <image:caption>Dogs playing poker</image:caption>
-    </image:image>
-    <video:video>
-      <video:content_loc>
-        http://www.example.com/video123.flv
-      </video:content_loc>
-      <video:player_loc allow_embed="yes" autoplay="ap=1">
-        http://www.example.com/videoplayer.swf?video=123
-      </video:player_loc>
-      <video:thumbnail_loc>
-        http://www.example.com/thumbs/123.jpg
-      </video:thumbnail_loc>
-      <video:title>Grilling steaks for summer</video:title>  
-      <video:description>
-        Cook the perfect steak every time.
-      </video:description>
-    </video:video>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/about/philosophy/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/blog/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/blog/article/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/demo</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/features/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/pricing/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/legal/privacy-policy/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/legal/terms-of-service/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url> 
+    <loc>https://tryvitris.com/under-construction/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
   </url>
 </urlset>
