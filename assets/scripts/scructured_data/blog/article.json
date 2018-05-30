@@ -1,0 +1,18 @@
+{
+    "@context" : "http://schema.org",
+    "@type" : "Article",
+    "name" : "This Is The Blog Title",
+    "author" : {
+        "@type" : "Person",
+        "name" : "Liam Haley"
+    },
+    "dataPublished": "2018-04-20",
+    "image" : "http://vitris.io/assets/img/vitris-full.png",
+    "articleSection": "Marketing",
+    "articleBody": "Data drives effective marketing For marketing purposes, consumer data is an invaluable resource. Utilizing consumer data allows marketers to tailor their strategies to reach and resonate with specific audiences who are most likely to convert. If small businesses could specifically target their audience based on demographics, consumer behavior, income, and even trends in their personal life, could you imagine how much more powerful their marketing efforts could become?</P>\n                    <P>For any business owner with a marketing mind, this idea should sound quite alluring, but it&#39;s likely that many small businesses believe that they don&#39;t have the budget to mine or utilize these types of highly specific market data for their organization&#39;s efforts. Not long ago, only corporate giants had the budget to collect and make use of highly specific consumer data. Most of us have heard of brands like Target, Walmart, and Apple using consumer information to improve and magnify their marketing efforts, but your local financial management company, credit union, or restaurant is likely unaware that resources like this are also available right at their fingertips essentially for free. How? Facebook.</P>",
+    "url" : "http://vitris.io/blog/article",
+    "publisher" : {
+        "@type" : "Organization",
+        "name" : "Vitris"
+    }
+}
