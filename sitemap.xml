@@ -31,6 +31,12 @@
     <priority>0.5</priority>
   </url>
   <url> 
+    <loc>https://tryvitris.com/blog/small-business-website-tips/</loc>
+    <lastmod>2018-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url> 
     <loc>https://tryvitris.com/demo</loc>
     <lastmod>2018-05-31</lastmod>
     <changefreq>weekly</changefreq>
