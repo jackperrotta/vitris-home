@@ -202,3 +202,14 @@ body {
     width: 100%;
     height: 60vh;
 }
+
+.philosophy-head {
+    background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/open-source.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 80vh;
+}
