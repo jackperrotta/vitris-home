@@ -1,0 +1,19 @@
+{
+    "@context" : "http://schema.org",
+    "@type" : "Article",
+    "name" : "4 Incredible Benefits of Content Driven Marketing",
+    "author" : {
+        "@type" : "Person",
+        "name" : "Liam Haley"
+    },
+    "dataPublished": "2018-05-17",
+    "image" : "https://tryvitris.com/assets/img/content-marketing.jpg",
+    "articleSection": "Marketing",
+    "articleBody": "Content marketing is a strategy a business can use educate, inform and attract more visitors to their websites. It is a way of providing value and creating trust with site visitors that will go a long way in helping the business be seen as an authority in the industry, thus gaining more trust from their customers. When executed properly, content marketing becomes so powerful with a lot of incredible benefits, including: With more content on your website, you will increase the number of pages that will be indexed in the search engines. This, in turn, will enhance your search engine profiles, and with many pages indexed, you will have access to quality and qualified search traffic. When you add fresh and unique content to your website, you give users a reason to continue coming back to your website. This is because they know they will find something useful and new every time they come back. In this manner, you have return visitors that costs you nothing. Since they are getting value from your content, users are likely to bookmark it on their browsers so that they can access it with ease at all times. This is will also lead to high user retention, and with many people bookmarking your site, the search will reward you with improved rankings for more traffic. People are more inclined to share your content with their friends and family across the internet if they find it very useful. When your content is shared, you benefit from free referral marketing – you don’t have to do anything, but people will keep on coming to your website. Additionally, there will be lots of natural links pointing back at your site for the shares, and the search engine will read this as a positive signal and reward you with higher rankings."
+,
+    "url" : "https://tryvitris.com/blog/4-incredible-benefits-of-content-driven-marketing/",
+    "publisher" : {
+        "@type" : "Organization",
+        "name" : "Vitris"
+    }
+}

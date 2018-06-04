@@ -1,0 +1,19 @@
+{
+    "@context" : "http://schema.org",
+    "@type" : "Article",
+    "name" : "3 Tips to Drive Customers to Your Website",
+    "author" : {
+        "@type" : "Person",
+        "name" : "Liam Haley"
+    },
+    "dataPublished": "2018-05-21",
+    "image" : "https://tryvitris.com/assets/img/drive-traffic.jpg",
+    "articleSection": "Marketing",
+    "articleBody": "If you have a website, then you know that it will never achieve much unless you can drive traffic to it. But sometimes the cost of traffic goes through the rooftop, thus hindering many businesses from getting customers to their websites. However, there are certain low-cost approaches you may consider that will give you very satisfactory results. Some of them include the following: Content marketing is one of the low-budget marketing strategies for websites. With high quality content, you don’t just provide the potential customer with valuable information they dearly need, but also when the content gets indexed in the search engines, you will be assured of high quality traffic that will keep on coming to your website for absolutely free. If you have valuable products and services, marketing in the social media should be a walk in the park. All you need to do is create good social media profiles and start engaging with potential customers. Share valuable content and offer useful tips on solving some of their products. If they like what you are offering to them, they will easily share the content, giving it the potential to go viral which can turn into fantastic internet publicity. Online contests are very powerful and affordable as far as digital marketing goes. Sadly, very few businesses ever use them. Online contest options include giving one of your products for free or even giving PayPal cash to the participants. The fact that your customers have a chance to get something for free is what makes contests such a powerful marketing tool. The good news is that creating contests online doesn’t cost a lot and there are powerful ways to market them to get as many participants as possible."
+,
+    "url" : "https://tryvitris.com/blog/3-tips-to-drive-customers-to-your-website/",
+    "publisher" : {
+        "@type" : "Organization",
+        "name" : "Vitris"
+    }
+}

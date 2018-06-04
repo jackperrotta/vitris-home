@@ -1,0 +1,19 @@
+{
+    "@context" : "http://schema.org",
+    "@type" : "Article",
+    "name" : "Why Every Small Business Needs a Website",
+    "author" : {
+        "@type" : "Person",
+        "name" : "Liam Haley"
+    },
+    "dataPublished": "2018-04-19",
+    "image" : "https://tryvitris.com/assets/img/business-website.jpg",
+    "articleSection": "Marketing",
+    "articleBody": "We've heard it before: I’ve already invested much time and money in the brick and mortar side of my business, so why do I need to invest more in a website? There's a plethora of reasons your business needs a website, but the biggest is your potential customers are already online. Don't miss them! You need to have a website online because people will go looking for your business. If they can't find it, that could be lost sales. Even if people hear of your small business through word of mouth, they are likely to Google it before coming in. When researching businesses, people will click on the business’s actual website before anything else. Searchers tend to believe that your website is where the most accurate information about the business rather than social media or review pages such as Yelp. Having a website greatly increases the chances of being found in a person’s Google search and increases a potential customer’s trust of your brand. Your small business should definitely have a presence on social media sites like Facebook and Instagram, but these channels are no substitute for having your own website. The reason why is that Facebook and Instagram make every page look the same. Things are standardized and there is no way for your small business page to pop in the same way that it could on its own website. Facebook filters all of the information on its site into its own platform, which is no issue if you’re simply looking to promote on Facebook, but promotion isn’t the only reason to have an online presence. Your small business should be online to tell its story and accurately communicate its brand values, which you won’t be able to do to the fullest extent on Facebook as you could on your own site."
+,
+    "url" : "https://tryvitris.com/blog/why-does-my-business-need-a-website/",
+    "publisher" : {
+        "@type" : "Organization",
+        "name" : "Vitris"
+    }
+}
