@@ -1,110 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url> 
+  <url>
     <loc>https://tryvitris.com/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/about/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/about/philosophy/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/article/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.1</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/small-business-website-tips/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/5-digital-marketing-tips-for-small-businesses/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/3-tips-to-drive-customers-to-your-website/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/4-incredible-benefits-of-content-driven-marketing/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/social-media-for-your-small-business/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/3-ways-your-business-can-use-facebook-groups/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/blog/why-does-my-business-need-a-website/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/demo</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/features/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/pricing/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url> 
+  <url>
+    <loc>https://tryvitris.com/faq/</loc>
+    <lastmod>2018-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
     <loc>https://tryvitris.com/legal/privacy-policy/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/legal/terms-of-service/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
-  <url> 
+  <url>
     <loc>https://tryvitris.com/under-construction/</loc>
-    <lastmod>2018-05-31</lastmod>
+    <lastmod>2018-06-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
