@@ -6,14 +6,24 @@
         "@type" : "Person",
         "name" : "Liam Haley"
     },
-    "dataPublished": "2018-04-29",
     "image" : "https://tryvitris.com/assets/img/fb-logo.jpg",
-    "articleSection": "Marketing",
+    "articleSection": "Small Business Digital Marketing",
     "articleBody": "If you run a small business and you want cost-effective ways of getting traffic to your website, then social media is always on the decks. One such platform usually considered for such is Facebook, and with the power of Facebook groups, you can achieve a lot for your business. Here are a few clever ways you can use the groups to the advantage of your business: A distinctive feature of Facebook group members is that they share a common interest and have very good information about it. A group is not the place you can get away with cheap talk and expect to be listened to. If your business is to benefit from the group, then you must provide massive value to the members. These can be tips, insights or tricks that will be useful to them. In this manner, you will soon be noticed, and they will be glad to interact with you because of the value you have to offer. Facebook is a social platform, and current events are some of the conversations people have when they are there. It is always a good idea to take part in some of the conversations. It shows that you are updated and keen on what is affecting people, especially in that particular industry. But you should avoid controversial topics which may make people change their perception they had about you. Stay moderate and always remain relevant. Once you develop some credibility and authority amongst the group members, you can request the admin to pin your post on the group. With a pinned post, you will be assured of maximum exposure since all the current group members and new members will see it. On the post, you can share value-packed information then leave a link so that if they need to know more about what you shared, then they can get it on your website. If you can achieve this in a large group, the results can be enormous."
 ,
     "url" : "https://tryvitris.com/blog/3-ways-your-business-can-use-facebook-groups/",
     "publisher" : {
         "@type" : "Organization",
-        "name" : "Vitris"
-    }
-}
+        "name" : "Vitris",
+        "logo" : {
+            "@type": "ImageObject",
+            "name": "VitrisLogo",
+            "width": "314",
+            "height": "226",
+            "url": "https://tryvitris.com/assets/img/vitris-v.png"
+        }
+    },
+        "datePublished": "2018-04-29",
+        "headline" : "3 Ways Your Business Can Use Facebook Groups",
+        "dateModified" : "2018-06-05",
+        "mainEntityOfPage" : "Vitris"
+}          

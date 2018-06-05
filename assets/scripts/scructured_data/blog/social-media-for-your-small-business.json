@@ -6,14 +6,24 @@
         "@type" : "Person",
         "name" : "Liam Haley"
     },
-    "dataPublished": "2018-05-05",
     "image" : "https://tryvitris.com/assets/img/social-apps.jpg",
-    "articleSection": "Marketing",
+    "articleSection": "Small Business Digital Marketing",
     "articleBody": "Small businesses can use social media effectively to get more customers, grow their following, and enhance their brand image. What the many businesses lack is a clear social media marketing strategy they can implement for the success of their ventures. Though developing such a strategy is complex and requires expert input, here are few approaches any small venture can use to get the most from social media for the benefit of their business: The first step towards utilizing social media as a small business is to have a noticeable presence in most of the social media platforms. You can do this by creating a compelling profile with lots of fresh and high quality content that your users will love sharing across the web. Having a strong presence will also make you appear more credible as lack of presence may cause some users question your legitimacy in the business. To distinguish yourself from the crowd and all the online voices, it is imperative to have a niche voice and communicate with your followers in a way they will understand. This calls for nothing but knowing who your target audience is, then tailoring your message in a manner they will easily address their concerns within that particular niche. You will, therefore, have to do some, research, know what they like, what pains them and any other info that may relevant in helping you craft the right message. Remember, it is not the number of social media posts you make, but the quality of the posts. It is preferable to make one post that will be shared and liked thousands of times than to make one hundred posts that don’t get any mentions at all. Besides, with too many posts, you will become a nuisance and appear desperate for social media attention."
 ,
     "url" : "https://tryvitris.com/blog/social-media-for-your-small-business/",
     "publisher" : {
         "@type" : "Organization",
-        "name" : "Vitris"
-    }
-}
+        "name" : "Vitris",
+        "logo" : {
+            "@type": "ImageObject",
+            "name": "VitrisLogo",
+            "width": "314",
+            "height": "226",
+            "url": "https://tryvitris.com/assets/img/vitris-v.png"
+        }
+    },
+        "datePublished": "2018-05-05",
+        "headline" : "Using Social Media for Your Small Business",
+        "dateModified" : "2018-06-05",
+        "mainEntityOfPage" : "Vitris"
+}          
