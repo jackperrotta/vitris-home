@@ -350,8 +350,22 @@
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
     </script>
     <script src="./assets/scripts/smoothscroll.js"></script>
-    <!-- TO DO: Replace this json link -->
-    <script type="application/ld+json" src="./assets/scripts/scructured_data/home.json"></script>
+    <!-- JSON structured data -->
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "LocalBusiness",
+            "name" : "VITRIS",
+            "image" : "https://tryvitris.com/assets/img/vitris-full.png",
+            "telephone" : "215 595-8457",
+            "email" : "hi@tryvitris.com",
+            "address" : {
+              "@type" : "PostalAddress",
+              "streetAddress" : "1635 Market Street",
+              "addressLocality" : "Philadelphia"
+            }
+          }
+    </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120006992-1"></script>
     <script>

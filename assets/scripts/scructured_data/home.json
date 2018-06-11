@@ -2,7 +2,7 @@
   "@context" : "http://schema.org",
   "@type" : "LocalBusiness",
   "name" : "VITRIS",
-  "image" : "http://vitris.io/assets/img/vitris-full.png",
+  "image" : "https://tryvitris.com/assets/img/vitris-full.png",
   "telephone" : "215 595-8457",
   "email" : "hi@tryvitris.com",
   "address" : {
