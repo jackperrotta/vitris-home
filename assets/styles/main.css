@@ -3,6 +3,10 @@ body {
     overflow-x: hidden !important;
 }
 
+.navbar {
+    z-index: 10;
+}
+
 .nav-text {
     color: rgb(62,90,245);
 }
@@ -346,7 +350,7 @@ body {
     left: 50%;
     margin-left: -25px;
     background-color: #999999;
-    z-index: 100;
+    z-index: 1;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
