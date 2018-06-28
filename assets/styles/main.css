@@ -145,6 +145,11 @@ body {
     background: rgb(245,245,245);
 }
 
+.embed-responsive {
+    border: .5rem solid rgba(62,90,245,1);
+    border-radius: .25rem;
+}
+
 .home-phil {
     background: rgb(245,245,245);
 }
