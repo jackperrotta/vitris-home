@@ -209,6 +209,11 @@ body {
     background-color: rgb(245,245,245);
 }
 
+.website-details {
+    background-color: rgba(62,90,245,1);
+    color: rgb(245,245,245);
+}
+
 /* Blog */
 /* @media (min-width: 768px){
     .v-card-col {
