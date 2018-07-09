@@ -49,7 +49,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
-        margin-top: 50px;
+        min-height: 100vh;
     }
 }
 
