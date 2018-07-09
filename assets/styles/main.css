@@ -45,11 +45,11 @@ body {
     .header-1 {
         background: linear-gradient(rgba(41, 193, 216, 0.4), rgba(38,147,164,.4)), url("../img/mobile-vitris-cover.jpg");
         background-attachment: fixed;
-        background-position: center ;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
-        min-height: 100vh;
+        margin-top: 40px;
     }
 }
 
