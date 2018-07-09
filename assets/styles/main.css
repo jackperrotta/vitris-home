@@ -43,7 +43,7 @@ body {
 
 @media only screen and (max-width: 767px){
     .header-1 {
-        background: linear-gradient(rgba(41, 193, 216, 0.4), rgba(38,147,164,.4)), url("../img/vitris-cover-8.jpg");
+        background: linear-gradient(rgba(41, 193, 216, 0.4), rgba(38,147,164,.4)), url("../img/mobile-vitris-cover.jpg");
         background-attachment: fixed;
         background-position: center ;
         background-repeat: no-repeat;
