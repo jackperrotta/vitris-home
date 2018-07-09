@@ -47,9 +47,9 @@ body {
         background-attachment: fixed;
         background-position: center ;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         color: white;
-        height: 100vh;
+        margin-top: 50px;
     }
 }
 
