@@ -209,6 +209,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media only screen and (max-width: 767px){
+    #pricing-cards {
+        background-attachment: scroll !important;
+    }
+}
+
 .pricing-head {
     background-color: rgba(62,90,245,1);
 }
@@ -289,6 +296,13 @@ body {
     color: white;
     width: 100%;
     height: 60vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-head {
+        background-attachment: scroll !important;
+    }
+
 }
 
 /* Timeline */
@@ -450,4 +464,10 @@ body {
     color: white;
     width: 100%;
     height: 80vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .philosophy-head {
+        background-attachment: scroll !important;
+    }
 }
