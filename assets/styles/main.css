@@ -19,7 +19,7 @@ body {
     font-weight: bold;
 }
 
-.header-1 {
+/* .header-1 {
     background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/vitris-cover-8.jpg");
     background-attachment: fixed;
     background-position: 35% center;
@@ -27,9 +27,9 @@ body {
     background-size: cover;
     color: white;
     height: 80vh;
-}
+} */
 
-/* @media only screen and (min-width: 767px){
+@media only screen and (min-width: 767px){
     .header-1 {
         background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/vitris-cover-8.jpg");
         background-attachment: fixed;
@@ -43,11 +43,16 @@ body {
 
 @media only screen and (max-width: 767px){
     .header-1 {
-        background-color: rgb(0,201,207);
+        margin-top: 3em;
+        background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/vitris-cover-8.jpg");
+        background-attachment: fixed;
+        background-position: 50% center;
+        background-repeat: no-repeat;
+        background-size: cover;
         color: white;
-        height: 100vh;
+        min-height: 80vh;
     }
-} */
+}
 
 .header-2 {
     background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/Vitris-cover-2.jpg");
