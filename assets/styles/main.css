@@ -51,6 +51,7 @@ body {
         background-size: cover;
         color: white;
         min-height: 80vh;
+        max-width: 100vw;
     }
 }
 
