@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://tryvitris.com/blog/</loc>
-    <lastmod>2018-07-17</lastmod>
+    <lastmod>2018-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -87,6 +87,13 @@
   <url>
     <loc>https://tryvitris.com/blog/choosing-social-media-for-small-business/</loc>
     <lastmod>2018-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+  <url>
+    <loc>https://tryvitris.com/blog/temple-entrepreneur-opens-on-campus-business/</loc>
+    <lastmod>2018-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
