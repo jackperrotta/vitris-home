@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://tryvitris.com/blog/</loc>
-    <lastmod>2018-08-20</lastmod>
+    <lastmod>2018-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -91,9 +91,20 @@
     <priority>0.5</priority>
   </url>
   <url>
-  <url>
     <loc>https://tryvitris.com/blog/temple-entrepreneur-opens-on-campus-business/</loc>
     <lastmod>2018-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tryvitris.com/blog/how-to-add-inventory-with-vitris/</loc>
+    <lastmod>2018-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tryvitris.com/blog/how-to-add-services-in-vitris/</loc>
+    <lastmod>2018-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
