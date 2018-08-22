@@ -104,7 +104,41 @@
                             <img src="../../assets/img/add-inventory-step-2-decision.png" alt="Vitris inventory page" class="img-fluid my-auto w-100 pointer" data-toggle="modal" data-target="#2">
                         </div>
                     </div>
-                    <div class="row my-2">
+                    <h4>Important Reference for Adding Inventory</h4>
+                    <p>Our inventory system lets you track a number of different fixed characteristics as well as being flexible so you can track specific values to best suit your values. For examples of all values please take a look at the excel sheet in section 3A.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <strong>Item Description</strong> - The main text used throughout the Vitris platform and on your website to describe what the inventory item is.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Item Brand </strong> - The brand of the item.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Item Model</strong> - The model name or number of the item.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Quantity</strong> - The number of items being added to the inventory.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Purchase Price</strong> - The unit cost of the item being added to inventory.
+                        </li>
+                        <li class="mb-1">
+                            <strong>List Price</strong> - The price you’re listing each item for in your point of sale and on your website.
+                        </li>
+                    </ul>
+                    <h5>Add Item Specs</h5>
+                    <p>
+                        When adding individual inventory items we allow you to create certain specifications to better customize the inventory item for your business. This is a more advanced option and currently isn’t used anywhere on the platform or on your website except in the inventory table.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <strong>Specification</strong> - The type of information you’d like to attach to this piece of inventory such as color, height, weight, etc.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Value</strong> - The value of the specification for the inventory item, to go along with the examples provided above the values could be blue, 3 feet 6 inches, 40 lbs, etc.
+                        </li>
+                    </ul>
+                    <div class="row my-3">
                         <div class="col-lg-4 my-auto">
                             <h4>Step 3A - Batch Upload CSV</h4>
                             <p>To start the batch upload you must select the template csv file we provide and add your inventory items to this sheet. Our batch upload function will not work if the template is not used and all the required fields are not used.</p>
@@ -113,7 +147,7 @@
                             <img src="../../assets/img/add-inventory-step-3a-upload-page.png" alt="Vitris batch upload page" class="img-fluid w-100 pointer" data-toggle="modal" data-target="#3aUpload">
                         </div>
                     </div>
-                    <div class="row my-2">
+                    <div class="row my-3">
                         <div class="col-lg-4 my-auto">
                             <p>An example has been filled out to the right here, you can see that even if a field doesn’t have a model or brand I still filled them in with “none”, if you leave them blank the system will give you an error. In some cases I left the “List Price” column empty, these items are involved in services performed like iPhone screen replacements, I want to add them to the customers ticket during checkout so they’re deducted from inventory but I don’t want to charge the customer on top of the price of the service.</p>
                         </div>
@@ -129,12 +163,78 @@
                             <img src="../../assets/img/add-inventory-step-3a-final-upload.png" alt="Vitris batch upload page" class="img-fluid w-100 pointer" data-toggle="modal" data-target="#3aFinal">
                         </div>
                     </div>
-                   <h4></h4>
-                    <p>If an influencer has a huge fan base and no engagement, you’d be accomplishing nothing by working with them. With available technology, some pseudo-influencers have grown their following with bots, meaning they don’t actually have real, engaging fans. These are people you don’t want to work with. Before working with someone who claims to be an influencer, be sure to examine their follower to engagement ratio, looking closely at likes and comments on their posts. After all, if someone has 100,000 followers and an average of only 50 likes per post, something is fishy.</p>
-                  <h4>The Size of the Following</h4>
-                    <p>Naturally, you should look at follower count when choosing an influencer to work with. This doesn’t mean you need to work with someone with millions of followers - instead, you should take into account the audience you’re trying to target, how much the influencer will charge you to promote your product or service, and what type of person you want associated with your brand. Perhaps you might want to work with someone who has a following or 50,000 or even 10,000 people instead 5 million. They may even do promotions in exchange for free product.</p>
-                 <h4>Do What’s Right for You</h4>
-                 <p>At the end of the day, influencer marketing can be a great way to build your business and grow your brand. Just be sure to do your research, look out for fakes, and choose to work with people who fit your brand. Remember, follower count isn’t everything. Aim to work with authentic, engaging individuals. All that glitters is not gold.</p>
+                    <div class="row my-3">
+                        <div class="col-lg-4 my-auto">
+                            <h4>Step 3B - Individual Item Adding</h4>
+                            <p>If you’d like to quickly add individual items to your inventory you, this is the best method. When you select the “Add Inventory” button on the “Inventory” page it’ll take you to the input page seen to the right. Take a look at the reference provided above to better understand the purpose of each field.</p>
+                        </div>
+                        <div class="col-lg-8 my-auto">
+                            <img src="../../assets/img/add-inventory-3b-add-item.png" alt="Vitris single add item" class="img-fluid w-100 pointer" data-toggle="modal" data-target="#3b">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-lg-4 my-auto">
+                            <h4>Step 3C - Creating an Order</h4>
+                            <p>To further track your inventory orders we allow you to create orders that document specific information from the supplier your order was placed through. This allows you to keep track of additional costs associated with the ordered inventory.</p>
+                        </div>
+                        <div class="col-lg-8 my-auto">
+                            <img src="../../assets/img/add-inventory-3c-order-details.png" alt="Create order details" class="img-fluid w-100 pointer" data-toggle="modal" data-target="#3cDetails">
+                        </div>
+                    </div>
+                    <h4>Reference for Order Creation</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-1">
+                            <strong>Vendor</strong> - Name of the supplier fulfilling the order.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Order ID</strong> - A specific reference identifier provided by the supplier to associate with the order.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Tracking ID</strong> - The ID to track the order as it is shipped to your location.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Shipping Price</strong> - The cost to ship the order.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Order Date</strong> - The date the order was placed.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Expected Arrival Date</strong> - The date the order should arrive and be added to your inventory.
+                        </li>
+                        <li class="mb-1">
+                            <strong>Is is already received?</strong> - Select whether the order should be added to your inventory immediately or if you’re still waiting for it. If you’re still waiting the inventory in the order will not be added to your inventory until you say it has arrived.
+                        </li>
+                    </ul>
+                    <div class="row my-3">
+                        <div class="col-lg-4 my-auto">
+                            <h4>Step 3C - Creating an Order (Continued)</h4>
+                            <p>Once you’ve filled out the order details you can input the inventory items to be added manually or through a batch CSV upload. The instructions on each of these are similar to what is provided above.</p>
+                        </div>
+                        <div class="col-lg-8 my-auto">
+                            <img src="../../assets/img/add-inventory-3c-choose-add-method.png" alt="Choose an order method" class="img-fluid w-100 pointer" data-toggle="modal" data-target="#3cMethod">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-lg-4 my-auto">
+                            <p>The only difference being with individual adding inventory items, we create a list of all the items you add below the form. Once you’ve manually added all the items to the order, you can submit the order.</p>
+                        </div>
+                        <div class="col-lg-8 my-auto">
+                            <img src="../../assets/img/add-inventory-3c-single-items.png" alt="Adding individual items to an order" class="img-fluid w-100 pointer" data-toggle="modal" data-target="#3cSingle">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-lg-4 my-auto">
+                            <h4>Step 4 - Confirm Items have been added to Inventory</h4>
+                            <p>You should be able to view the inventory items you’ve added in the table on the “Inventory” page. To make edits to any items in your inventory click the arrow in the actions column, this will let you change all the information surrounding an item. When you sell items through the Vitris POS or on your website they will be automatically deducted from this table.</p>
+                        </div>
+                        <div class="col-lg-8 my-auto">
+                            <img src="../../assets/img/add-inventory-4-view-table.png" alt="Completed adding inventory" class="img-fluid w-100 pointer" data-toggle="modal" data-target="#4">
+                        </div>
+                    </div>
+                    <h4 class="mt-3">Troubleshooting</h4>
+                    <p>
+                        If you can’t find any items you’ve added, make sure you accepted the order as received if you chose that method for adding inventory and check to make sure you have a strong WIFI signal. As always, for further help with troubleshooting please <a href="mailto:jack@tryvitris.com?subject=Help with Inventory&body=Hey Jack, I'm having some trouble with inventory can you help me with...">Contact Jack</a> at jack@tryvitris.com
+                    </p>
                 </div>
             </div>
         </div>
@@ -199,6 +299,71 @@
         <div class="modal-content">
         <div class="modal-body text-center">
             <img src="../../assets/img/add-inventory-step-3a-final-upload.png" alt="Vitris batch upload page" class="img-fluid w-75">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="3b" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lightbox">
+        <div class="modal-content">
+        <div class="modal-body">
+            <img src="../../assets/img/add-inventory-3b-add-item.png" alt="Vitris single add item" class="img-fluid w-100">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="3cDetails" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lightbox">
+        <div class="modal-content">
+        <div class="modal-body">
+            <img src="../../assets/img/add-inventory-3c-order-details.png" alt="Create order details" class="img-fluid w-100">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="3cMethod" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lightbox">
+        <div class="modal-content">
+        <div class="modal-body">
+            <img src="../../assets/img/add-inventory-3c-choose-add-method.png" alt="Choose an order method" class="img-fluid w-100">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="3cSingle" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lightbox">
+        <div class="modal-content">
+        <div class="modal-body">
+            <img src="../../assets/img/add-inventory-3c-single-items.png" alt="Adding individual items to an order" class="img-fluid w-100">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="4" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lightbox">
+        <div class="modal-content">
+        <div class="modal-body">
+            <img src="../../assets/img/add-inventory-4-view-table.png" alt="Completed adding inventory" class="img-fluid w-100">
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -282,16 +447,80 @@
     {
     "@context" : "http://schema.org",
     "@type" : "Article",
-    "name" : "Influencer Marketing for Small Business: How to Find the Right Influencers",
+    "name" : "How to Add Inventory with Vitris",
     "author" : {
         "@type" : "Person",
         "name" : "Jack Perrotta"
     },
-    "image" : "https://tryvitris.com/assets/img/influencer-marketing.png",
-    "articleSection": "Influencer Marketing for Small Business: How to Find the Right Influencers",
-    "articleBody": "With the rise of social media, influencer marketing has become an efficient way of leveraging other people’s following to increase exposure for your products or services. With so many influencers spread across multiple platforms, how do you figure out which ones can actually help you grow your business? For influencer marketing to be successful, you have to know how to select the right influencers for your brand. Here are a few factors you should consider.You want to be promoting your business through individuals who fit your niche and resonate with your brand. If you choose to work with influencers in different niches simply because they are more affordable or have huge followings, it may come off as inauthentic. At best, this would be ineffective marketing. At worst, it could damage your brand’s reputation. As a general rule of thumb, only work with influencers who would buy your product or service without being paid to do so. If an influencer has a huge fan base and no engagement, you’d be accomplishing nothing by working with them. With available technology, some pseudo-influencers have grown their following with bots, meaning they don’t actually have real, engaging fans. These are people you don’t want to work with. Before working with someone who claims to be an influencer, be sure to examine their follower to engagement ratio, looking closely at likes and comments on their posts. After all, if someone has 100,000 followers and an average of only 50 likes per post, something is fishy. Naturally, you should look at follower count when choosing an influencer to work with. This doesn’t mean you need to work with someone with millions of followers - instead, you should take into account the audience you’re trying to target, how much the influencer will charge you to promote your product or service, and what type of person you want associated with your brand. Perhaps you might want to work with someone who has a following or 50,000 or even 10,000 people instead 5 million. They may even do promotions in exchange for free product. At the end of the day, influencer marketing can be a great way to build your business and grow your brand. Just be sure to do your research, look out for fakes, and choose to work with people who fit your brand. Remember, follower count isn’t everything. Aim to work with authentic, engaging individuals. All that glitters is not gold."
+    "image" : "https://tryvitris.com/assets/img/inventory-management-thumbnail.png",
+    "articleSection": "How to Add Inventory with Vitris",
+    "articleBody": "Getting Started
+
+    Effective inventory management is a crucial aspect to how any business with products is run, without it your business could be losing hundreds and thousands of dollars. Additionally, Vitris pairs this inventory with the dynamic “products” section on your website so your customers always know what you have in stock.
+    
+    Step 1 - Navigate to the Inventory Page
+    
+    Naturally we start by logging into our Vitris account. In the image above you can see I’ve logged into my account, opened the navigation menu and will select “Inventory” then “View Inventory”.
+    
+    Step 2 - *Decision* How would you like to add your Inventory
+    
+     We give you 3 options for adding inventory, batch uploading CSV (Step 3A), individually adding (Step 3B), and through creating an order (Step 3C). Batch uploading will let you add up to 100 inventory items at a time, individual is self explanatory and creating an order will allow you to add the order details to the batch upload or inventory items you add. The choice is yours as to how you’d like to add inventory, they will all add the inventory items to the table found on the “View Inventory” page.
+    
+    Important Reference for Adding Inventory
+    
+    Our inventory system lets you track a number of different fixed characteristics as well as being flexible so you can track specific values to best suit your values. For examples of all values please take a look at the excel sheet in section 3A.
+    
+    Item Description - The main text used throughout the Vitris platform and on your website to describe what the inventory item is. 
+    
+    Item Brand - The brand of the item.
+    
+    Item Model - The model name or number of the item.
+    
+    Quantity - The number of items being added to the inventory.
+    
+    Purchase Price - The unit cost of the item being added to inventory.
+    
+    List Price - The price you’re listing each item for in your point of sale and on your website.
+    
+    Add Item Specs - When adding individual inventory items we allow you to create certain specifications to better customize the inventory item for your business. This is a more advanced option and currently isn’t used anywhere on the platform or on your website except in the inventory table.
+        
+        Specification - The type of information you’d like to attach to this piece of inventory such as color, height, weight, etc
+        Value - The value of the specification for the inventory item, to go along with the examples provided above the values could be blue, 3 feet 6 inches, 40 lbs, etc.
+    
+    Step 3A - Batch Upload CSV
+    
+    To start the batch upload you must select the template csv file we provide and add your inventory items to this sheet. Our batch upload function will not work if the template is not used and all the required fields are not used. An example has been filled out to the right here, you can see that even if a field doesn’t have a model or brand I still filled them in with “none”, if you leave them blank the system will give you an error. In some cases I left the “List Price” column empty, these items are involved in services performed like iPhone screen replacements, I want to add them to the customers ticket during checkout so they’re deducted from inventory but I don’t want to charge the customer on top of the price of the service. Once you save the excel sheet and add the file, you can press “Upload Batch”. If you see any errors please check to make sure you are using the template provided, you filled in the required fields, and you haven’t surpassed the 100 quantity limit.
+    
+    Step 3B - Individual Item Adding
+    
+    If you’d like to quickly add individual items to your inventory you, this is the best method. When you select the “Add Inventory” button on the “Inventory” page it’ll take you to the input page seen to the right. Take a look at the reference provided above to better understand the purpose of each field.
+    
+    Step 3C - Creating an Order
+    
+    To further track your inventory orders we allow you to create orders that document specific information from the supplier your order was placed through. This allows you to keep track of additional costs associated with the ordered inventory.
+    
+    Reference for Order Creation
+    
+    Vendor - Name of the supplier fulfilling the order.
+    Order ID - A specific reference identifier provided by the supplier to associate with the order.
+    Tracking ID - The ID to track the order as it is shipped to your location.
+    Shipping Price - The cost to ship the order.
+    Order Date - The date the order was placed.
+    Expected Arrival date - The date the order should arrive and be added to your inventory.
+    Is is already received? - Select whether the order should be added to your inventory immediately or if you’re still waiting for it. If you’re still waiting the inventory in the order will not be added to your inventory until you say it has arrived.
+    
+    Once you’ve filled out the order details you can input the inventory items to be added manually or through a batch CSV upload. The instructions on each of these are similar to what is provided above.
+    
+    The only difference being with individual adding inventory items, we create a list of all the items you add below the form. Once you’ve manually added all the items to the order, you can submit the order.
+    
+    Step 4 - Confirm Items have been added to Inventory
+    
+    You should be able to view the inventory items you’ve added in the table on the “Inventory” page. To make edits to any items in your inventory click the arrow in the actions column, this will let you change all the information surrounding an item. When you sell items through the Vitris POS or on your website they will be automatically deducted from this table.
+    
+    If you can’t find any items you’ve added, make sure you accepted the order as received if you chose that method for adding inventory and check to make sure you have a strong WIFI signal. As always, for further help with troubleshooting please contact Jack at jack@tryvitris.com
+    "
 ,
-    "url" : "https://tryvitris.com/blog/small-business-influencer-marketing/",
+    "url" : "https://tryvitris.com/blog/how-to-add-inventory-with-vitris/",
     "publisher" : {
         "@type" : "Organization",
         "name" : "Vitris",
@@ -303,9 +532,9 @@
             "url": "https://tryvitris.com/assets/img/vitris-v.png"
         }
     },
-        "datePublished": "2018-06-15",
-        "headline" : "Influencer Marketing for Small Business: How to Find the Right Influencers",
-        "dateModified" : "2018-07-11",
+        "datePublished": "2018-08-22",
+        "headline" : "How to Add Inventory with Vitris",
+        "dateModified" : "2018-08-22",
         "mainEntityOfPage" : "Vitris"
 }          
     </script>
