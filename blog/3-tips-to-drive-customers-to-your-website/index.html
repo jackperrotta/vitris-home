@@ -169,37 +169,119 @@
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
     </script>
     <script src="../../assets/scripts/smoothscroll.js"></script>
-    <!-- TO DO: Replace this json tag -->
+
     <script type="application/ld+json">
     {
-    "@context" : "http://schema.org",
-    "@type" : "Article",
-    "name" : "3 Tips to Drive Customers to Your Website",
-    "author" : {
-        "@type" : "Person",
-        "name" : "Liam Haley"
-    },
-    "image" : "https://tryvitris.com/assets/img/drive-traffic.jpg",
-    "articleSection": "Small Business Digital Marketing",
-    "articleBody": "If you have a website, then you know that it will never achieve much unless you can drive traffic to it. But sometimes the cost of traffic goes through the rooftop, thus hindering many businesses from getting customers to their websites. However, there are certain low-cost approaches you may consider that will give you very satisfactory results. Some of them include the following: Content marketing is one of the low-budget marketing strategies for websites. With high quality content, you don’t just provide the potential customer with valuable information they dearly need, but also when the content gets indexed in the search engines, you will be assured of high quality traffic that will keep on coming to your website for absolutely free. If you have valuable products and services, marketing in the social media should be a walk in the park. All you need to do is create good social media profiles and start engaging with potential customers. Share valuable content and offer useful tips on solving some of their products. If they like what you are offering to them, they will easily share the content, giving it the potential to go viral which can turn into fantastic internet publicity. Online contests are very powerful and affordable as far as digital marketing goes. Sadly, very few businesses ever use them. Online contest options include giving one of your products for free or even giving PayPal cash to the participants. The fact that your customers have a chance to get something for free is what makes contests such a powerful marketing tool. The good news is that creating contests online doesn’t cost a lot and there are powerful ways to market them to get as many participants as possible."
-,
-    "url" : "https://tryvitris.com/blog/3-tips-to-drive-customers-to-your-website/",
-    "publisher" : {
-        "@type" : "Organization",
-        "name" : "Vitris",
-        "logo" : {
-            "@type": "ImageObject",
-            "name": "VitrisLogo",
-            "width": "314",
-            "height": "226",
-            "url": "https://tryvitris.com/assets/img/vitris-v.png"
-        }
-    },
-        "datePublished": "2018-05-21",
-        "headline" : "3 Tips to Drive Customers to Your Website",
-        "dateModified" : "2018-06-05",
-        "mainEntityOfPage" : "Vitris"
-}          
+        "@context" : "http://schema.org",
+        "@graph":
+        [
+        {
+            "@type": "Organization",
+            "url": "https://tryvitris.com",
+            "logo": "https://tryvitris.com/assets/img/vitris-full.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1-215-595-8457",
+                "contactType": "Customer Service"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/tryvitris",
+                "https://instagram.com/tryvitris",
+                "https://www.linkedin.com/company/vitris-wireless-llc/",
+                "https://twitter.com/tryvitris/"
+            ]
+        },
+        {
+            "@type": "LocalBusiness",
+            "@id": "https://tryvitris.com",
+            "name" : "Vitris",
+            "image" : "https://tryvitris.com/assets/img/vitris-full.png",
+            "telephone": "+1-215-595-8457",
+            "email": "jack@tryvitris.com",
+            "url": "https://tryvitris.com",
+            "priceRange": "$",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "1635 Market Street",
+                "addressLocality" : "Philadelphia",
+                "addressRegion": "PA",
+                "postalCode": "19103",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.953300",
+                "longitude": "-75.168058"
+            },
+            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "21:00"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tryvitris.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://tryvitris.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Blog - 3 Tips to Drive Customers to Your Website",
+                "item": "https://tryvitris.com/blog/3-tips-to-drive-customers-to-your-website/"
+            }
+            ]
+        },
+        {
+            "@type" : "Article",
+            "name" : "3 Tips to Drive Customers to Your Website",
+            "author" : {
+                "@type" : "Person",
+                "name" : "Liam Haley"
+            },
+            "image" : "https://tryvitris.com/assets/img/drive-traffic.jpg",
+            "articleSection": "Small Business Digital Marketing",
+            "articleBody": "If you have a website, then you know that it will never achieve much unless you can drive traffic to it. But sometimes the cost of traffic goes through the rooftop, thus hindering many businesses from getting customers to their websites. However, there are certain low-cost approaches you may consider that will give you very satisfactory results. Some of them include the following: Content marketing is one of the low-budget marketing strategies for websites. With high quality content, you don’t just provide the potential customer with valuable information they dearly need, but also when the content gets indexed in the search engines, you will be assured of high quality traffic that will keep on coming to your website for absolutely free. If you have valuable products and services, marketing in the social media should be a walk in the park. All you need to do is create good social media profiles and start engaging with potential customers. Share valuable content and offer useful tips on solving some of their products. If they like what you are offering to them, they will easily share the content, giving it the potential to go viral which can turn into fantastic internet publicity. Online contests are very powerful and affordable as far as digital marketing goes. Sadly, very few businesses ever use them. Online contest options include giving one of your products for free or even giving PayPal cash to the participants. The fact that your customers have a chance to get something for free is what makes contests such a powerful marketing tool. The good news is that creating contests online doesn’t cost a lot and there are powerful ways to market them to get as many participants as possible."
+        ,
+            "url" : "https://tryvitris.com/blog/3-tips-to-drive-customers-to-your-website/",
+            "publisher" : {
+                "@type" : "Organization",
+                "name" : "Vitris",
+                "logo" : {
+                    "@type": "ImageObject",
+                    "name": "VitrisLogo",
+                    "width": "314",
+                    "height": "226",
+                    "url": "https://tryvitris.com/assets/img/vitris-v.png"
+                }
+            },
+                "datePublished": "2018-05-21",
+                "headline" : "3 Tips to Drive Customers to Your Website",
+                "dateModified" : "2018-06-05",
+                "mainEntityOfPage" : "Vitris"
+        }          
+        ]
+    }
+    
     </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120006992-1"></script>

@@ -442,101 +442,182 @@
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
     </script>
     <script src="../../assets/scripts/smoothscroll.js"></script>
-    <!-- TO DO: Replace this json tag -->
+
     <script type="application/ld+json">
     {
-    "@context" : "http://schema.org",
-    "@type" : "Article",
-    "name" : "How to Add Inventory with Vitris",
-    "author" : {
-        "@type" : "Person",
-        "name" : "Jack Perrotta"
-    },
-    "image" : "https://tryvitris.com/assets/img/inventory-management-thumbnail.png",
-    "articleSection": "How to Add Inventory with Vitris",
-    "articleBody": "Getting Started
-
-    Effective inventory management is a crucial aspect to how any business with products is run, without it your business could be losing hundreds and thousands of dollars. Additionally, Vitris pairs this inventory with the dynamic “products” section on your website so your customers always know what you have in stock.
-    
-    Step 1 - Navigate to the Inventory Page
-    
-    Naturally we start by logging into our Vitris account. In the image above you can see I’ve logged into my account, opened the navigation menu and will select “Inventory” then “View Inventory”.
-    
-    Step 2 - *Decision* How would you like to add your Inventory
-    
-     We give you 3 options for adding inventory, batch uploading CSV (Step 3A), individually adding (Step 3B), and through creating an order (Step 3C). Batch uploading will let you add up to 100 inventory items at a time, individual is self explanatory and creating an order will allow you to add the order details to the batch upload or inventory items you add. The choice is yours as to how you’d like to add inventory, they will all add the inventory items to the table found on the “View Inventory” page.
-    
-    Important Reference for Adding Inventory
-    
-    Our inventory system lets you track a number of different fixed characteristics as well as being flexible so you can track specific values to best suit your values. For examples of all values please take a look at the excel sheet in section 3A.
-    
-    Item Description - The main text used throughout the Vitris platform and on your website to describe what the inventory item is. 
-    
-    Item Brand - The brand of the item.
-    
-    Item Model - The model name or number of the item.
-    
-    Quantity - The number of items being added to the inventory.
-    
-    Purchase Price - The unit cost of the item being added to inventory.
-    
-    List Price - The price you’re listing each item for in your point of sale and on your website.
-    
-    Add Item Specs - When adding individual inventory items we allow you to create certain specifications to better customize the inventory item for your business. This is a more advanced option and currently isn’t used anywhere on the platform or on your website except in the inventory table.
+        "@context" : "http://schema.org",
+        "@graph":
+        [
+        {
+            "@type": "Organization",
+            "url": "https://tryvitris.com",
+            "logo": "https://tryvitris.com/assets/img/vitris-full.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1-215-595-8457",
+                "contactType": "Customer Service"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/tryvitris",
+                "https://instagram.com/tryvitris",
+                "https://www.linkedin.com/company/vitris-wireless-llc/",
+                "https://twitter.com/tryvitris/"
+            ]
+        },
+        {
+            "@type": "LocalBusiness",
+            "@id": "https://tryvitris.com",
+            "name" : "Vitris",
+            "image" : "https://tryvitris.com/assets/img/vitris-full.png",
+            "telephone": "+1-215-595-8457",
+            "email": "jack@tryvitris.com",
+            "url": "https://tryvitris.com",
+            "priceRange": "$",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "1635 Market Street",
+                "addressLocality" : "Philadelphia",
+                "addressRegion": "PA",
+                "postalCode": "19103",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.953300",
+                "longitude": "-75.168058"
+            },
+            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "21:00"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tryvitris.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://tryvitris.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Blog - How to Add Inventory with Vitris",
+                "item": "https://tryvitris.com/blog/how-to-add-inventory-with-vitris/"
+            }
+            ]
+        },
+        {
+            "@type" : "Article",
+            "name" : "How to Add Inventory with Vitris",
+            "author" : {
+                "@type" : "Person",
+                "name" : "Jack Perrotta"
+            },
+            "image" : "https://tryvitris.com/assets/img/inventory-management-thumbnail.png",
+            "articleSection": "How to Add Inventory with Vitris",
+            "articleBody": "Getting Started
         
-        Specification - The type of information you’d like to attach to this piece of inventory such as color, height, weight, etc
-        Value - The value of the specification for the inventory item, to go along with the examples provided above the values could be blue, 3 feet 6 inches, 40 lbs, etc.
-    
-    Step 3A - Batch Upload CSV
-    
-    To start the batch upload you must select the template csv file we provide and add your inventory items to this sheet. Our batch upload function will not work if the template is not used and all the required fields are not used. An example has been filled out to the right here, you can see that even if a field doesn’t have a model or brand I still filled them in with “none”, if you leave them blank the system will give you an error. In some cases I left the “List Price” column empty, these items are involved in services performed like iPhone screen replacements, I want to add them to the customers ticket during checkout so they’re deducted from inventory but I don’t want to charge the customer on top of the price of the service. Once you save the excel sheet and add the file, you can press “Upload Batch”. If you see any errors please check to make sure you are using the template provided, you filled in the required fields, and you haven’t surpassed the 100 quantity limit.
-    
-    Step 3B - Individual Item Adding
-    
-    If you’d like to quickly add individual items to your inventory you, this is the best method. When you select the “Add Inventory” button on the “Inventory” page it’ll take you to the input page seen to the right. Take a look at the reference provided above to better understand the purpose of each field.
-    
-    Step 3C - Creating an Order
-    
-    To further track your inventory orders we allow you to create orders that document specific information from the supplier your order was placed through. This allows you to keep track of additional costs associated with the ordered inventory.
-    
-    Reference for Order Creation
-    
-    Vendor - Name of the supplier fulfilling the order.
-    Order ID - A specific reference identifier provided by the supplier to associate with the order.
-    Tracking ID - The ID to track the order as it is shipped to your location.
-    Shipping Price - The cost to ship the order.
-    Order Date - The date the order was placed.
-    Expected Arrival date - The date the order should arrive and be added to your inventory.
-    Is is already received? - Select whether the order should be added to your inventory immediately or if you’re still waiting for it. If you’re still waiting the inventory in the order will not be added to your inventory until you say it has arrived.
-    
-    Once you’ve filled out the order details you can input the inventory items to be added manually or through a batch CSV upload. The instructions on each of these are similar to what is provided above.
-    
-    The only difference being with individual adding inventory items, we create a list of all the items you add below the form. Once you’ve manually added all the items to the order, you can submit the order.
-    
-    Step 4 - Confirm Items have been added to Inventory
-    
-    You should be able to view the inventory items you’ve added in the table on the “Inventory” page. To make edits to any items in your inventory click the arrow in the actions column, this will let you change all the information surrounding an item. When you sell items through the Vitris POS or on your website they will be automatically deducted from this table.
-    
-    If you can’t find any items you’ve added, make sure you accepted the order as received if you chose that method for adding inventory and check to make sure you have a strong WIFI signal. As always, for further help with troubleshooting please contact Jack at jack@tryvitris.com
-    "
-,
-    "url" : "https://tryvitris.com/blog/how-to-add-inventory-with-vitris/",
-    "publisher" : {
-        "@type" : "Organization",
-        "name" : "Vitris",
-        "logo" : {
-            "@type": "ImageObject",
-            "name": "VitrisLogo",
-            "width": "314",
-            "height": "226",
-            "url": "https://tryvitris.com/assets/img/vitris-v.png"
+            Effective inventory management is a crucial aspect to how any business with products is run, without it your business could be losing hundreds and thousands of dollars. Additionally, Vitris pairs this inventory with the dynamic “products” section on your website so your customers always know what you have in stock.
+            
+            Step 1 - Navigate to the Inventory Page
+            
+            Naturally we start by logging into our Vitris account. In the image above you can see I’ve logged into my account, opened the navigation menu and will select “Inventory” then “View Inventory”.
+            
+            Step 2 - *Decision* How would you like to add your Inventory
+            
+             We give you 3 options for adding inventory, batch uploading CSV (Step 3A), individually adding (Step 3B), and through creating an order (Step 3C). Batch uploading will let you add up to 100 inventory items at a time, individual is self explanatory and creating an order will allow you to add the order details to the batch upload or inventory items you add. The choice is yours as to how you’d like to add inventory, they will all add the inventory items to the table found on the “View Inventory” page.
+            
+            Important Reference for Adding Inventory
+            
+            Our inventory system lets you track a number of different fixed characteristics as well as being flexible so you can track specific values to best suit your values. For examples of all values please take a look at the excel sheet in section 3A.
+            
+            Item Description - The main text used throughout the Vitris platform and on your website to describe what the inventory item is. 
+            
+            Item Brand - The brand of the item.
+            
+            Item Model - The model name or number of the item.
+            
+            Quantity - The number of items being added to the inventory.
+            
+            Purchase Price - The unit cost of the item being added to inventory.
+            
+            List Price - The price you’re listing each item for in your point of sale and on your website.
+            
+            Add Item Specs - When adding individual inventory items we allow you to create certain specifications to better customize the inventory item for your business. This is a more advanced option and currently isn’t used anywhere on the platform or on your website except in the inventory table.
+                
+                Specification - The type of information you’d like to attach to this piece of inventory such as color, height, weight, etc
+                Value - The value of the specification for the inventory item, to go along with the examples provided above the values could be blue, 3 feet 6 inches, 40 lbs, etc.
+            
+            Step 3A - Batch Upload CSV
+            
+            To start the batch upload you must select the template csv file we provide and add your inventory items to this sheet. Our batch upload function will not work if the template is not used and all the required fields are not used. An example has been filled out to the right here, you can see that even if a field doesn’t have a model or brand I still filled them in with “none”, if you leave them blank the system will give you an error. In some cases I left the “List Price” column empty, these items are involved in services performed like iPhone screen replacements, I want to add them to the customers ticket during checkout so they’re deducted from inventory but I don’t want to charge the customer on top of the price of the service. Once you save the excel sheet and add the file, you can press “Upload Batch”. If you see any errors please check to make sure you are using the template provided, you filled in the required fields, and you haven’t surpassed the 100 quantity limit.
+            
+            Step 3B - Individual Item Adding
+            
+            If you’d like to quickly add individual items to your inventory you, this is the best method. When you select the “Add Inventory” button on the “Inventory” page it’ll take you to the input page seen to the right. Take a look at the reference provided above to better understand the purpose of each field.
+            
+            Step 3C - Creating an Order
+            
+            To further track your inventory orders we allow you to create orders that document specific information from the supplier your order was placed through. This allows you to keep track of additional costs associated with the ordered inventory.
+            
+            Reference for Order Creation
+            
+            Vendor - Name of the supplier fulfilling the order.
+            Order ID - A specific reference identifier provided by the supplier to associate with the order.
+            Tracking ID - The ID to track the order as it is shipped to your location.
+            Shipping Price - The cost to ship the order.
+            Order Date - The date the order was placed.
+            Expected Arrival date - The date the order should arrive and be added to your inventory.
+            Is is already received? - Select whether the order should be added to your inventory immediately or if you’re still waiting for it. If you’re still waiting the inventory in the order will not be added to your inventory until you say it has arrived.
+            
+            Once you’ve filled out the order details you can input the inventory items to be added manually or through a batch CSV upload. The instructions on each of these are similar to what is provided above.
+            
+            The only difference being with individual adding inventory items, we create a list of all the items you add below the form. Once you’ve manually added all the items to the order, you can submit the order.
+            
+            Step 4 - Confirm Items have been added to Inventory
+            
+            You should be able to view the inventory items you’ve added in the table on the “Inventory” page. To make edits to any items in your inventory click the arrow in the actions column, this will let you change all the information surrounding an item. When you sell items through the Vitris POS or on your website they will be automatically deducted from this table.
+            
+            If you can’t find any items you’ve added, make sure you accepted the order as received if you chose that method for adding inventory and check to make sure you have a strong WIFI signal. As always, for further help with troubleshooting please contact Jack at jack@tryvitris.com
+            "
+        ,
+            "url" : "https://tryvitris.com/blog/how-to-add-inventory-with-vitris/",
+            "publisher" : {
+                "@type" : "Organization",
+                "name" : "Vitris",
+                "logo" : {
+                    "@type": "ImageObject",
+                    "name": "VitrisLogo",
+                    "width": "314",
+                    "height": "226",
+                    "url": "https://tryvitris.com/assets/img/vitris-v.png"
+                }
+            },
+                "datePublished": "2018-08-22",
+                "headline" : "How to Add Inventory with Vitris",
+                "dateModified" : "2018-08-22",
+                "mainEntityOfPage" : "Vitris"
         }
-    },
-        "datePublished": "2018-08-22",
-        "headline" : "How to Add Inventory with Vitris",
-        "dateModified" : "2018-08-22",
-        "mainEntityOfPage" : "Vitris"
-}          
+        ]
+    }          
     </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120006992-1"></script>

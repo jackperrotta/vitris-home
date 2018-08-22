@@ -225,35 +225,116 @@
     </script>
     <script src="../../assets/scripts/smoothscroll.js"></script>
     <script type="application/ld+json">
-    {
-    "@context" : "http://schema.org",
-    "@type" : "Article",
-    "name" : "Philly Is Prime",
-    "author" : {
-        "@type" : "Person",
-        "name" : "Nicole Gormley"
-    },
-    "image" : "https://tryvitris.com/assets/img/philly-is-prime.png",
-    "articleSection": "Philly Is Prime",
-    "articleBody": "Amazon took the world by storm a few weeks ago when the company announced it would be accepting bids for the placement of its second headquarters. Since the announcement, cities across the country have come up with clever ploys to try to gain Amazon’s attention. Philadelphia especially has gone above and beyond. A simple search on Google will show you the numerous articles written about why Philly would be such a great place for Amazon’s HQ2. All of them are wonderful reads, but most are missing the essential elements of what makes Philadelphia, Philadelphia...so here’s our not-so-conventional list of why we think #PhillyisPrime. More In Article."
-,
-    "url" : "https://tryvitris.com/blog/philly-is-prime",
-    "publisher" : {
-        "@type" : "Organization",
-        "name" : "Vitris",
-    "logo" : {
-            "@type": "ImageObject",
-            "name": "VitrisLogo",
-            "width": "314",
-            "height": "226",
-            "url": "https://tryvitris.com/assets/img/vitris-v.png"
+        {
+            "@context" : "http://schema.org",
+            "@graph":
+            [
+            {
+                "@type": "Organization",
+                "url": "https://tryvitris.com",
+                "logo": "https://tryvitris.com/assets/img/vitris-full.png",
+                "contactPoint": [{
+                    "@type": "ContactPoint",
+                    "telephone": "+1-215-595-8457",
+                    "contactType": "Customer Service"
+                }],
+                "sameAs": [
+                    "https://www.facebook.com/tryvitris",
+                    "https://instagram.com/tryvitris",
+                    "https://www.linkedin.com/company/vitris-wireless-llc/",
+                    "https://twitter.com/tryvitris/"
+                ]
+            },
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://tryvitris.com",
+                "name" : "Vitris",
+                "image" : "https://tryvitris.com/assets/img/vitris-full.png",
+                "telephone": "+1-215-595-8457",
+                "email": "jack@tryvitris.com",
+                "url": "https://tryvitris.com",
+                "priceRange": "$",
+                "address" : {
+                    "@type" : "PostalAddress",
+                    "streetAddress" : "1635 Market Street",
+                    "addressLocality" : "Philadelphia",
+                    "addressRegion": "PA",
+                    "postalCode": "19103",
+                    "addressCountry": "US"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "39.953300",
+                    "longitude": "-75.168058"
+                },
+                "openingHoursSpecification": [
+                    {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "21:00"
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://tryvitris.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://tryvitris.com/blog/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Blog - Philly Is Prime",
+                    "item": "https://tryvitris.com/blog/philly-is-prime/"
+                }
+                ]
+            },
+            {
+                "@type" : "Article",
+                "name" : "Philly Is Prime",
+                "author" : {
+                    "@type" : "Person",
+                    "name" : "Nicole Gormley"
+                },
+                "image" : "https://tryvitris.com/assets/img/philly-is-prime.png",
+                "articleSection": "Philly Is Prime",
+                "articleBody": "Amazon took the world by storm a few weeks ago when the company announced it would be accepting bids for the placement of its second headquarters. Since the announcement, cities across the country have come up with clever ploys to try to gain Amazon’s attention. Philadelphia especially has gone above and beyond. A simple search on Google will show you the numerous articles written about why Philly would be such a great place for Amazon’s HQ2. All of them are wonderful reads, but most are missing the essential elements of what makes Philadelphia, Philadelphia...so here’s our not-so-conventional list of why we think #PhillyisPrime. More In Article."
+            ,
+                "url" : "https://tryvitris.com/blog/philly-is-prime",
+                "publisher" : {
+                    "@type" : "Organization",
+                    "name" : "Vitris",
+                "logo" : {
+                        "@type": "ImageObject",
+                        "name": "VitrisLogo",
+                        "width": "314",
+                        "height": "226",
+                        "url": "https://tryvitris.com/assets/img/vitris-v.png"
+                    }
+                },
+                    "datePublished": "2018-07-07",
+                    "headline" : "Philly Is Prime",
+                    "dateModified" : "2018-07-07",
+                    "mainEntityOfPage" : "Vitris"
+            }
+            ]
         }
-    },
-        "datePublished": "2018-07-07",
-        "headline" : "Philly Is Prime",
-        "dateModified" : "2018-07-07",
-        "mainEntityOfPage" : "Vitris"
-}
 </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120006992-1"></script>

@@ -170,34 +170,115 @@
     <script src="../../assets/scripts/smoothscroll.js"></script>
     <script type="application/ld+json">
     {
-    "@context" : "http://schema.org",
-    "@type" : "Article",
-    "name" : "Critical Aspects of Small Business Websites",
-    "author" : {
-        "@type" : "Person",
-        "name" : "Liam Haley"
-    },
-    "image" : "https://tryvitris.com/assets/img/mobile-devices.png",
-    "articleSection": "Small Business Digital Marketing",
-    "articleBody": "Even though not directly, small businesses are always in competition with the industry’s big dogs. In order for these firms to survive, they have to maximize on every opportunity that they have in front of them. A well-designed, optimized, and functional website to give the much-needed presence online is a necessity to set apart a small business from the rest of it’s competition. To create such a website, the following critical aspects must be incorporated Clear Top Navigation  You may decide to have navigation on the sidebar, however this may not be very effective for a small business as users expect the navigation to be on the top. This is where they will look at when searching for other pages on the website.Contact Information As a small business, your contact information must always be easily visible on the website. This information should show the business name, physical address, telephone numbers and business email. It should be fashion in a easily accessible location, preferably on the footer menu in addition to a link on the top navigation. Site security You want to give your visitors the confidence that your website is secure and they should not be afraid of using it. This calls for securing your site with SSL and having the security signature shown on the website. This is especially imperative if you will be collecting sensitive customer information such as credit card numbers. Mobile friendly Mobile users have now surpassed desktop users, and as a small business, this is a critical aspect you must never avoid. It goes without saying that current websites must be mobile-friendly, and as such, it is imperative for you to test your site and ascertain that  it renders okay on mobile devices. Failure to utilize this can result in the loss of clients."
-,
-    "url" : "https://tryvitris.com/blog/small-business-website-tips",
-    "publisher" : {
-        "@type" : "Organization",
-        "name" : "Vitris",
-    "logo" : {
-            "@type": "ImageObject",
-            "name": "VitrisLogo",
-            "width": "314",
-            "height": "226",
-            "url": "https://tryvitris.com/assets/img/vitris-v.png"
+        "@context" : "http://schema.org",
+        "@graph":
+        [
+        {
+            "@type": "Organization",
+            "url": "https://tryvitris.com",
+            "logo": "https://tryvitris.com/assets/img/vitris-full.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1-215-595-8457",
+                "contactType": "Customer Service"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/tryvitris",
+                "https://instagram.com/tryvitris",
+                "https://www.linkedin.com/company/vitris-wireless-llc/",
+                "https://twitter.com/tryvitris/"
+            ]
+        },
+        {
+            "@type": "LocalBusiness",
+            "@id": "https://tryvitris.com",
+            "name" : "Vitris",
+            "image" : "https://tryvitris.com/assets/img/vitris-full.png",
+            "telephone": "+1-215-595-8457",
+            "email": "jack@tryvitris.com",
+            "url": "https://tryvitris.com",
+            "priceRange": "$",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "1635 Market Street",
+                "addressLocality" : "Philadelphia",
+                "addressRegion": "PA",
+                "postalCode": "19103",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.953300",
+                "longitude": "-75.168058"
+            },
+            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "21:00"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tryvitris.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://tryvitris.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Blog - Critical Aspects of Small Business Websites",
+                "item": "https://tryvitris.com/blog/small-business-website-tips/"
+            }
+            ]
+        },
+        {
+            "@type" : "Article",
+            "name" : "Critical Aspects of Small Business Websites",
+            "author" : {
+                "@type" : "Person",
+                "name" : "Liam Haley"
+            },
+            "image" : "https://tryvitris.com/assets/img/mobile-devices.png",
+            "articleSection": "Small Business Digital Marketing",
+            "articleBody": "Even though not directly, small businesses are always in competition with the industry’s big dogs. In order for these firms to survive, they have to maximize on every opportunity that they have in front of them. A well-designed, optimized, and functional website to give the much-needed presence online is a necessity to set apart a small business from the rest of it’s competition. To create such a website, the following critical aspects must be incorporated Clear Top Navigation  You may decide to have navigation on the sidebar, however this may not be very effective for a small business as users expect the navigation to be on the top. This is where they will look at when searching for other pages on the website.Contact Information As a small business, your contact information must always be easily visible on the website. This information should show the business name, physical address, telephone numbers and business email. It should be fashion in a easily accessible location, preferably on the footer menu in addition to a link on the top navigation. Site security You want to give your visitors the confidence that your website is secure and they should not be afraid of using it. This calls for securing your site with SSL and having the security signature shown on the website. This is especially imperative if you will be collecting sensitive customer information such as credit card numbers. Mobile friendly Mobile users have now surpassed desktop users, and as a small business, this is a critical aspect you must never avoid. It goes without saying that current websites must be mobile-friendly, and as such, it is imperative for you to test your site and ascertain that  it renders okay on mobile devices. Failure to utilize this can result in the loss of clients."
+        ,
+            "url" : "https://tryvitris.com/blog/small-business-website-tips",
+            "publisher" : {
+                "@type" : "Organization",
+                "name" : "Vitris",
+            "logo" : {
+                    "@type": "ImageObject",
+                    "name": "VitrisLogo",
+                    "width": "314",
+                    "height": "226",
+                    "url": "https://tryvitris.com/assets/img/vitris-v.png"
+                }
+            },
+                "datePublished": "2018-06-04",
+                "headline" : "Critical Aspects of Small Business Websites",
+                "dateModified" : "2018-06-05",
+                "mainEntityOfPage" : "Vitris"
         }
-    },
-        "datePublished": "2018-06-04",
-        "headline" : "Critical Aspects of Small Business Websites",
-        "dateModified" : "2018-06-05",
-        "mainEntityOfPage" : "Vitris"
-}
+        ]
+    }
 </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120006992-1"></script>

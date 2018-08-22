@@ -271,68 +271,149 @@
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
     </script>
     <script src="../../assets/scripts/smoothscroll.js"></script>
-    <!-- TO DO: Replace this json tag -->
+
     <script type="application/ld+json">
     {
-    "@context" : "http://schema.org",
-    "@type" : "Article",
-    "name" : "How to Add Services in Vitris",
-    "author" : {
-        "@type" : "Person",
-        "name" : "Jack Perrotta"
-    },
-    "image" : "https://tryvitris.com/assets/img/services-thumbnail.png",
-    "articleSection": "How to Add Services in Vitris",
-    "articleBody": "Getting Started
-
-    Managing your company’s service offerings in Vitris gives you both the ability to have customers book appointments for those services on your website and gives you better insight into what offerings your customers are requesting by tracking them in the point of sale history. We’ve built a simple solution on your end then automate as much as possible so you can get back to your customers and not have to worry about the operations of your business.
-    
-    Step 1 - Navigate to the Services Page
-    
-    Naturally we start by logging into our Vitris account. In the here you can see I’ve logged into my account, opened the navigation menu and will select “Services” then “View Services”. PRO TIP: you can skip step 2 by selecting “Add Service” in the navigation menu instead.
-    
-    Step 2 - Go to Create Service
-    
-    The image here shows the services table, once you begin adding services you’ll be able to view them here, until then it will be empty like mine. To create a service we click the button in the top right corner “Create Service”
-    
-    Step 3 - Complete Service Form
-    
-     On the “Add a Service” page we see a form to tell your customers the most important information about your service. I filled in an example in the image, below is a reference for the meaning and usage of each field in the form. Once you’ve completed all the fields in the form simply click “Add Service” in the bottom right.
-    
-    Reference for Adding Services
-    
-    Service Name - Describe what the service is to the customer. This is used on your website to tell your customer exactly what services you are offering, be as descriptive as possible to ensure your customers are clear what the service they are booking an appointment for.
-    
-    Price - How much the service costs the customer. Don’t worry about discounts here, you can add those alter if necessary.
-    
-    Duration - The amount of time this services takes in minutes.
-    
-    Location - Select whether this service is performed at your business’s location, if it has no location, if you would like to allow customers to set the location it’s performed or if you have another location for this service. This is used when the customer is booking an appointment through your website.
-    
-    Step 4 - Search, Edit or Delete your Services
-    
-    Once you navigate back to the “Services” page you should see all the services you’ve added in the table, including the information about each service. The search bar allows you to search all your services by all fields: the service name, price, duration, and location. You can edit any service by clicking the paper & pencil icon in the “Actions” column in the table or delete any services by clicking the trash can.
-    
-    If you can’t find any services you’ve added, check to make sure you have a strong WIFI signal sometimes poor connection will mess things up. As always, for further help with troubleshooting please contact Jack at jack@tryvitris.com
-    "
-,
-    "url" : "https://tryvitris.com/blog/how-to-add-services-in-vitris/",
-    "publisher" : {
-        "@type" : "Organization",
-        "name" : "Vitris",
-        "logo" : {
-            "@type": "ImageObject",
-            "name": "VitrisLogo",
-            "width": "314",
-            "height": "226",
-            "url": "https://tryvitris.com/assets/img/vitris-v.png"
+        "@context" : "http://schema.org",
+        "@graph":
+        [
+        {
+            "@type": "Organization",
+            "url": "https://tryvitris.com",
+            "logo": "https://tryvitris.com/assets/img/vitris-full.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1-215-595-8457",
+                "contactType": "Customer Service"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/tryvitris",
+                "https://instagram.com/tryvitris",
+                "https://www.linkedin.com/company/vitris-wireless-llc/",
+                "https://twitter.com/tryvitris/"
+            ]
+        },
+        {
+            "@type": "LocalBusiness",
+            "@id": "https://tryvitris.com",
+            "name" : "Vitris",
+            "image" : "https://tryvitris.com/assets/img/vitris-full.png",
+            "telephone": "+1-215-595-8457",
+            "email": "jack@tryvitris.com",
+            "url": "https://tryvitris.com",
+            "priceRange": "$",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "1635 Market Street",
+                "addressLocality" : "Philadelphia",
+                "addressRegion": "PA",
+                "postalCode": "19103",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.953300",
+                "longitude": "-75.168058"
+            },
+            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "21:00"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tryvitris.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://tryvitris.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Blog - How to Add Services in Vitris",
+                "item": "https://tryvitris.com/blog/how-to-add-services-in-vitris/"
+            }
+            ]
+        },
+        {
+            "@type" : "Article",
+            "name" : "How to Add Services in Vitris",
+            "author" : {
+                "@type" : "Person",
+                "name" : "Jack Perrotta"
+            },
+            "image" : "https://tryvitris.com/assets/img/services-thumbnail.png",
+            "articleSection": "How to Add Services in Vitris",
+            "articleBody": "Getting Started
+        
+            Managing your company’s service offerings in Vitris gives you both the ability to have customers book appointments for those services on your website and gives you better insight into what offerings your customers are requesting by tracking them in the point of sale history. We’ve built a simple solution on your end then automate as much as possible so you can get back to your customers and not have to worry about the operations of your business.
+            
+            Step 1 - Navigate to the Services Page
+            
+            Naturally we start by logging into our Vitris account. In the here you can see I’ve logged into my account, opened the navigation menu and will select “Services” then “View Services”. PRO TIP: you can skip step 2 by selecting “Add Service” in the navigation menu instead.
+            
+            Step 2 - Go to Create Service
+            
+            The image here shows the services table, once you begin adding services you’ll be able to view them here, until then it will be empty like mine. To create a service we click the button in the top right corner “Create Service”
+            
+            Step 3 - Complete Service Form
+            
+             On the “Add a Service” page we see a form to tell your customers the most important information about your service. I filled in an example in the image, below is a reference for the meaning and usage of each field in the form. Once you’ve completed all the fields in the form simply click “Add Service” in the bottom right.
+            
+            Reference for Adding Services
+            
+            Service Name - Describe what the service is to the customer. This is used on your website to tell your customer exactly what services you are offering, be as descriptive as possible to ensure your customers are clear what the service they are booking an appointment for.
+            
+            Price - How much the service costs the customer. Don’t worry about discounts here, you can add those alter if necessary.
+            
+            Duration - The amount of time this services takes in minutes.
+            
+            Location - Select whether this service is performed at your business’s location, if it has no location, if you would like to allow customers to set the location it’s performed or if you have another location for this service. This is used when the customer is booking an appointment through your website.
+            
+            Step 4 - Search, Edit or Delete your Services
+            
+            Once you navigate back to the “Services” page you should see all the services you’ve added in the table, including the information about each service. The search bar allows you to search all your services by all fields: the service name, price, duration, and location. You can edit any service by clicking the paper & pencil icon in the “Actions” column in the table or delete any services by clicking the trash can.
+            
+            If you can’t find any services you’ve added, check to make sure you have a strong WIFI signal sometimes poor connection will mess things up. As always, for further help with troubleshooting please contact Jack at jack@tryvitris.com
+            "
+        ,
+            "url" : "https://tryvitris.com/blog/how-to-add-services-in-vitris/",
+            "publisher" : {
+                "@type" : "Organization",
+                "name" : "Vitris",
+                "logo" : {
+                    "@type": "ImageObject",
+                    "name": "VitrisLogo",
+                    "width": "314",
+                    "height": "226",
+                    "url": "https://tryvitris.com/assets/img/vitris-v.png"
+                }
+            },
+                "datePublished": "2018-08-01",
+                "headline" : "How to Add Services in Vitris",
+                "dateModified" : "2018-08-22",
+                "mainEntityOfPage" : "Vitris"
         }
-    },
-        "datePublished": "2018-08-01",
-        "headline" : "How to Add Services in Vitris",
-        "dateModified" : "2018-08-22",
-        "mainEntityOfPage" : "Vitris"
-}          
+        ]
+    }
     </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120006992-1"></script>

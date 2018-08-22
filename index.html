@@ -445,27 +445,47 @@
     <script src="./assets/scripts/smoothscroll.js"></script>
     <!-- JSON structured data -->
     <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@graph":
+        [
         {
-            "@context" : "http://schema.org",
-            "@type" : "LocalBusiness",
+            "@type": "Organization",
+            "url": "https://tryvitris.com",
+            "logo": "https://tryvitris.com/assets/img/vitris-full.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1-215-595-8457",
+                "contactType": "Customer Service"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/tryvitris",
+                "https://instagram.com/tryvitris",
+                "https://www.linkedin.com/company/vitris-wireless-llc/",
+                "https://twitter.com/tryvitris/"
+            ]
+        },
+        {
+            "@type": "LocalBusiness",
             "@id": "https://tryvitris.com",
             "name" : "Vitris",
             "image" : "https://tryvitris.com/assets/img/vitris-full.png",
-            "telephone" : "+12155958457",
-            "email" : "hi@tryvitris.com",
+            "telephone": "+1-215-595-8457",
+            "email": "jack@tryvitris.com",
             "url": "https://tryvitris.com",
+            "priceRange": "$",
             "address" : {
-              "@type" : "PostalAddress",
-              "streetAddress" : "1635 Market Street",
-              "addressLocality" : "Philadelphia",
-              "addressRegion": "NY",
-              "postalCode": "19103",
-              "addressCountry": "US"
+                "@type" : "PostalAddress",
+                "streetAddress" : "1635 Market Street",
+                "addressLocality" : "Philadelphia",
+                "addressRegion": "PA",
+                "postalCode": "19103",
+                "addressCountry": "US"
             },
             "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "39.953300",
-              "longitude": "-75.168058"
+                "@type": "GeoCoordinates",
+                "latitude": "39.953300",
+                "longitude": "-75.168058"
             },
             "openingHoursSpecification": [
                 {
@@ -481,7 +501,21 @@
                 "closes": "21:00"
                 }
             ]
-          }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tryvitris.com"
+            }
+            ]
+        }
+        ]
+        
+    }
     </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120006992-1"></script>
