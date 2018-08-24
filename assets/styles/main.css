@@ -261,20 +261,18 @@ body {
 }
 
 /* Blog */
-/* @media (min-width: 768px){
-    .v-card-col {
-        column-count: 3;
-        column-gap: 1.25rem;
+
+@media only screen and (min-width: 768px) {
+    .blog-card {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        width: 31.75%;
+        max-height: 100%;
     }
-} */
-/* .card-columns {
-    @include media-breakpoint-only(lg) {
-      column-count: 4;
-    }
-    @include media-breakpoint-only(xl) {
-      column-count: 5;
-    }
-  } */
+}
+
 
 .modal-lightbox {
     max-width: 100% !important;
