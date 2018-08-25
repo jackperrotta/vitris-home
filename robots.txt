@@ -1,0 +1,19 @@
+User-agent: /
+
+Disallow: /contact/
+Disallow: /blog/article
+Disallow: /blog/founders
+Disallow: /blog/lifestyle
+Disallow: /blog/updates
+Disallow: /blog/business
+Disallow: /blog/industry
+Disallow: /blog/tech
+Disallow: /founders
+Disallow: /lifestyle
+Disallow: /%22
+Disallow: /industry
+Disallow: /updates
+Disallow: /business
+Disallow: /tech
+Disallow: /assets/blog
+Disallow: /assets/html
