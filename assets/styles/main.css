@@ -99,7 +99,7 @@ body {
 
 @media only screen and (min-width: 767px){
     .header-1 {
-        background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/bg-1.png");
+        background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5));
         background-attachment: fixed;
         background-position: left top;
         background-repeat: no-repeat;
@@ -112,7 +112,7 @@ body {
 @media only screen and (max-width: 767px){
     .header-1 {
         margin-top: 3em;
-        background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/bg-1.png");
+        background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5));
         background-attachment: scroll;
         background-position: 50% center;
         background-repeat: no-repeat;
@@ -153,6 +153,10 @@ body {
     height: 80vh;
 }
 
+.highlighted-header {
+    background-color: rgba(0, 0, 0, 0.175);
+    font-size: 1rem;
+}
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter {
@@ -161,22 +165,20 @@ body {
     border-right: .15em solid rgba(62,90,245,.85); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .15em; /* Adjust as needed */
-    animation:
-      typing 3.5s steps(60, end),
-      blink-caret .5s step-end infinite;
+    animation: typing 3.5s steps(60, end), blink-caret .5s step-end infinite;
   }
   
-  /* The typing effect */
-  @keyframes typing {
+/* The typing effect */
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgba(62,90,245,.85); }
-  }
+}
 
 .header-shadow {
     text-shadow: 2px 2px 4px #000000;
@@ -589,4 +591,67 @@ body {
     .philosophy-head {
         background-attachment: scroll !important;
     }
+}
+
+.cell-phone-repair {
+    height: 55vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../img/cell-phone-repair.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.construction {
+    height: 55vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../img/business-construction.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.computer-repair {
+    height: 55vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../img/computer-repair.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.marketing-agency {
+    height: 55vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../img/marketing-agency.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.financial-advisor {
+    height: 55vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../img/financial-advisor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.real-estate {
+    height: 55vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../img/real-estate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.personal-coaching {
+    height: 55vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../img/personal-coaching.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
