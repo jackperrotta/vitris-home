@@ -10,23 +10,22 @@ setClasses();
 function setClasses(){
     var selectedClass = document.getElementsByClassName("header-"+number);
     if(header1 === selectedClass){
-        selectedClass[0].style.display = 'flex';
+        selectedClass[0].style.display = 'grid';
         header2[0].style.display = 'none'
         header3[0].style.display = 'none'
         header4[0].style.display = 'none'
-
     } else if(header2 === selectedClass){
-        selectedClass[0].style.display = 'flex';
+        selectedClass[0].style.display = 'grid';
         header1[0].style.display = 'none'
         header3[0].style.display = 'none'
         header4[0].style.display = 'none'
     } else if(header3 === selectedClass){
-        selectedClass[0].style.display = 'flex';
+        selectedClass[0].style.display = 'grid';
         header1[0].style.display = 'none'
         header2[0].style.display = 'none'
         header4[0].style.display = 'none'
     } else if(header4 === selectedClass){
-        selectedClass[0].style.display = 'flex';
+        selectedClass[0].style.display = 'grid';
         header1[0].style.display = 'none'
         header2[0].style.display = 'none'
         header3[0].style.display = 'none'
