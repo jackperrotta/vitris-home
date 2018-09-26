@@ -99,7 +99,7 @@ body {
 
 @media only screen and (min-width: 767px){
     .header-1 {
-        background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5));
+        background: rgba(62,90,245,1);
         background-attachment: fixed;
         background-position: left top;
         background-repeat: no-repeat;
@@ -112,7 +112,7 @@ body {
 @media only screen and (max-width: 767px){
     .header-1 {
         margin-top: 3em;
-        background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5));
+        background: rgba(62,90,245,1);
         background-attachment: scroll;
         background-position: 50% center;
         background-repeat: no-repeat;
@@ -124,9 +124,9 @@ body {
 }
 
 .header-2 {
-    background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/Vitris-cover-2.jpg");
+    background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/header-one.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -134,9 +134,9 @@ body {
 }
 
 .header-3 {
-    background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/Vitris-cover-3.jpg");
+    background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/header-two.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -144,9 +144,9 @@ body {
 }
 
 .header-4 {
-    background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/Vitris-cover-4.jpg");
+    background: linear-gradient(rgba(41, 193, 216, 0.5), rgba(38,147,164,.5)), url("../img/header-three.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -156,28 +156,6 @@ body {
 .highlighted-header {
     background-color: rgba(0, 0, 0, 0.175);
     font-size: 1rem;
-}
-
-/* DEMO-SPECIFIC STYLES */
-.typewriter {
-    color: #fff;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgba(62,90,245,.85); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: typing 3.5s steps(60, end), blink-caret .5s step-end infinite;
-  }
-  
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgba(62,90,245,.85); }
 }
 
 .header-shadow {
@@ -243,6 +221,15 @@ body {
 
 .home-product {
     background: rgb(245,245,245);
+}
+
+/* Testimonials */
+
+.v-card {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    box-shadow: none;
+    text-align: center;
 }
 
 .embed-responsive {
