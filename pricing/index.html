@@ -363,17 +363,14 @@ td.default {
   <div class="row">
     <div class="col">
       <ul>
-        <li class="bg-purple">
-          <button>Self-Employed</button>
+        <li class="bg-purple active">
+          <button>Solo Entrepreneur</button>
         </li>
         <li class="bg-blue">
-          <button>Simple Start</button>
-        </li>
-        <li class="bg-blue active">
-          <button>Essentials</button>
+          <button>Local Chain</button>
         </li>
         <li class="bg-blue">
-          <button>Plus</button>
+          <button>Franchise</button>
         </li>
       </ul>  
       
@@ -381,74 +378,53 @@ td.default {
         <thead>
           <tr>
             <th class="hide"></th>
-            <th class="bg-purple">Self-Employed</th>
-            <th class="bg-blue">Simple Start</th>
-            <th class="bg-blue default">Essentials</th>
-            <th class="bg-blue">Plus</th>
+            <th class="bg-purple default">Solo Entrepreneur</th>
+            <th class="bg-blue">Local Chain</th>
+            <th class="bg-blue">Franchise</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Monthly price</td>
-            <td><span class="txt-top">$</span><span class="txt-l">6</span></td>
-            <td><span class="txt-top">$</span><span class="txt-l">7</span></td>
-            <td class="default"><span class="txt-top">$</span><span class="txt-l">15</span></td>
-            <td><span class="txt-top">$</span><span class="txt-l">25</span></td>
+            <td>Monthly pricing</td>
+            <td class="default"><span class="txt-top">$</span><span class="txt-l">65</span></td>
+            <td><span class="txt-top">$</span><span class="txt-l">155</span></td>
+            <td><span class="txt-l">CONTACT</span></td>
           </tr>
           <tr>
-            <td colspan="5" class="sep">Get started easily</td>
+            <td>Yearly pricing (10% Discount)</td>
+            <td class="default"><span class="txt-top">$</span><span class="txt-l">700</span></td>
+            <td><span class="txt-top">$</span><span class="txt-l">1675</span></td>
+            <td><span class="txt-l">CONTACT</span></td>
           </tr>
           <tr>
-            <td>Includes free updates and new features as they become available</td>
-            <td><span class="tick">&#10004;</span></td>
-            <td><span class="tick">&#10004;</span></td>
-            <td class="default"><span class="tick">&#10004;</span></td>
-            <td><span class="tick">&#10004;</span></td>
+            <td colspan="4" class="sep">Get started, stay pro we're here to help</td>
           </tr>
           <tr>
             <td>No software to install — sign up online in moments</td>
-            <td><span class="tick">&#10004;</span></td>
-            <td><span class="tick">&#10004;</span></td>
             <td class="default"><span class="tick">&#10004;</span></td>
             <td><span class="tick">&#10004;</span></td>
-          </tr>
-          <tr>
-            <td>Import customer & supplier details from Excel, Outlook and .csv</td>
-            <td></td>
-            <td><span class="tick">&#10004;</span></td>
-            <td class="default"><span class="tick">&#10004;</span></td>
-            <td><span class="tick">&#10004;</span></td>
-          </tr>
-          <tr>
-            <td>Accept card payments in QuickBooks Online</td>
-            <td></td>
-            <td><span class="tick">&#10004;</span></td>
-            <td class="default"><span class="tick">&#10004;</span></td>
-            <td><span class="tick">&#10004;</span></td>
-          </tr>
-          <tr>
-            <td colspan="5" class="sep">Stay protected and get support</td>
-          </tr>
-          <tr>
-            <td>Free telephone and online support</td>
-            <td></td>
-            <td><span class="tick">&#10004;</span></td>
-            <td class="default"><span class="tick">&#10004;</span></td>
             <td><span class="tick">&#10004;</span></td>
           </tr>
           <tr>
             <td>Strong encryption protects your business data</td>
-            <td><span class="tick">&#10004;</span></td>
-            <td><span class="tick">&#10004;</span></td>
             <td class="default"><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
             <td><span class="tick">&#10004;</span></td>
           </tr>
           <tr>
             <td>Automatic data backups</td>
-            <td><span class="tick">&#10004;</span></td>
-            <td><span class="tick">&#10004;</span></td>
             <td class="default"><span class="tick">&#10004;</span></td>
             <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Free telephone and online support</td>
+            <td class="default"></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="sep">Stay protected and get support</td>
           </tr>
         </tbody>
       </table>
@@ -561,7 +537,7 @@ td.default {
         // Function to do something with the media query
         function doSomething(mediaQuery) {    
           if (mediaQuery.matches) {
-            $('.sep').attr('colspan',5);
+            $('.sep').attr('colspan',4);
           } else {
             $('.sep').attr('colspan',2);
           }
