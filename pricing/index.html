@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="../assets/venders/css/webfonts/fontawesome-all.min.css">
     <link href="../assets/styles/main.css" rel="stylesheet">
+    <link href="../assets/styles/pricing.css" rel="stylesheet">
 
 </head>
 <body>
@@ -181,7 +182,7 @@
     </section>
 
     <!-- Start Pricing Section -->
-    <section id="pricing-cards" class="pricing pt-3 pb-5">
+    <!-- <section id="pricing-cards" class="pricing pt-3 pb-5">
         <div class="container py-3">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mb-3 mx-auto">
@@ -257,120 +258,20 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- <style>
-    * {
-  box-sizing:border-box;
-  padding:0;
-  margin:0;
-   outline: 0;
-}
-body { 
-  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size:14px;
-  padding:14px;
-}
-article {
-  width:100%;
-  max-width:1000px;
-  margin:0 auto;
-  height:1000px;
-  position:relative;
-}
-ul {
-  display:flex;
-  top:0px;
-  z-index:10;
-  padding-bottom:14px;
-}
-li {
-  list-style:none;
-  flex:1;
-}
-li:last-child {
-  border-right:1px solid #DDD;
-}
-button {
-  width:100%;
-  border: 1px solid #DDD;
-  border-right:0;
-  border-top:0;
-  padding: 10px;
-  background:#FFF;
-  font-size:14px;
-  font-weight:bold;
-  height:60px;
-  color:#999
-}
-li.active button {
-  background:#F5F5F5;
-  color:#000;
-}
-table { border-collapse:collapse; table-layout:fixed; width:100%; }
-th { background:#F5F5F5; display:none; }
-td, th {
-  height:53px
-}
-td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
-td,th {
-  text-align:left;
-}
-td+td, th+th {
-  text-align:center;
-  display:none;
-}
-td.default {
-  display:table-cell;
-}
-.bg-purple {
-  border-top:3px solid #A32362;
-}
-.bg-blue {
-  border-top:3px solid #0097CF;
-}
-.sep {
-  background:#F5F5F5;
-  font-weight:bold;
-}
-.txt-l { font-size:28px; font-weight:bold; }
-.txt-top { position:relative; top:-9px; left:-2px; }
-.tick { font-size:18px; color:#2CA01C; }
-.hide {
-  border:0;
-  background:none;
-}
-
-@media (min-width: 768px) {
-  ul {
-    display:none;
-  }
-  td,th {
-    display:table-cell !important;
-  }
-  td,th {
-    width: 330px;
-  
-  }
-  td+td, th+th {
-    width: auto;
-    cursor: pointer;
-  }
-}
-    </style>
-
-<div class="container">
+<div class="container mt-5">
   <div class="row">
-    <div class="col">
-      <ul>
-        <li class="bg-purple active">
-          <button>Solo Entrepreneur</button>
+    <div class="col-12">
+      <ul class="pricing-table-ul">
+        <li class="bg-green active">
+          <div class="pricing-table-header">STARTER</div>
         </li>
         <li class="bg-blue">
-          <button>Local Chain</button>
+          <div class="pricing-table-header">ESSENTIAL</div>
         </li>
-        <li class="bg-blue">
-          <button>Franchise</button>
+        <li class="bg-gold">
+          <div class="pricing-table-header">PROFESSIONAL</div>
         </li>
       </ul>  
       
@@ -378,26 +279,146 @@ td.default {
         <thead>
           <tr>
             <th class="hide"></th>
-            <th class="bg-purple default">Solo Entrepreneur</th>
-            <th class="bg-blue">Local Chain</th>
-            <th class="bg-blue">Franchise</th>
+            <th class="bg-green default">STARTER</th>
+            <th class="bg-blue">ESSENTIAL</th>
+            <th class="bg-gold">PROFESSIONAL</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Monthly pricing</td>
-            <td class="default"><span class="txt-top">$</span><span class="txt-l">65</span></td>
-            <td><span class="txt-top">$</span><span class="txt-l">155</span></td>
-            <td><span class="txt-l">CONTACT</span></td>
+            <td>Monthly Pricing</td>
+            <td class="default"><span class="txt-top">$</span><span class="txt-l">100</span></td>
+            <td><span class="txt-top">$</span><span class="txt-l">400</span></td>
+            <td><span class="txt-top">$</span><span class="txt-l">900</span></td>
           </tr>
           <tr>
-            <td>Yearly pricing (10% Discount)</td>
-            <td class="default"><span class="txt-top">$</span><span class="txt-l">700</span></td>
-            <td><span class="txt-top">$</span><span class="txt-l">1675</span></td>
-            <td><span class="txt-l">CONTACT</span></td>
+            <td>Annual Pricing (approx. 10% Discount)</td>
+            <td class="default"><span class="txt-top">$</span><span class="txt-l">1100</span></td>
+            <td><span class="txt-top">$</span><span class="txt-l">4300</span></td>
+            <td><span class="txt-top">$</span><span class="txt-l">9700</span></td>
           </tr>
           <tr>
-            <td colspan="4" class="sep">Get started, stay pro we're here to help</td>
+            <td colspan="4" class="sep">Website</td>
+          </tr>
+          <tr>
+            <td>Custom Domain</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Custom Website Builder</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Website Traffic Analytics</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Professionally designed website</td>
+            <td class="default"><span class="tick">&#10004;</span><br>*Annual Tier Only*</td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Copywriting</td>
+            <td class="default"></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="sep">Search Engine</td>
+          </tr>
+          <tr>
+            <td>Google My Business</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Structured Data</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>SSL Certificate</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Keyword Research Report</td>
+            <td class="default"></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>PPC Campaign Setup & Management</td>
+            <td class="default"></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="sep">Social Media</td>
+          </tr>
+          <tr>
+            <td>Facebook, Twitter, & Instagram Posting</td>
+            <td class="default"></td>
+            <td><span class="tick">12/Month</span></td>
+            <td><span class="tick">15/Month</span></td>
+          </tr>
+          <tr>
+            <td>Social Performance Analytics</td>
+            <td class="default"></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Paid Boosting</td>
+            <td class="default"></td>
+            <td></td>
+            <td><span class="tick">Includes $30/month</span></td>
+          </tr>
+          <tr>
+            <td>Paid Campaigns</td>
+            <td class="default"></td>
+            <td><span class="tick"></span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="sep">Calendar</td>
+          </tr>
+          <tr>
+            <td>Online Appointment Scheduling</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Create Services & Classes</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>2-way Google Calendar Syncing</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td>Automated Reminders</td>
+            <td class="default"><span class="tick">&#10004;</span><br></td>
+            <td><span class="tick">&#10004;</span></td>
+            <td><span class="tick">&#10004;</span></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="sep">Get started & stay protected, we're here to help</td>
           </tr>
           <tr>
             <td>No software to install — sign up online in moments</td>
@@ -423,14 +444,11 @@ td.default {
             <td><span class="tick">&#10004;</span></td>
             <td><span class="tick">&#10004;</span></td>
           </tr>
-          <tr>
-            <td colspan="4" class="sep">Stay protected and get support</td>
-          </tr>
         </tbody>
       </table>
     </div>
   </div>
-</div> -->
+</div>
         
 
        
@@ -529,7 +547,7 @@ td.default {
       });
 
       // Initialize the media query
-        var mediaQuery = window.matchMedia('(min-width: 768px)');
+        var mediaQuery = window.matchMedia('(min-width: 993px)');
         
         // Add a listen event
         mediaQuery.addListener(doSomething);
