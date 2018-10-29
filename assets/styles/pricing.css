@@ -78,6 +78,10 @@ ul {
     td+td, th+th {
       width: auto;
       cursor: pointer;
-    }
-    
+    } 
+  }
+
+  .sub-txt {
+      font-size: 10px;
+      line-height: 8px;
   }
