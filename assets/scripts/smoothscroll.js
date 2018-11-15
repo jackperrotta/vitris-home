@@ -29,6 +29,6 @@ $(document).ready(function(){
     }
 
     // Else don't prevent default behavior
-    else { }
+    else {}
     });
   });
