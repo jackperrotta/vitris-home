@@ -14,6 +14,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.no-underline:hover {
+    text-decoration-line: none;
+}
+
 .navbar {
     z-index: 20;
 }
@@ -151,6 +155,12 @@ a:hover {
     cursor: pointer;
 }
 
+.flat-card-text {
+    text-align: justify !important;
+    color: black;
+    text-decoration: none;
+}
+
 /* Homepage Testimonial Slider */
 .testimonial-item {
     position: relative;
@@ -232,7 +242,7 @@ a:hover {
 @media only screen and (min-width: 767px){
     .pricing-header {
         margin-top: 60px;
-        background: rgba(62,90,245,1);
+        background: rgb(43,118,208);
         background-attachment: fixed;
         background-position: left top;
         background-repeat: no-repeat;

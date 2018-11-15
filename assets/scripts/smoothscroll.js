@@ -5,10 +5,10 @@ $(document).ready(function(){
     // Get href value
     var href = $(this).attr('href');
     // Remove href hash
-    var noHash = href.substr(0,href.indexOf('#'));
+    var noHash = href.split('#')[0];
     
     // check if href has a path, if not prevent default click behavior
-    if (this.noHash == "") {
+    if (noHash == "") {
       // Prevent default anchor click behavior
       event.preventDefault();
 

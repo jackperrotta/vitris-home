@@ -47,7 +47,7 @@ ul {
     border-top:3px solid rgb(255,213,73);
   }
   .bg-blue {
-    border-top:3px solid rgba(62,90,245,1);
+    border-top:3px solid rgb(43,118,208);
   }
   .bg-green {
     border-top:3px solid rgb(47,200,208);
@@ -58,7 +58,7 @@ ul {
   }
   .txt-l { font-size:28px; font-weight:bold; }
   .txt-top { position:relative; top:-9px; left:-2px; }
-  .tick { font-size:18px; color:rgba(62,90,245,1); }
+  .tick { font-size:18px; color:rgb(43,118,208); }
   .hide {
     border:0;
     background:none;
