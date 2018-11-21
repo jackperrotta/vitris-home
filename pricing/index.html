@@ -313,17 +313,44 @@
           <tr>
             <td class="hide"></td>
             <td>
-              <a href="https://portal.tryvitris.com/signup">
+              <a href="https://portal.tryvitris.com/signup" onclick="ga('send', {
+                hitType: 'event',
+                eventCategory: 'Pricing Plans',
+                eventAction: 'Essential Signup',
+                eventLabel: location.pathname
+            },{
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = 'https://portal.tryvitris.com/signup';}
+              }
+            );">
                 Get Started
               </a>
             </td>
             <td>
-              <a href="https://portal.tryvitris.com/signup">
+              <a href="https://portal.tryvitris.com/signup" onclick="ga('send', {
+                hitType: 'event',
+                eventCategory: 'Pricing Plans',
+                eventAction: 'Plus Signup',
+                eventLabel: location.pathname
+            },{
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = 'https://portal.tryvitris.com/signup';}
+              }
+            );">
                 Get Started
               </a>
             </td>
             <td>
-              <a href="https://portal.tryvitris.com/signup">
+              <a href="https://portal.tryvitris.com/signup" onclick="ga('send', {
+                hitType: 'event',
+                eventCategory: 'Pricing Plans',
+                eventAction: 'Professional Signup',
+                eventLabel: location.pathname
+            },{
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = 'https://portal.tryvitris.com/signup';}
+              }
+            );">
                 Get Started
               </a>
             </td>
