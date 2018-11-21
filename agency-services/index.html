@@ -153,7 +153,12 @@
                     <h4 class="mx-auto header-shadow">
                         Let us help you attract more clients and grow your revenue.
                     </h4>
-                    <a class="btn btn-v-blue mt-3 mx-auto" href="#how-it-works">
+                    <a class="btn btn-v-blue mt-3 mx-auto" href="#how-it-works" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Buttons',
+                        eventAction: 'Learn How',
+                        eventLabel: location.pathname
+                    })">
                         LEARN HOW
                     </a>
                 </div>
@@ -213,7 +218,16 @@
                         <div class="carousel-caption d-block testimonial-item mb-3">
                             <div class="row mx-auto">
                                 <div class="col-md-8 mx-auto">
-                                    <a href="https://preferredhomeimprovements.net" target="_blank">
+                                    <a href="https://preferredhomeimprovements.net" target="_blank" onclick="ga('send', {
+                                        hitType: 'event',
+                                        eventCategory: 'Testimonial Slider',
+                                        eventAction: 'Preferred Home',
+                                        eventLabel: location.pathname
+                                    },{
+                                        'transport': 'beacon',
+                                        'hitCallback': function(){document.location = 'https://preferredhomeimprovements.net';}
+                                      }
+                                    );">
                                         <img src="../assets/img/preferredhome-thumbnail.png" alt="" class="img-fluid mb-3">
                                         <h5>
                                             Preferred Home Improvements
@@ -227,7 +241,16 @@
                         <div class="carousel-caption d-block testimonial-item mb-3">
                             <div class="row mx-auto">
                                 <div class="col-md-8 mx-auto">
-                                    <a href="https://phonerepairpennsauken.com/" target="_blank">
+                                    <a href="https://phonerepairpennsauken.com/" target="_blank" onclick="ga('send', {
+                                        hitType: 'event',
+                                        eventCategory: 'Testimonial Slider',
+                                        eventAction: 'Phone Repair Pennsauken',
+                                        eventLabel: location.pathname
+                                    },{
+                                        'transport': 'beacon',
+                                        'hitCallback': function(){document.location = 'https://phonerepairpennsauken.com/';}
+                                      }
+                                    );">
                                         <img src="../assets/img/phone-repair-pennsauken-thumbnail.png" alt="" class="img-fluid mb-3">
                                         <h5>
                                             Phone Repair Pennsauken
@@ -242,7 +265,16 @@
                         <div class="carousel-caption d-block testimonial-item mb-3">
                             <div class="row mx-auto">
                                 <div class="col-md-8 mx-auto">
-                                    <a href="https://dwperrotta.com/" target="_blank">
+                                    <a href="https://dwperrotta.com/" target="_blank" onclick="ga('send', {
+                                        hitType: 'event',
+                                        eventCategory: 'Testimonial Slider',
+                                        eventAction: 'Perrotta Construction',
+                                        eventLabel: location.pathname
+                                    },{
+                                        'transport': 'beacon',
+                                        'hitCallback': function(){document.location = 'https://dwperrotta.com/';}
+                                      }
+                                    );">
                                         <img src="../assets/img/dwperrotta-thumbnail.png" alt="" class="img-fluid mb-3">
                                         <h5>
                                             DW Perrotta Construction Group
@@ -257,7 +289,16 @@
                         <div class="carousel-caption d-block testimonial-item mb-3">
                             <div class="row mx-auto">
                                 <div class="col-md-8 mx-auto">
-                                    <a href="https://platinumbrands.com/" target="_blank">
+                                    <a href="https://platinumbrands.com/" target="_blank" onclick="ga('send', {
+                                        hitType: 'event',
+                                        eventCategory: 'Testimonial Slider',
+                                        eventAction: 'Platinum Brands',
+                                        eventLabel: location.pathname
+                                    },{
+                                        'transport': 'beacon',
+                                        'hitCallback': function(){document.location = 'https://platinumbrands.com/';}
+                                      }
+                                    );">
                                         <img src="../assets/img/platinumbrands-thumbnail.png" alt="" class="img-fluid mb-3">
                                         <h5>
                                             Platinum Brands
@@ -271,7 +312,16 @@
                         <div class="carousel-caption d-block testimonial-item mb-3">
                             <div class="row mx-auto">
                                 <div class="col-md-8 mx-auto">
-                                    <a href="https://finnmccoolsphilly.com/" target="_blank">
+                                    <a href="https://finnmccoolsphilly.com/" target="_blank" onclick="ga('send', {
+                                        hitType: 'event',
+                                        eventCategory: 'Testimonial Slider',
+                                        eventAction: 'Finn McCools',
+                                        eventLabel: location.pathname
+                                    },{
+                                        'transport': 'beacon',
+                                        'hitCallback': function(){document.location = 'https://finnmccoolsphilly.com/';}
+                                      }
+                                    );">
                                         <img src="../assets/img/finn-mccools-thumbnail.png" alt="" class="img-fluid mb-3">
                                         <h5>
                                             Finn McCools Ale House
@@ -306,7 +356,12 @@
                         Google’s definition: “the process of making your site better for search engines.”<br>Key term being PROCESS because search engines like Google are constantly evolving, SEO is not a set it and forget it concept.<br><br>
                         We guarantee new leads and sales prospects via online search results. Using cutting-edge search optimization (SEO) techniques and your Google My Business listing, we put your website ahead in local searches.
                     </p>
-                    <a class="btn btn-v-blue mt-3 mx-auto" href="../pricing/">
+                    <a class="btn btn-v-blue mt-3 mx-auto" href="../pricing/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Buttons',
+                        eventAction: 'Local SEO Learn More',
+                        eventLabel: location.pathname
+                    })">
                         LEARN MORE
                     </a>
                 </div>
@@ -329,7 +384,12 @@
                         <br><br>
                         Content is one of the best tools you have for earning trust, building your brand, generating site traffic and qualified leads, and everything in between. Content marketing is marketing, and the brands that understand content is core to effective marketing — and, ultimately, to their entire business — will set themselves up for success.
                     </p>
-                    <a class="btn btn-v-blue mt-3 mx-auto" href="../pricing/">
+                    <a class="btn btn-v-blue mt-3 mx-auto" href="../pricing/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Buttons',
+                        eventAction: 'Content Marketing Learn More',
+                        eventLabel: location.pathname
+                    })">
                         LEARN MORE
                     </a>
                 </div>

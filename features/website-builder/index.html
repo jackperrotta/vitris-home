@@ -128,11 +128,25 @@
                     <h2 class="wow fadeInUp header-shadow">
                         You have enough problems to worry about. We'll make sure your website isn't one of them.
                     </h2>
-                    <a class="btn btn-v-blue my-3 mr-2" href="#small-biz-transition">
-                        LEARN MORE
+                    <a class="btn btn-v-blue my-3 mr-2" href="#small-biz-transition" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Buttons',
+                        eventAction: 'Learn How',
+                        eventLabel: location.pathname
+                    })">
+                        LEARN HOW
                     </a>
-                    <a class="btn btn-v-blue my-3" href="https://portal.tryvitris.com/signup">
-                        Get Started
+                    <a class="btn btn-v-blue my-3" href="https://portal.tryvitris.com/signup" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Buttons',
+                        eventAction: 'Signup',
+                        eventLabel: location.pathname
+                    },{
+                        'transport': 'beacon',
+                        'hitCallback': function(){document.location = 'https://portal.tryvitris.com/signup';}
+                      }
+                    );">
+                        GET STARTED
                     </a>
                 </div>
             </div>

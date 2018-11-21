@@ -167,7 +167,12 @@
                         <!-- <button class="btn btn-v-blue" type="button" data-toggle="collapse" data-target="#website-details" aria-expanded="false" aria-controls="website-details">
                             More Details
                         </button> -->
-                        <a href="./website-builder/" class="btn btn-v-blue">More Details</a>
+                        <a href="./website-builder/" class="btn btn-v-blue" onclick="ga('send', {
+                            hitType: 'event',
+                            eventCategory: 'CTA Buttons',
+                            eventAction: 'More Details',
+                            eventLabel: location.pathname
+                        })">More Details</a>
                     </div>
                 </div>
                 <div class="col-lg-6 my-auto d-none d-lg-block">
