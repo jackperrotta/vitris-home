@@ -2,16 +2,6 @@
 <html>
 <head>
     <!-- Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120006992-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-120006992-1');
-    </script> -->
-
-    <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -66,7 +56,12 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top bg-light navbar-expand-md">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" onclick="ga('send', {
+            hitType: 'event',
+            eventCategory: 'Navbar',
+            eventAction: 'Logo',
+            eventLabel: location.pathname
+        })">
             <img src="./assets/img/vitris-full.png" height="30px" alt="">
         </a>
 
@@ -77,25 +72,73 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav-text" href="#">HOME</a>
+                    <a class="nav-link nav-text" href="#" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Navbar',
+                        eventAction: 'Home',
+                        eventLabel: location.pathname
+                    })">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-text" href="./pricing/">PRICING</a>
+                    <a class="nav-link nav-text" href="./pricing/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Navbar',
+                        eventAction: 'Pricing',
+                        eventLabel: location.pathname
+                    })">PRICING</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-text" href="./agency-services/">SERVICES</a>
+                    <a class="nav-link nav-text" href="./agency-services/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Navbar',
+                        eventAction: 'Services',
+                        eventLabel: location.pathname
+                    })">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-text" href="./features/">FEATURES</a>
+                    <a class="nav-link nav-text" href="./features/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Navbar',
+                        eventAction: 'Features',
+                        eventLabel: location.pathname
+                    })">FEATURES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-text" href="./about/">ABOUT</a>
+                    <a class="nav-link nav-text" href="./about/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Navbar',
+                        eventAction: 'About',
+                        eventLabel: location.pathname
+                    })">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-text" href="./blog/">BLOG</a>
+                    <a class="nav-link nav-text" href="./blog/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Navbar',
+                        eventAction: 'Blog',
+                        eventLabel: location.pathname
+                    })">BLOG</a>
                 </li>
-                <a href="https://portal.tryvitris.com/signup"><button class="btn btn-v-blue btn-raised ml-md-1 mr-md-2 my-2 my-sm-0">Try Vitris</button></a>
-                <a href="https://portal.tryvitris.com/"><button class="btn btn-blue-outline my-2 my-sm-0">Login</button></a>
+                <a href="https://portal.tryvitris.com/signup" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Navbar',
+                    eventAction: 'Signup',
+                    eventLabel: location.pathname
+                },{
+                    'transport': 'beacon',
+                    'hitCallback': function(){document.location = 'https://portal.tryvitris.com/signup';}
+                  }
+                );"><button class="btn btn-v-blue btn-raised ml-md-1 mr-md-2 my-2 my-sm-0">Try Vitris</button></a>
+                <a href="https://portal.tryvitris.com/" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Navbar',
+                    eventAction: 'Login',
+                    eventLabel: location.pathname
+                },{
+                    'transport': 'beacon',
+                    'hitCallback': function(){document.location = 'https://portal.tryvitris.com/';}
+                  }
+                );"><button class="btn btn-blue-outline my-2 my-sm-0">Login</button></a>
             </ul>
         </div>
     </nav>
@@ -115,7 +158,7 @@
                         hitType: 'event',
                         eventCategory: 'CTA Buttons',
                         eventAction: 'Learn More',
-                        eventLabel: 'Homepage Learn More'
+                        eventLabel: location.pathname
                     })">
                         LEARN MORE
                     </a>
@@ -511,9 +554,10 @@
     <script src="./assets/venders/js/wow.min.js"></script>
     <script>
         new WOW().init();
-        $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
+        $(document).ready(function() { $('body').bootstrapMaterialDesign(); });        
     </script>
     <script src="./assets/scripts/smoothscroll.js"></script>
+    <script src="./assets/scripts/analytics-functions.js"></script>
     <!-- JSON structured data -->
     <script type="application/ld+json">
     {
