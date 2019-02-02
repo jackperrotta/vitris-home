@@ -1,16 +1,24 @@
-var trackOutboundLink = function(url) {
-    ga('send', 'event', 'Outbound', 'Click', url, {
-      'transport': 'beacon',
-      'hitCallback': function(){document.location = url;}
-    });
- }
+// var trackOutboundLink = function(url) {
+//     ga('send', 'event', 'Outbound', 'Click', url, {
+//       'transport': 'beacon',
+//       'hitCallback': function(){document.location = url;}
+//     });
+//  }
 
- try {
-    // Runs code that may or may not work.
-    window.possiblyUndefinedFunction();
-  } catch(err) {
-    ga('send', 'exception', {
-      'exDescription': err.message,
-      'exFatal': false
-    });
-  }
+//  try {
+//     // Runs code that may or may not work.
+//     window.possiblyUndefinedFunction();
+//   } catch(err) {
+//     ga('send', 'exception', {
+//       'exDescription': err.message,
+//       'exFatal': false
+//     });
+//   }
+
+// console.log(window);
+
+$(document).ready(function() {
+    setTimeout(function() {
+        $('#exampleModalCenter').modal();
+    }, 3000);
+});
