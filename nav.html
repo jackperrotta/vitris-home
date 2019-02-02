@@ -1,0 +1,88 @@
+<nav class="navbar fixed-top bg-light navbar-expand-md">
+
+    <a class="navbar-brand" href="#" onclick="ga('send', {
+        hitType: 'event',
+        eventCategory: 'Navbar',
+        eventAction: 'Logo',
+        eventLabel: location.pathname
+    })">
+        <img src="./assets/img/vitris-full.png" height="30px" alt="">
+    </a>
+
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="#" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Navbar',
+                    eventAction: 'Home',
+                    eventLabel: location.pathname
+                })">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="./pricing/" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Navbar',
+                    eventAction: 'Pricing',
+                    eventLabel: location.pathname
+                })">PRICING</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="./agency-services/" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Navbar',
+                    eventAction: 'Services',
+                    eventLabel: location.pathname
+                })">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="./features/" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Navbar',
+                    eventAction: 'Features',
+                    eventLabel: location.pathname
+                })">FEATURES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="./about/" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Navbar',
+                    eventAction: 'About',
+                    eventLabel: location.pathname
+                })">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="./blog/" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Navbar',
+                    eventAction: 'Blog',
+                    eventLabel: location.pathname
+                })">BLOG</a>
+            </li>
+            <a href="https://portal.tryvitris.com/signup" onclick="ga('send', {
+                hitType: 'event',
+                eventCategory: 'Navbar',
+                eventAction: 'Signup',
+                eventLabel: location.pathname
+            },{
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = 'https://portal.tryvitris.com/signup';}
+              }
+            );"><button class="btn btn-v-blue btn-raised ml-md-1 mr-md-2 my-2 my-sm-0">Try Vitris</button></a>
+            <a href="https://portal.tryvitris.com/" onclick="ga('send', {
+                hitType: 'event',
+                eventCategory: 'Navbar',
+                eventAction: 'Login',
+                eventLabel: location.pathname
+            },{
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = 'https://portal.tryvitris.com/';}
+              }
+            );"><button class="btn btn-blue-outline my-2 my-sm-0">Login</button></a>
+        </ul>
+    </div>
+</nav>
