@@ -4,30 +4,90 @@
             <div class="col">
                 <div class="list-group list-group-flush">
                     <h5 class="list-group-item bold mb-1">Vitris</h5>
-                    <a href="./pricing/" class="list-group-item footer-text">Pricing</a>
-                    <a href="./features/" class="list-group-item footer-text">Product</a>
-                    <a href="./about/philosophy" class="list-group-item footer-text">Philosophy</a>
-                    <a href="./about/" class="list-group-item footer-text">About Us</a>
-                    <a href="./faq/" class="list-group-item footer-text">Help</a>
+                    <a href="https://tryvitris.com/pricing/" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Pricing',
+                        eventLabel: location.pathname
+                    })">Pricing</a>
+                    <a href="https://tryvitris.com/features/" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Product',
+                        eventLabel: location.pathname
+                    })">Product</a>
+                    <a href="https://tryvitris.com/about/philosophy" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Philosophy',
+                        eventLabel: location.pathname
+                    })">Philosophy</a>
+                    <a href="https://tryvitris.com/about/" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'About',
+                        eventLabel: location.pathname
+                    })">About Us</a>
+                    <!-- <a href="https://tryvitris.com/faq/" class="list-group-item footer-text">Help</a> -->
                 </div>
             </div>
             <div class="col">
                 <div class="list-group list-group-flush">
                     <h5 class="list-group-item bold mb-1">Community</h5>
                     <!-- <a href="#" class="list-group-item footer-text">The Community</a> -->
-                    <a href="./about/" class="list-group-item footer-text">Our Story</a>
-                    <a href="./blog/" class="list-group-item footer-text">Blog</a>
-                    <a href="./under-construction/" class="list-group-item footer-text">Contribute</a>
-                    <a href="./under-construction/" class="list-group-item footer-text">Press</a>
+                    <a href="https://tryvitris.com/about/" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Our Story',
+                        eventLabel: location.pathname
+                    })">Our Story</a>
+                    <a href="https://tryvitris.com/blog/" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Blog',
+                        eventLabel: location.pathname
+                    })">Blog</a>
+                    <a href="https://tryvitris.com/under-construction/" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Contribute',
+                        eventLabel: location.pathname
+                    })">Contribute</a>
+                    <a href="https://tryvitris.com/under-construction/" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Press',
+                        eventLabel: location.pathname
+                    })">Press</a>
                 </div>
             </div>
             <div class="col">
                 <div class="list-group list-group-flush">
                     <h5 class="list-group-item bold mb-1">Contact</h5>
-                    <a href="./under-construction/" class="list-group-item footer-text">FAQ</a>
-                    <a href="./demo/" class="list-group-item footer-text">Get In Touch</a>
-                    <a class="list-group-item">(484) 734-0865</a>
-                    <a class="list-group-item">hi@tryvitris.com</a>
+                    <a href="https://tryvitris.com/faq/" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'FAQ',
+                        eventLabel: location.pathname
+                    })">FAQ</a>
+                    <a href="mailto:hi@tryvitris.com" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Get In Touch',
+                        eventLabel: location.pathname
+                    })">Get In Touch</a>
+                    <a href="tel:2155958457" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Phone Number',
+                        eventLabel: location.pathname
+                    })">(215) 595-8457</a>
+                    <a href="mailto:hi@tryvitris.com" class="list-group-item footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Email',
+                        eventLabel: location.pathname
+                    })">hi@tryvitris.com</a>
                 </div>
             </div>
             <div class="col">
@@ -35,7 +95,6 @@
                     <h5 class="list-group-item bold mb-1">Visit Us</h5>
                     <a class="list-group-item">1635 Market Street, Suite 1600</a>
                     <a class="list-group-item">Philadelphia, Pa 19103</a>
-
                 </div>
             </div>
         </div>
@@ -43,17 +102,63 @@
     <div class="container-fluid v-sub-footer py-3">
         <div class="row">
             <div class="col d-none d-md-block mt-auto">
-                <p class=" ml-4"><a href="./legal/terms-of-service/" class="footer-text">Terms of Service</a> | <a href="./legal/privacy-policy/" class="footer-text">Privacy Policy</a></p>
-
+                <p class=" ml-4"><a href="https://tryvitris.com/legal/terms-of-service/" class="footer-text" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Footer',
+                    eventAction: 'Terms of Service',
+                    eventLabel: location.pathname
+                })">Terms of Service</a> | <a href="https://tryvitris.com/legal/privacy-policy/" class="footer-text" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Footer',
+                        eventAction: 'Privacy Policy',
+                        eventLabel: location.pathname
+                    })">Privacy Policy</a>
+                </p>
             </div>
             <div class="col text-center">
-                <a href="https://www.linkedin.com/company/vitris-wireless-llc/" target="_blank" class="text-white mr-2"><i class="fab fa-linkedin fa-3x"></i></a>
-                <a href="https://www.instagram.com/tryvitris/" target="_blank" class="text-white mr-2"><i class="fab fa-instagram fa-3x"></i></a>
-                <a href="https://twitter.com/tryvitris/" target="_blank" class="text-white mr-2"><i class="fab fa-twitter-square fa-3x"></i></a>
-                <a href="https://www.facebook.com/tryvitris" target="_blank" class="text-white mr-2"><i class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://www.linkedin.com/company/vitris-wireless-llc/" target="_blank" class="text-white mr-2" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Footer',
+                    eventAction: 'LinkedIn',
+                    eventLabel: location.pathname
+                },{
+                    'transport': 'beacon',
+                    'hitCallback': function(){document.location = 'https://www.linkedin.com/company/vitris-wireless-llc/';}
+                  }
+                );"><i class="fab fa-linkedin fa-3x"></i></a>
+                <a href="https://www.instagram.com/tryvitris/" target="_blank" class="text-white mr-2" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Footer',
+                    eventAction: 'Instagram',
+                    eventLabel: location.pathname
+                },{
+                    'transport': 'beacon',
+                    'hitCallback': function(){document.location = 'https://www.instagram.com/tryvitris/';}
+                  }
+                );"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://twitter.com/tryvitris/" target="_blank" class="text-white mr-2" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Footer',
+                    eventAction: 'Twitter',
+                    eventLabel: location.pathname
+                },{
+                    'transport': 'beacon',
+                    'hitCallback': function(){document.location = 'https://twitter.com/tryvitris/';}
+                  }
+                );"><i class="fab fa-twitter-square fa-3x"></i></a>
+                <a href="https://www.facebook.com/tryvitris/" target="_blank" class="text-white mr-2" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Footer',
+                    eventAction: 'Facebook',
+                    eventLabel: location.pathname
+                },{
+                    'transport': 'beacon',
+                    'hitCallback': function(){document.location = 'https://www.facebook.com/tryvitris/';}
+                  }
+                );"><i class="fab fa-facebook fa-3x"></i></a>
             </div>
             <div class="col d-none d-md-block ml-auto mt-auto">
-                <p class=" mr-4 float-right">&copy; 2018 Vitris Wireless, LLC</p>
+                <p class=" mr-4 float-right">&copy; 2019 Vitris Wireless, LLC</p>
             </div>
         </div>
     </div>
