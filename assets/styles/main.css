@@ -42,6 +42,10 @@ a:hover {
     cursor: pointer;
 }
 
+.v-primary {
+    color:rgb(43,118,207);
+}
+
 @media only screen and (min-width: 767px){
     .header-1 {
         margin-top: 3em;
@@ -236,28 +240,20 @@ a:hover {
 
 @media only screen and (min-width: 767px){
     .pricing-header {
-        margin-top: 60px;
-        background: rgb(43,118,208);
+        background: linear-gradient(rgba(250,250,250,0.85), rgba(250,250,250,0.85)), url("../img/bg-1.png");
         background-attachment: fixed;
-        background-position: left top;
         background-repeat: no-repeat;
         background-size: cover;
-        color: white;
-        height: 80vh;
     }
 }
 
 @media only screen and (max-width: 767px){
     .pricing-header{
-        margin-top: 3em;
-        background: rgb(43,118,208);
+        background: rgba(250,250,250,9);
         background-attachment: scroll;
         background-position: 50% center;
         background-repeat: no-repeat;
         background-size: cover;
-        color: white;
-        min-height: 80vh;
-        max-width: 100vw;
     }
 }
 
