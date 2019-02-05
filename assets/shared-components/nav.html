@@ -40,12 +40,12 @@
                 })">SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="https://tryvitris.com/features/" onclick="ga('send', {
+                <a class="nav-link nav-text" href="https://tryvitris.com/portfolio/" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'Navbar',
-                    eventAction: 'Features',
+                    eventAction: 'Portfolio',
                     eventLabel: location.pathname
-                })">FEATURES</a>
+                })">PORTFOLIO</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-text" href="https://tryvitris.com/about/" onclick="ga('send', {
@@ -85,4 +85,27 @@
             );"><button class="btn btn-blue-outline my-2 my-sm-0">Login</button></a>
         </ul>
     </div>
+</nav>
+
+<nav class="fixed fixed-bottom bg-light mx-auto text-center d-md-none">
+    <a href="https://portal.tryvitris.com/signup" onclick="ga('send', {
+        hitType: 'event',
+        eventCategory: 'Navbar',
+        eventAction: 'Signup',
+        eventLabel: location.pathname
+    },{
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = 'https://portal.tryvitris.com/signup';}
+      }
+    );"><button class="btn btn-v-blue btn-raised w-75 mx-auto">Try Vitris</button></a>
+    <!-- <a href="https://portal.tryvitris.com/" onclick="ga('send', {
+        hitType: 'event',
+        eventCategory: 'Navbar',
+        eventAction: 'Login',
+        eventLabel: location.pathname
+    },{
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = 'https://portal.tryvitris.com/';}
+      }
+    );"><button class="btn btn-blue-outline flex-grow">Login</button></a> -->
 </nav>
