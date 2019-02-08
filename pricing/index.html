@@ -304,7 +304,7 @@
     </div>
   </section>
 
-  <section class="py-2 text-center text-white" id="monthly-pricing" style="background-color:rgb(43,118,207)">
+  <!-- <section class="py-2 text-center text-white" id="monthly-pricing" style="background-color:rgb(43,118,207)">
     <h4 class="mb-0">
       STEP 5
     </h4>
@@ -411,7 +411,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 <!-- Data analytics report iframe -->
 <!-- <iframe src="https://datastudio.google.com/embed/reporting/1JtwkQzxqEKAyeVILEwqq8ckYM9kAEpy-/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe> -->
@@ -445,7 +445,7 @@
             <div class="col-md-6 my-auto">
                 <h5>If I cancel my subscription do I lose my website?</h5>
                 <p>
-                    Yes, once you cancel your subscription your website will be taken off our servers. However, if you decide to come back, you'll have your website back up in seconds.
+                    Yes, once you cancel your subscription your website will be taken off our servers. However, we'll give you the source files to host it on your own server or if you decide to come back, you'll have your website back up in seconds.
                 </p>
             </div>
             <div class="col-md-6 my-auto">
@@ -487,34 +487,6 @@
         new WOW().init();
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
     </script>
-     <script>
-        $( "ul" ).on( "click", "li", function() {
-        var pos = $(this).index()+2;
-        $("tr").find('td:not(:eq(0))').hide();
-        $('td:nth-child('+pos+')').css('display','table-cell');
-        $("tr").find('th:not(:eq(0))').hide();
-        $('li').removeClass('active');
-        $(this).addClass('active');
-      });
-
-      // Initialize the media query
-        var mediaQuery = window.matchMedia('(min-width: 993px)');
-        
-        // Add a listen event
-        mediaQuery.addListener(doSomething);
-        
-        // Function to do something with the media query
-        function doSomething(mediaQuery) {    
-          if (mediaQuery.matches) {
-            $('.sep').attr('colspan',4);
-          } else {
-            $('.sep').attr('colspan',2);
-          }
-        }
-        
-        // On load
-        doSomething(mediaQuery);
-      </script>
     <script src="../assets/scripts/smoothscroll.js"></script>
     <script type="application/ld+json">
     {
