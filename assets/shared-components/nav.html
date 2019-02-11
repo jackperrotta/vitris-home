@@ -136,8 +136,8 @@
                 </div>
                 <button type="submit" class="btn btn-raised btn-v-blue w-100 mt-2" onclick="ga('send', {
                     hitType: 'event',
-                    eventCategory: 'Navbar',
-                    eventAction: 'Blog',
+                    eventCategory: 'Modal Form',
+                    eventAction: 'Submit',
                     eventLabel: location.pathname
                 })">Submit</button>
             </form>
@@ -160,7 +160,7 @@ $(document).ready(function(){
       let values  = {}
       values.message = {}
       values.to = 'jack@tryvitris.com'
-      values.subject = 'Contact Form Submission'
+      values.subject = 'Mobile Contact Form Submission'
       $inputs.each(function () {
         values.message[this.name] = $(this).val()
       })
@@ -170,7 +170,7 @@ $(document).ready(function(){
         url: "https://mailer.tryvitris.com/sendMail",
         method: "POST",
         data: values,
-        dataType: "json",
+        dataType: "text",
         success:  (data) => {
           
           $('#emailForm').css('display', 'none')

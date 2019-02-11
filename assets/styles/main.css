@@ -62,13 +62,14 @@ a:hover {
 @media only screen and (max-width: 767px){
     .header-1 {
         margin-top: 3em;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         background: linear-gradient(rgba(41, 193, 216, 0.15), rgba(38,147,164,0.15)), url("../img/vitris-philadephia-header.jpg");
         background-attachment: scroll;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
-        min-height: 80vh;
         max-width: 100vw;
     }
 }
@@ -425,6 +426,14 @@ a:hover {
 }
 /* Demo & Contact */
 #returnHome {
+    display: none;
+}
+
+#returnHome2 {
+    display: none;
+}
+
+#returnHome3 {
     display: none;
 }
 
