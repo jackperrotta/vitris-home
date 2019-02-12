@@ -1,0 +1,90 @@
+<!-- Modal -->
+<div class="modal fade" id="sharedContactModal" tabindex="-1" role="dialog" aria-labelledby="sharedContactModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <form id="emailForm">
+                <div class="form-group d-none">
+                    <label for="type">Type</label>
+                    <input type="text" class="form-control" id="type" name="type" value="Shared Contact Modal">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="janeDoe@gmail.com" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="215-555-8008">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="2"></textarea>
+                </div>
+                <button type="submit" class="btn btn-raised btn-v-blue w-100 mt-2" onclick="ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Modal Form',
+                    eventAction: 'Submit',
+                    eventLabel: location.pathname
+                })">Submit</button>
+            </form>
+            <div id="returnHome" class="w-100 text-center">
+                <div class="mx-auto">
+                    <i class="far fa-check-circle fa-10x"></i><br>
+                    <h4>Thank you, we've recieved your request! Someone will reach out to you shortly.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('#emailForm').submit(function(e){
+      e.preventDefault()
+      let $inputs = $('#emailForm :input' )
+      let values  = {}
+      values.message = {}
+      values.to = 'jack@tryvitris.com'
+      values.subject = 'Contact Form Submission'
+      $inputs.each(function () {
+        values.message[this.name] = $(this).val()
+      })
+  
+      
+      $.ajax({
+        url: "https://mailer.tryvitris.com/sendMail",
+        method: "POST",
+        data: values,
+        dataType: "text",
+        success:  (data) => {
+          
+          $('#emailForm').css('display', 'none')
+          $('#returnHome').css('display', 'initial')
+          setTimeout(() => {
+                $('#sharedContactModal').modal('hide')
+            }, 3500);
+        },
+        error: (textStatus, errorThrown) => {
+
+            $('#emailForm').css('display', 'none')
+            $('#returnHome').css('display', 'initial')
+            setTimeout(() => {
+                $('#sharedContactModal').modal('hide')
+            }, 3500);
+        }
+      })
+  
+    })
+})
+</script>
