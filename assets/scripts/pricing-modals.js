@@ -1,6 +1,6 @@
 setTimeout(() => {
     $('#1minModal').modal('show')
-  }, 10000);
+  }, 15000);
       
   setTimeout(() => {
     $('#2minModal').modal('show')
