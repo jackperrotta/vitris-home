@@ -74,6 +74,11 @@ a:hover {
     }
 }
 
+.pattern-bg-blue {
+    margin-top: 59px;
+    background: linear-gradient(rgba(38,147,164, 0.65), rgba(38,147,164,0.65)), url(../img/dark-blue-bg-pattern.jpg);
+    background-size: cover;
+}
 .highlighted-header {
     background-color: rgba(0, 0, 0, 0.175);
     font-size: 1rem;
@@ -102,6 +107,18 @@ a:hover {
 .btn-blue-outline:hover {
     background-color: rgb(43,118,208);
     color: white;
+}
+
+.btn-blue-alt-outline {
+    color: rgb(43,118,208);
+    border: 1px solid rgb(43,118,208);
+    background-color: rgb(245,245,245);
+}
+
+.btn-blue-alt-outline:hover {
+    color: rgb(43,118,208,0.8);
+    border: 1px solid rgb(43,118,208);
+    background-color: rgb(245,245,245,0.8);
 }
 
 .header-arrow {
