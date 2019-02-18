@@ -121,6 +121,10 @@ a:hover {
     background-color: rgb(245,245,245,0.8);
 }
 
+.v-alt-bg {
+    background-color: #ffba56;
+}
+
 .header-arrow {
     color: white;
     text-shadow: 2px 2px 4px #000000;
