@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-120006992-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Our platform makes running a small business easier than ever before. From building a website to managing appointments and inventory, we’ve got you covered.">
+    <meta name="google-site-verification" content="2AINPjLcmCzqlXeouC9Uv5e88gEHIwsxLs6E-RsRWog" />
+    <title>Vitris | Small Business Management Software | Best Website Builder</title>
+
+    <meta name="image" content="https://tryvitris.com/assets/img/vitris-fav.png">
+
+    <meta name="theme-color" content="#00c9cf"/>
+    
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Vitris | Small Business Management Software | Best Website Builder">
+    <meta itemprop="description" content="Our platform makes running a small business easier than ever before. From building a website to managing appointments and inventory, we’ve got you covered.">
+    <meta itemprop="image" content="https://tryvitris.com/assets/img/vitris-fav.png">
+
+    <link rel="icon" href="../assets/img/vitris-fav.png" type="image/gif">
+
+    <link rel="stylesheet" href="../assets/venders/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../assets/venders/css/animate.min.css">
+
+    <link href="../assets/styles/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/styles/circle.css">
+
+    <!-- Facebook/Social Meta Tags ***EDIT MOST DATA*** -->
+    <meta property="og:url" content="https://www.tryvitris.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="og:site_name" content="Vitris">
+    <meta name="og:locale" content="en_US">
+    <meta property="og:title" content="Vitris | Small Business Management Software | Best Website Builder" />
+    <meta property="og:description" content="Our platform makes running a small business easier than ever before. From building a website to managing appointments and inventory, we’ve got you covered." />
+    <meta property="og:image" content="https://tryvitris.com/assets/img/vitris-full.png" />
+    <meta property="fb:app_id" content="473322109692700" />
+
+    <!-- Twitter Meta Tags ***EDIT MOST DATA*** -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vitris | Small Business Management Software | Best Website Builder">
+    <meta name="twitter:description" content="Our platform makes running a small business easier than ever before. From building a website to managing appointments and inventory, we’ve got you covered.">
+    <meta name="twitter:site" content="@tryvitris">
+    <meta name="twitter:creator" content="@wildcard">
+    <meta name="twitter:image:src" content="https://tryvitris.com/assets/img/vitris-full.png">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="nav"></div>
+
+    <!-- Head Section -->
+    <section class="py-5 pattern-bg-blue">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-12 mx-auto text-center">
+                    <h2>About Vitris</h2>
+                    <h4>Humans and AI working together to help grow your business</h4>
+                    <form class="form-inline" id="websiteUrl">
+                        <div class="form-group mt-3 ml-auto w-50 text-white">
+                            <label for="exampleInputName2" class="bmd-label-floating text-white">Enter a website URL</label>
+                            <input type="text" class="form-control text-white w-100" id="exampleInputName2" style="background-image: linear-gradient(0deg,#fafafa 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,#fafafa 1px,transparent 0)">
+                        </div>
+                        <span class="form-group bmd-form-group ml-2 mr-auto"> 
+                            <a class="btn btn-blue-alt-outline btn-raised mt-3 wow fadeInUp ml-auto mr-2" onclick="loadClient()" href="#website-analysis">
+                                Analyze Website
+                            </a>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="website-analysis"></div>
+    <section class="py-5 wow slideInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center mb-0">
+                    <div id="seoCircle" class="c100 mx-auto" style="float:none;">
+                        <span id="seoScore"></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h4>SEO Score</h4>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-0">
+                    <div id="performanceCircle" class="c100 mx-auto" style="float:none;">
+                        <span id="performanceScore"></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h4>Performance Score</h4>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-0">
+                    <div id="bestPracticesCircle" class="c100 mx-auto" style="float:none;">
+                        <span id="bestPracticesScore"></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h4>Best Practices Score</h4>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-0">
+                    <div id="pwaCircle" class="c100 mx-auto" style="float:none;">
+                        <span id="pwaScore"></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h4>PWA Score</h4>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    
+    <div id="local-search"></div>
+    <section class=" py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-3">
+                    <img class="img-fluid my-auto wow slideInUp" src="../assets/img/graphic-search.png" alt="local search graphic">
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <h3>Local Search Engine Optimization</h3>
+                    <div class="how-hr"></div>
+                    <p class="wow slideInUp mt-2">
+                        Google’s definition: “the process of making your site better for search engines.”<br>Key term being PROCESS because search engines like Google are constantly evolving, SEO is not a set it and forget it concept.<br><br>
+                        We guarantee new leads and sales prospects via online search results. Using cutting-edge search optimization (SEO) techniques and your Google My Business listing, we put your website ahead in local searches.
+                    </p>
+                    <a class="btn btn-v-blue mt-3 mx-auto" href="../pricing/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Buttons',
+                        eventAction: 'Local SEO Learn More',
+                        eventLabel: location.pathname
+                    })">
+                        LEARN MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="content-marketing"></div>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-2 mb-3">
+                    <img class="img-fluid my-auto wow slideInUp" src="../assets/img/vitris-blog-graphic.png" alt="content marketing graphic">
+                </div>
+                <div class="col-lg-6 order-lg-1 my-auto">
+                    <h3>Content Marketing</h3>
+                    <div class="how-hr"></div>
+                    <p class="wow slideInUp mt-2">
+                        Build your brand, earn your customers’ trust, generate site traffic, gain qualified leads, and everything in between with custom content marketing.
+                        <br><br>
+                        Content is one of the best tools you have for earning trust, building your brand, generating site traffic and qualified leads, and everything in between. Content marketing is marketing, and the brands that understand content is core to effective marketing — and, ultimately, to their entire business — will set themselves up for success.
+                    </p>
+                    <a class="btn btn-v-blue mt-3 mx-auto" href="../pricing/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Buttons',
+                        eventAction: 'Content Marketing Learn More',
+                        eventLabel: location.pathname
+                    })">
+                        LEARN MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <div id="contact-modal"></div>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/venders/css/webfonts/fontawesome-all.min.css">
+    <script src="../assets/venders/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/scripts/shared-components.js"></script>
+    <script src="../assets/venders/js/popper.min.js"></script>
+    <script src="../assets/venders/js/bootstrap-material-design.min.js"></script>
+    <script src="../assets/venders/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        $(document).ready(function() { $('body').bootstrapMaterialDesign(); });        
+    </script>
+    <script src="../assets/scripts/smoothscroll.js"></script>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+<script>
+
+  function loadClient() {
+
+    gapi.client.setApiKey("AIzaSyARzOgyIgAwCr7Kwu5UPeNUeEl6bVfn3yw");
+    return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/pagespeedonline/v5/rest")
+        .then(function() {
+
+      console.log("execute clicked");
+
+      var url = document.getElementById("websiteUrl").elements[0].value;
+
+      let values  = {}
+      values.to = 'jack@tryvitris.com'
+      values.subject = 'Website Analysis'
+        values.message = {};
+        values.message['URL'] = url;
+      
+      $.ajax({
+        url: "https://mailer.tryvitris.com/sendMail",
+        method: "POST",
+        data: values,
+        dataType: "text",
+        success:  (data) => {
+
+        },
+        error: (textStatus, errorThrown) => {
+console.log("worked?");
+
+        }
+      })
+
+      console.log(url);
+
+      var validation = /(((http|ftp|https):\/{2})+(([0-9a-z_-]+\.)+(aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|ac|ad|ae|af|ag|ai|al|am|an|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cx|cy|cz|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mn|mn|mo|mp|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|nom|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ra|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sj|sk|sl|sm|sn|so|sr|st|su|sv|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tp|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|yu|za|zm|zw|arpa)(:[0-9]+)?((\/([~0-9a-zA-Z\#\+\%@\.\/_-]+))?(\?[0-9a-zA-Z\+\%@\/&\[\];=_-]+)?)?))\b/
+
+
+    var validUrl;
+
+      if (validation.test(url)){
+        console.log('good url');
+        validUrl = url;
+        
+      } else if(validation.test("http://" + url)){
+        console.log('good url');
+          validUrl = "http://" + url;
+      } else {
+        console.log('bad url');
+        alert("url is not valid.");
+      }
+      
+
+    return gapi.client.pagespeedonline.pagespeedapi.runpagespeed({
+      "url": validUrl,
+      "category": [
+        "seo",
+        "best-practices",
+        "performance",
+        "pwa"
+      ],
+      "strategy": "mobile"
+    })
+        .then(function(response) {
+                console.log("Response", response.result);
+                var seo = parseInt(response.result.lighthouseResult.categories.seo.score * 100);
+                var performance = parseInt(response.result.lighthouseResult.categories.performance.score * 100); 
+                var bestPractices = parseInt(response.result.lighthouseResult.categories["best-practices"].score * 100);
+                var pwa = parseInt(response.result.lighthouseResult.categories.pwa.score * 100);
+
+                document.getElementById("seoScore").innerHTML = seo + "%";
+                document.getElementById("seoCircle").classList.add('p' + seo);
+
+                document.getElementById("performanceScore").innerHTML = performance + "%";
+                document.getElementById("performanceCircle").classList.add('p' + performance);
+
+                document.getElementById("bestPracticesScore").innerHTML = bestPractices + "%";
+                document.getElementById("bestPracticesCircle").classList.add('p' + bestPractices);
+
+                document.getElementById("pwaScore").innerHTML = pwa + "%";
+                document.getElementById("pwaCircle").classList.add('p' + pwa);
+                console.log("loaded");
+                
+              },
+              function(err) { console.error("Execute error", err); });
+  },
+              function(err) { console.error("Error loading GAPI client for API", err); });
+  }
+
+  gapi.load("client");
+</script>
+
+    <!-- JSON structured data -->
+    <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@graph":
+        [
+        {
+            "@type": "Organization",
+            "url": "https://tryvitris.com",
+            "logo": "https://tryvitris.com/assets/img/vitris-full.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1-215-595-8457",
+                "contactType": "Customer Service"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/tryvitris",
+                "https://instagram.com/tryvitris",
+                "https://www.linkedin.com/company/vitris-wireless-llc/",
+                "https://twitter.com/tryvitris/"
+            ]
+        },
+        {
+            "@type": "LocalBusiness",
+            "@id": "https://tryvitris.com",
+            "name" : "Vitris",
+            "image" : "https://tryvitris.com/assets/img/vitris-full.png",
+            "telephone": "+1-215-595-8457",
+            "email": "jack@tryvitris.com",
+            "url": "https://tryvitris.com",
+            "priceRange": "$",
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "1635 Market Street",
+                "addressLocality" : "Philadelphia",
+                "addressRegion": "PA",
+                "postalCode": "19103",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.953300",
+                "longitude": "-75.168058"
+            },
+            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "21:00"
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tryvitris.com"
+            }
+            ]
+        }
+        ]
+        
+    }
+    </script>
+</body>
+</html>
