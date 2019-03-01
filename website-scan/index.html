@@ -60,20 +60,21 @@
     <!-- Navbar -->
     <div id="nav"></div>
 
+    <div id="page-top"></div>
     <!-- Head Section -->
     <section class="py-5 pattern-bg-blue">
         <div class="container">
             <div class="row text-white">
-                <div class="col-12 mx-auto text-center">
-                    <h2>About Vitris</h2>
-                    <h4>Humans and AI working together to help grow your business</h4>
+                <div class="col-10 mx-auto text-center">
+                    <h2>Vitris Website Scanner</h2>
+                    <h4>The first step toward SUCCESS is awareness</h4>
                     <form class="form-inline" id="websiteUrl">
                         <div class="form-group mt-3 ml-auto w-50 text-white">
                             <label for="exampleInputName2" class="bmd-label-floating text-white">Enter a website URL</label>
                             <input type="text" class="form-control text-white w-100" id="exampleInputName2" style="background-image: linear-gradient(0deg,#fafafa 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,#fafafa 1px,transparent 0)">
                         </div>
                         <span class="form-group bmd-form-group ml-2 mr-auto"> 
-                            <a class="btn btn-blue-alt-outline btn-raised mt-3 wow fadeInUp ml-auto mr-2" onclick="loadClient()" href="#website-analysis">
+                            <a class="btn btn-blue-alt-outline btn-raised mt-3 wow fadeInUp ml-auto mr-2" onclick="loadClient()" href="javascript:void(0)">
                                 Analyze Website
                             </a>
                         </span>
@@ -83,8 +84,155 @@
         </div>
     </section>
 
+    <style>
+    .lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2b76cf;
+  margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+    </style>
+
     <div id="website-analysis"></div>
-    <section class="py-5 wow slideInUp">
+    <section id="analysis-loading" class="py-5 wow slideInUp" style="display:none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="lds-roller text-center" id="loading-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+                    <div id="done-loading" class="w-100 text-center wow slideInUp" style="display: none;">
+                        <div class="mx-auto">
+                            <div id="totalCircle" class="c100 mx-auto" style="float:none;">
+                                <span id="totalScore"></span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <h4>Website Score</h4>
+                            <a class="btn btn-blue-alt-outline btn-raised mt-3 wow fadeInUp mx-auto" onclick="viewResults()" href="javascript:void(0)">
+                                View Full Results
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h4 class="mb-1">www.tryvitris.com</h4>
+                    <p>The speed score is based on lab data analyzed by <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Google's Lighthouse</a> service</p>
+                    <p>Analysis time: <span id="analysis-time"></span></p>
+                    <p></p>
+
+                </div>
+
+
+                <div class="col-12 text-center">
+                    
+                </div>
+                <div class="col-12 text-center">
+                    <h4>Our webcrawlers are analyzing your site.</h4>
+                    <h5>For a more detailed report please submit your name, number, and email.<br>Someone will be with you shortly. Thanks!</h5>
+                    <form class="form-inline" id="analysisLead">
+                        <div class="form-group mt-3 ml-auto">
+                            <label for="analysisName" class="bmd-label-floating">Name</label>
+                            <input type="text" class="form-control" id="analysisName">
+                        </div>
+                        <div class="form-group mt-3 ml-2">
+                            <label for="analysisNumber" class="bmd-label-floating">Number</label>
+                            <input type="text" class="form-control" id="analysisNumber">
+                        </div>
+                        <div class="form-group mt-3 ml-2">
+                            <label for="analysisEmail" class="bmd-label-floating">Email</label>
+                            <input type="text" class="form-control" id="analysisEmail">
+                        </div>
+                        <span class="form-group bmd-form-group ml-2 mr-auto"> 
+                            <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp ml-auto mr-2" onclick="sendLead()" href="javascript:void(0)">
+                                Submit
+                            </a>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="analysis-results" class="py-5 wow slideInUp" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 text-center mb-0">
@@ -194,7 +342,7 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/venders/css/webfonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/venders/css/webfonts/fontawesome-all.min.css">
     <script src="../assets/venders/js/jquery-3.3.1.slim.min.js"></script>
     <script src="../assets/scripts/shared-components.js"></script>
     <script src="../assets/venders/js/popper.min.js"></script>
@@ -207,96 +355,7 @@
     <script src="../assets/scripts/smoothscroll.js"></script>
 
     <script src="https://apis.google.com/js/api.js"></script>
-<script>
-
-  function loadClient() {
-
-    gapi.client.setApiKey("AIzaSyARzOgyIgAwCr7Kwu5UPeNUeEl6bVfn3yw");
-    return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/pagespeedonline/v5/rest")
-        .then(function() {
-
-      console.log("execute clicked");
-
-      var url = document.getElementById("websiteUrl").elements[0].value;
-
-      let values  = {}
-      values.to = 'jack@tryvitris.com'
-      values.subject = 'Website Analysis'
-        values.message = {};
-        values.message['URL'] = url;
-      
-      $.ajax({
-        url: "https://mailer.tryvitris.com/sendMail",
-        method: "POST",
-        data: values,
-        dataType: "text",
-        success:  (data) => {
-
-        },
-        error: (textStatus, errorThrown) => {
-console.log("worked?");
-
-        }
-      })
-
-      console.log(url);
-
-      var validation = /(((http|ftp|https):\/{2})+(([0-9a-z_-]+\.)+(aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|ac|ad|ae|af|ag|ai|al|am|an|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cx|cy|cz|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mn|mn|mo|mp|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|nom|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ra|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sj|sk|sl|sm|sn|so|sr|st|su|sv|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tp|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|yu|za|zm|zw|arpa)(:[0-9]+)?((\/([~0-9a-zA-Z\#\+\%@\.\/_-]+))?(\?[0-9a-zA-Z\+\%@\/&\[\];=_-]+)?)?))\b/
-
-
-    var validUrl;
-
-      if (validation.test(url)){
-        console.log('good url');
-        validUrl = url;
-        
-      } else if(validation.test("http://" + url)){
-        console.log('good url');
-          validUrl = "http://" + url;
-      } else {
-        console.log('bad url');
-        alert("url is not valid.");
-      }
-      
-
-    return gapi.client.pagespeedonline.pagespeedapi.runpagespeed({
-      "url": validUrl,
-      "category": [
-        "seo",
-        "best-practices",
-        "performance",
-        "pwa"
-      ],
-      "strategy": "mobile"
-    })
-        .then(function(response) {
-                console.log("Response", response.result);
-                var seo = parseInt(response.result.lighthouseResult.categories.seo.score * 100);
-                var performance = parseInt(response.result.lighthouseResult.categories.performance.score * 100); 
-                var bestPractices = parseInt(response.result.lighthouseResult.categories["best-practices"].score * 100);
-                var pwa = parseInt(response.result.lighthouseResult.categories.pwa.score * 100);
-
-                document.getElementById("seoScore").innerHTML = seo + "%";
-                document.getElementById("seoCircle").classList.add('p' + seo);
-
-                document.getElementById("performanceScore").innerHTML = performance + "%";
-                document.getElementById("performanceCircle").classList.add('p' + performance);
-
-                document.getElementById("bestPracticesScore").innerHTML = bestPractices + "%";
-                document.getElementById("bestPracticesCircle").classList.add('p' + bestPractices);
-
-                document.getElementById("pwaScore").innerHTML = pwa + "%";
-                document.getElementById("pwaCircle").classList.add('p' + pwa);
-                console.log("loaded");
-                
-              },
-              function(err) { console.error("Execute error", err); });
-  },
-              function(err) { console.error("Error loading GAPI client for API", err); });
-  }
-
-  gapi.load("client");
-</script>
+    <script src="../assets/scripts/website-scan.js"></script>
 
     <!-- JSON structured data -->
     <script type="application/ld+json">

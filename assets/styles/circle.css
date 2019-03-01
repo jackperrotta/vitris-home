@@ -851,29 +851,42 @@
   background-color: #666666;
 }
 .c100.dark:hover > span {
-  color: #c6ff00;
+  color: #1b8239;
 }
 .c100.green .bar, .c100.green .fill {
-  border-color: #4db53c !important;
+  border-color: #1b8239 !important;
 }
 .c100.green:hover > span {
-  color: #4db53c;
+  color: #1b8239;
 }
 .c100.green.dark .bar, .c100.green.dark .fill {
-  border-color: #5fd400 !important;
+  border-color: #1b8239 !important;
 }
 .c100.green.dark:hover > span {
-  color: #5fd400;
+  color: #1b8239;
 }
 .c100.orange .bar, .c100.orange .fill {
-  border-color: #dd9d22 !important;
+  border-color: #e67700 !important;
 }
 .c100.orange:hover > span {
-  color: #dd9d22;
+  color: #e67700;
 }
 .c100.orange.dark .bar, .c100.orange.dark .fill {
-  border-color: #e08833 !important;
+  border-color: #e67700 !important;
 }
 .c100.orange.dark:hover > span {
-  color: #e08833;
+  color: #e67700;
+}
+
+.c100.red .bar, .c100.red .fill {
+  border-color: #c7211f !important;
+}
+.c100.red:hover > span {
+  color: #c7211f;
+}
+.c100.red.dark .bar, .c100.red.dark .fill {
+  border-color: #c7211f !important;
+}
+.c100.red.dark:hover > span {
+  color: #c7211f;
 }
