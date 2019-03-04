@@ -175,59 +175,38 @@
     <section id="analysis-loading" class="py-5 wow slideInUp" style="display:none">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="lds-roller text-center" id="loading-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-
-                    <div id="done-loading" class="w-100 text-center wow slideInUp" style="display: none;">
-                        <div class="mx-auto">
-                            <div id="totalCircle" class="c100 mx-auto" style="float:none;">
-                                <span id="totalScore"></span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-3 col-4">
+                            <div class="mr-auto" id="loading-roller">
+                                <div class="lds-roller float-right"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                             </div>
-                            <h4>Website Score</h4>
-                            <a class="btn btn-blue-alt-outline btn-raised mt-3 wow fadeInUp mx-auto" onclick="viewResults()" href="javascript:void(0)">
+
+                        <div id="done-loading" class="w-100 text-center wow slideInUp" style="display: none;">
+                            <div class="mx-auto">
+                                <div id="totalCircle" class="c100 mx-auto" style="float:none;">
+                                    <span id="totalScore"></span>
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                                <h4>Website Score</h4>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-8">
+                            <h4 id="testedUrl" class="mb-1"></h4>
+                            <p class="mb-1">The website score is based on lab data analyzed by <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Google's Lighthouse</a> service</p>
+                            <p>Analysis time: <span id="currentDate"></span></p>
+                            <a class="btn btn-blue-alt-outline btn-raised mr-3" onclick="viewResults()" href="javascript:void(0)" style="display:none;" id="done-loading-btn">
                                 View Full Results
+                            </a>
+                            <a class="btn btn-v-blue btn-raised" data-toggle="modal" data-target="#analysisModal" href="#">
+                                More Details
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-9">
-                    <h4 class="mb-1">www.tryvitris.com</h4>
-                    <p>The speed score is based on lab data analyzed by <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Google's Lighthouse</a> service</p>
-                    <p>Analysis time: <span id="analysis-time"></span></p>
-                    <p></p>
-
-                </div>
-
-
-                <div class="col-12 text-center">
-                    
-                </div>
-                <div class="col-12 text-center">
-                    <h4>Our webcrawlers are analyzing your site.</h4>
-                    <h5>For a more detailed report please submit your name, number, and email.<br>Someone will be with you shortly. Thanks!</h5>
-                    <form class="form-inline" id="analysisLead">
-                        <div class="form-group mt-3 ml-auto">
-                            <label for="analysisName" class="bmd-label-floating">Name</label>
-                            <input type="text" class="form-control" id="analysisName">
-                        </div>
-                        <div class="form-group mt-3 ml-2">
-                            <label for="analysisNumber" class="bmd-label-floating">Number</label>
-                            <input type="text" class="form-control" id="analysisNumber">
-                        </div>
-                        <div class="form-group mt-3 ml-2">
-                            <label for="analysisEmail" class="bmd-label-floating">Email</label>
-                            <input type="text" class="form-control" id="analysisEmail">
-                        </div>
-                        <span class="form-group bmd-form-group ml-2 mr-auto"> 
-                            <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp ml-auto mr-2" onclick="sendLead()" href="javascript:void(0)">
-                                Submit
-                            </a>
-                        </span>
-                    </form>
                 </div>
             </div>
         </div>
@@ -307,7 +286,7 @@
         </div>
     </section>
 
-    <div id="content-marketing"></div>
+    <!-- <div id="content-marketing"></div>
     <section class="py-5">
         <div class="container">
             <div class="row">
@@ -333,13 +312,60 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <div id="footer"></div>
 
     <div id="contact-modal"></div>
 
+    <!-- Scan Lead Modal -->
+    <div class="modal fade" id="analysisModal" tabindex="-1" role="dialog" aria-labelledby="analysisModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form id="analysisForm">
+                        <h5 class="mb-1">Our webcrawlers are analyzing your site.</h5>
+                        <h6>For a more detailed report please submit this quick form. Thanks!</h6>
+                    <div class="form-group d-none">
+                        <label for="type">Type</label>
+                        <input type="text" class="form-control" id="type" name="type" value="Website Scan Modal">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="janeDoe@gmail.com" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="215-555-8008">
+                    </div>
+                    <button type="submit" class="btn btn-raised btn-v-blue w-100 mt-2" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Modal Form',
+                        eventAction: 'Submit',
+                        eventLabel: location.pathname
+                    })">Submit</button>
+                </form>
+                <div style="display: none;" id="analysisLead" class="w-100 text-center">
+                    <div class="mx-auto">
+                        <i class="far fa-check-circle fa-10x"></i><br>
+                        <h4>Thank you, we've recieved your request! Someone will reach out to you shortly.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="../assets/venders/css/webfonts/fontawesome-all.min.css">

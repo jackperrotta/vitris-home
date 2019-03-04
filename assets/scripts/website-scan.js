@@ -7,7 +7,7 @@ function loadClient() {
         var url = document.getElementById("websiteUrl").elements[0].value;
 
         let values  = {}
-            values.to = 'jperrotta521@gmail.com'
+            values.to = 'jack@tryvitris.com'
             values.subject = 'Website Analysis'
             values.message = {};
             values.message['URL'] = url;
@@ -43,6 +43,53 @@ function loadClient() {
             alert("url is not valid.");
             window.location.hash = '#page-top';
         }
+
+        var currentdate = new Date(); 
+        var datetime = currentdate.getDate() + "/"
+                    + (currentdate.getMonth()+1)  + "/" 
+                    + currentdate.getFullYear() + ", "  
+                    + currentdate.getHours() + ":"  
+                    + currentdate.getMinutes() + ":" 
+                    + currentdate.getSeconds();
+
+        document.getElementById("currentDate").innerHTML = datetime;
+        document.getElementById("testedUrl").innerHTML = validUrl;
+
+        $('#analysisForm').submit(function(e){
+            e.preventDefault()
+            let $inputs = $('#analysisForm :input' )
+            let values  = {}
+            values.message = {}
+            values.to = 'jack@tryvitris.com'
+            values.subject = 'Analysis Lead Submission'
+            $inputs.each(function () {
+              values.message[this.name] = $(this).val()
+            })
+            
+            $.ajax({
+              url: "https://mailer.tryvitris.com/sendMail",
+              method: "POST",
+              data: values,
+              dataType: "text",
+              success:  (data) => {
+                
+                $('#analysisForm').css('display', 'none')
+                $('#analysisLead').css('display', 'initial')
+                setTimeout(() => {
+                      $('#analysisModal').modal('hide')
+                  }, 2500);
+              },
+              error: (textStatus, errorThrown) => {
+      
+                  $('#analysisForm').css('display', 'none')
+                  $('#analysisLead').css('display', 'initial')
+                  setTimeout(() => {
+                      $('#analysisModal').modal('hide')
+                  }, 2500);
+              }
+            })
+        
+        })
       
         return gapi.client.pagespeedonline.pagespeedapi.runpagespeed({
             "url": validUrl,
@@ -125,11 +172,9 @@ function loadClient() {
             document.getElementById("totalCircle").classList.add('p' + total, totalColor);
             
             document.getElementById('done-loading').style.display = 'block';
+            document.getElementById('done-loading-btn').style.display = 'inline-block';
             document.getElementById('loading-roller').style.display = 'none';
 
-            console.log(total);
-            
-            
             },
             function(err) { 
                 console.error("Execute error", err);
@@ -137,37 +182,15 @@ function loadClient() {
                 window.location.reload(false);  
             });
     },
-    function(err) { console.error("Error loading GAPI client for API", err); });
+    function(err) { 
+        console.error("Error loading GAPI client for API", err);
+        alert("Something went wrong, refresh the page and try again");
+        window.location.reload(false); 
+    });
   }
 
   gapi.load("client");
 
-  function sendLead() {
-    var name = document.getElementById("analysisLead").elements[0].value;
-    var number = document.getElementById("analysisLead").elements[1].value;
-    var email = document.getElementById("analysisLead").elements[2].value;
-
-    let values  = {}
-      values.to = 'jack@tryvitris.com'
-      values.subject = 'Website Analysis Lead'
-        values.message = {};
-        values.message['Lead'] = [name, number, email];
-      
-      $.ajax({
-        url: "https://mailer.tryvitris.com/sendMail",
-        method: "POST",
-        data: values,
-        dataType: "text",
-        success:  (data) => {
-
-        },
-        error: (textStatus, errorThrown) => {
-
-        }
-      })
-  }
-
   function viewResults(){
     document.getElementById('analysis-results').style.display = 'block';
-    document.getElementById('analysis-loading').style.display = 'none';
   }
