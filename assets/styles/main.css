@@ -227,6 +227,12 @@ a:hover {
     color: rgb(252,254,254);
 }
 
+@media only screen and (max-width : 767px) {
+    .v-footer {
+        margin-bottom: 51px;
+    }
+}
+
 .v-sub-footer {
     background-color: rgb(120,130,131);
     color: rgb(252,254,254);
