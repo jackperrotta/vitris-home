@@ -220,6 +220,81 @@ a:hover {
     background: rgb(245,245,245);
 }
 
+/* Split Overlay Section */
+
+.split-overlay {
+    overflow: visible; 
+    position: relative;
+}
+
+.img-col {
+    z-index: 9; 
+    padding: 0;
+    height: 450px;
+}
+
+.img-container {
+    background-color: lavender; 
+    overflow: hidden; 
+    margin-left: -105px; 
+    transform: skew(-10deg); 
+    transform-origin: bottom; 
+    height: 100%;
+}
+
+.overlay-img {
+    transform: skew(10deg); 
+    max-width: initial;
+    min-width: 107%;
+    min-height: 100%;
+}
+
+.overlay-col {
+    background: linear-gradient(90deg, rgb(43,118,208) ,#00c9cf);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+    .split-overlay {
+        overflow: hidden;
+        padding: 0px;
+    }
+
+    .img-col {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 9;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .overlay-col {
+        z-index: 19;
+        background: linear-gradient(90deg, rgba(43,118,208,0.8) ,rgba(0,201,207,0.8));
+    }
+
+    .overlay-text {
+        padding: 30px 30px;
+        max-width: initial;
+        position: relative;
+        top: initial;
+        left: initial;
+        transform: none;
+        width: 100%;
+    }
+}
+
+/* End Split Section */
+
 /* Footer */
 
 .v-footer {
