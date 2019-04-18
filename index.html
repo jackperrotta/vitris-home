@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>.async-hide { opacity: 0 !important} </style>
     <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -9,12 +12,13 @@
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
         
         ga('create', 'UA-120006992-1', 'auto');
+        ga('require', 'GTM-NLJQZ5M');
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+    
     <meta name="description" content="Our platform makes running a small business easier than ever before. From building a website to managing appointments and inventory, we’ve got you covered.">
     <meta name="google-site-verification" content="2AINPjLcmCzqlXeouC9Uv5e88gEHIwsxLs6E-RsRWog" />
     <title>Vitris | Small Business Management Software | Best Website Builder</title>
@@ -62,20 +66,20 @@
     <div class="header-1">
         <div class="container h-100 d-flex align-items-center flex-column">
             <div class="row mx-auto my-auto">
-                <div class="col-md-7 mx-auto mt-md-5 text-center">
+                <div class="col-md-10 col-lg-7">
                     <h1 class="mx-auto my-3 header-shadow">
-                        Everything Your Business Needs to Succeed Online
+                        A.I. Enhanced Digital Marketing
                     </h1>
                     <h4 class="mx-auto header-shadow">
-                        Attract more customers and grow your revenue.
+                        We use artificial intelligence to build better websites for your small business.
                     </h4>
-                    <a class="btn btn-v-blue mt-3 mx-auto" href="./agency-services/" onclick="ga('send', {
+                    <a class="btn btn-v-blue mt-3 mx-auto" href="./about/" onclick="ga('send', {
                         hitType: 'event',
                         eventCategory: 'CTA Buttons',
-                        eventAction: 'Learn More',
+                        eventAction: 'how it works',
                         eventLabel: location.pathname
                     })">
-                        LEARN MORE
+                        HOW IT WORKS
                     </a>
                     <!-- <a class="btn btn-v-blue ml-md-2 mt-3 mx-auto" href="./contact/">
                         CONTACT US
@@ -87,31 +91,93 @@
         
     <div id="whats-vitris"></div>
 
-    <!-- <section>
-        <div class="container-fluid">
-            <div class="row split-overlay">
-                <div class="col-md-4 col-sm-12 img-col">
-                    <div class="img-container">
-                        <img src="./assets/img/3-stacked-red-websites-and-philly-mockup.jpg" alt="" class="overlay-img">
-                    </div>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="./assets/img/custom-icons/local-seo-map.png" class="img-fluid w-25 mb-3" alt="local search optimization graphic">
+                    <h3 class="text-dark">Local Search</h3>
+                    <p class="text-justify">Using cutting-edge search engine optimization (SEO) techniques we put your website ahead of the competition in local searches.</p>
                 </div>
-                <div class="col-md-8 col-sm-12 overlay-col">
-                    <div class="text-white overlay-text">
-                        <h2>This is a test header</h2>
-                        <p>This is a test paragraph i wonder how it looks.</p>
-                    </div>
+                <div class="col-lg-4 px-lg-4 text-center">
+                    <img src="./assets/img/custom-icons/website-builder.png" class="img-fluid w-25 mb-3 mt-lg-1" alt="professional website design graphic">
+                    <h3 class="text-dark">Pro Website Design</h3>
+                    <p class="text-justify">Built using data collected by our A.I. with the primary goal of bringing in more customers. Your site is the foundation to your internet marketing efforts, make it a Vitris site.</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="./assets/img/custom-icons/online-payments.png" class="img-fluid w-25 mb-3 mt-lg-3" alt="content marketing graphic">
+                    <h3 class="text-dark">Conversion Optimized</h3>
+                    <p class="text-justify">
+                        If your website isn't making you money then it's not working hard enough. Our A.I. analyzes millions of lines of data to suggest edits for conversion rate optimization.
+                    </p>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- 3 box section -->
+    <section class="home-product" style="background-color: rgb(255,255,255)">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 my-lg-auto mb-3 text-center order-lg-2">
+                    <img class="img-fluid wow slideInUp" src="./assets/img/website-ai.png" alt="Website design powered AI">
+                </div>
+                <div class="col-lg-6 my-auto order-lg-1">
+                    <h3>Next-Gen Marketing, Now.</h3>
+                    <div class="how-hr"></div>
+                    <p class="wow slideInUp mt-2 text-justify">
+                        Being an entrepreneur is more than a full time job. You never stop working for your business, and neither should your website. At Vitris utilize cutting edge artificial intelligence to gather information on and improve your website 24/7. Our websites are constantly learning how to get you more customers and produce a significant return on investment.
+                    </p>
+                    <a class="btn btn-v-blue btn-raised mx-auto wow fadeInUp" href="./pricing/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Button',
+                        eventAction: 'View Pricing',
+                        eventLabel: location.pathname
+                    })">
+                        VIEW PRICING
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-md-block d-none v-alt-bg">
+        <div class="container py-4">
+            <div class="row text-white">
+                <div class="col-12 text-center header-shadow">
+                    <h3>Ready to start winning online? We'd love to hear from you.</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp ml-auto mr-2" data-toggle="modal" data-target="#sharedContactModal" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Button',
+                        eventAction: 'Contact',
+                        eventLabel: location.pathname
+                        });">
+                            Contact Us
+                        </a>
+                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp mr-auto ml-2" href="./portfolio/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Button',
+                        eventAction: 'Portfolio',
+                        eventLabel: location.pathname
+                        });">
+                            Our Portfolio
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="pt-5" style="background-color: #f7f7f7">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto text-center">
                 <h3 class="bold-h">BUILT FOR YOUR BUSINESS</h3>
                 <div class="how-hr mx-auto"></div>
+                <p class="mt-2">
+                    We've had success in a wide array of different industries. Unlike traditional marketing agencies who focus on specific industries or sectors, our software is smart enough to increase the conversion rate of anyones business.
+                </p>
             </div>
         </div>
     </div>
@@ -500,133 +566,6 @@
             </div>
         </div>
     </section>
-    
-    <section class="d-md-block d-none v-alt-bg">
-        <div class="container py-4">
-            <div class="row text-white">
-                <div class="col-12 text-center header-shadow">
-                    <h3>Ready to start winning online? We'd love to hear from you.</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp ml-auto mr-2" data-toggle="modal" data-target="#sharedContactModal" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Button',
-                        eventAction: 'Contact',
-                        eventLabel: location.pathname
-                        });">
-                            Contact Us
-                        </a>
-                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp mr-auto ml-2" href="./portfolio/" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Button',
-                        eventAction: 'Portfolio',
-                        eventLabel: location.pathname
-                        });">
-                            Our Portfolio
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About the Product -->
-    <section  class="home-product">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6 my-auto">
-                    <h3>BUILD YOUR EMPIRE</h3>
-                    <div class="how-hr"></div>
-                    <p class="wow slideInUp mt-2">
-                        We know from experience that being an entrepreneur is a big job, so we’ve set out to take some of that weight off your shoulders. Our software makes it easy to build a high-quality website with custom components, scheduling capabilities, order and inventory management, and sales performance tracking.
-                    </p>
-                    <a class="btn btn-v-blue btn-raised wow fadeInUp" href="./features/" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Buttons',
-                        eventAction: 'Features',
-                        eventLabel: location.pathname
-                    })">
-                        Features
-                    </a>
-                </div>
-                <div class="col-lg-6 mt-3">
-                    <img class="img-fluid my-auto wow slideInUp" src="./assets/img/woman-owner-phone.jpg" alt="Woman business owner on the phone">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-md-8 mx-auto text-center">
-                    <h3>NEW AGE DIGITAL MARKETING AGENCY</h3>
-                    <div class="how-hr mx-auto"></div>
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <a class="no-underline" href="./agency-services#local-search" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Tiles',
-                        eventAction: 'Local Search',
-                        eventLabel: location.pathname
-                    })">
-                        <div class="card flat-card mb-3">
-                            <div class="card-body text-center">
-                                <img src="./assets/img/icon-search.png" class="img-fluid w-25 mb-3" alt="local search optimization graphic">
-                                <h3 class="text-dark">Local Search</h3>
-                                <p class="flat-card-text">Using cutting-edge search engine optimization (SEO) techniques and your Google My Business listing, we put your website ahead in local searches.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a class="no-underline" href="./agency-services#professional-website-design" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Tiles',
-                        eventAction: 'Website Design',
-                        eventLabel: location.pathname
-                    })">
-                        <div class="card flat-card mb-3">
-                            <div class="card-body text-center">
-                                <img src="./assets/img/website-icon1.png" class="img-fluid w-25 mb-3" alt="professional website design graphic">
-                                <h3 class="text-dark">Pro Website Design</h3>
-                                <p class="flat-card-text">Proven to bring in new customers, the websites we build are fast, secure, and mobile ready. Your site is the foundation to your internet marketing efforts.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a class="no-underline" href="./agency-services#content-marketing" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Tiles',
-                        eventAction: 'Content Marketing',
-                        eventLabel: location.pathname
-                    })">
-                        <div class="card flat-card mb-3">
-                            <div class="card-body text-center">
-                                <img src="./assets/img/icon-article.png" class="mx-auto img-fluid w-25 mb-3" alt="content marketing graphic">
-                                <h3 class="text-dark">Content Marketing</h3>
-                                <p class="flat-card-text">Build your brand, earn your customers’ trust, generate site traffic, gain qualified leads, and everything in between with custom content marketing.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <a class="btn btn-v-blue btn-raised mx-auto wow fadeInUp" href="./agency-services/" onclick="ga('send', {
-                    hitType: 'event',
-                    eventCategory: 'CTA Buttons',
-                    eventAction: 'Agency Services',
-                    eventLabel: location.pathname
-                })">
-                    AGENCY SERVICES
-                </a>
-            </div>
-        </div>
-    </section>
 
     <section class="py-5">
         <div class="container">
@@ -634,6 +573,9 @@
                 <div class="col-md-8 mx-auto text-center">
                     <h3>BUILT FOR SERVICE PROS BY SERVICE PROS</h3>
                     <div class="how-hr mx-auto"></div>
+                    <p class="mt-2">
+                        We take grat pride in our work and focus on converting our clients prospects into customers so they experience a significant return on investment. The results speak for thereself.
+                    </p>
                 </div>
             </div>
         </div>
@@ -785,10 +727,10 @@
                 <div class="col-lg-6 my-auto">
                     <h3 class="wow slideInUp mt-3" style="text-align: right;">OUR PHILOSOPHY</h3>
                     <div class="how-hr ml-auto"></div>
-                    <p class="wow fadeInUp mt-2" style="text-align: right">
+                    <p class="wow fadeInUp mt-2 text-justify" style="text-align-last: right">
                         Our goal is to provide entrepreneurs with the tools they need make their dreams come true. We believe that being an entrepreneur is one of the most important jobs out there, so we strive to be an ongoing source of value for our users both on and off the screen.
                         </p>
-                    <a class="btn btn-v-blue btn-raised wow fadeInUp float-right" href="./about/" onclick="ga('send', {
+                    <a class="btn btn-v-blue btn-raised wow fadeInUp float-right" href="./about/#our-team" onclick="ga('send', {
                         hitType: 'event',
                         eventCategory: 'CTA Buttons',
                         eventAction: 'About Us',
