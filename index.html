@@ -88,6 +88,67 @@
             </div>
         </div>
     </div>
+
+    <section class="v-alt-bg">
+        <div class="container py-4">
+            <div class="row text-white">
+                <div class="col-12 text-center header-shadow">
+                    <h3>Want to save <span style="font-size: 2rem;">$1,500</span>? Get started before our intro rate ends.</h3>
+                    
+                    <div class="row mt-4 mx-md-5 px-md-5">
+                        <div class="col">
+                            <div id="timerDays" style="font-size: 2.5em;"></div>
+                            <h4>Days</h4>
+                        </div>
+                        <div class="col">
+                            <div id="timerHours" style="font-size: 2.5em;"></div>
+                            <h4>Hours</h4>
+                        </div>
+                        <div class="col">
+                            <div id="timerMinutes" style="font-size: 2.5em;"></div>
+                            <h4>Minutes</h4>
+                        </div>
+                        <div class="col">
+                            <div id="timerSeconds" style="font-size: 2.5em;"></div>
+                            <h4>Seconds</h4>
+                        </div>
+                    </div>
+                    <div class="d-md-flex d-none">
+                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp ml-auto mr-2" data-toggle="modal" data-target="#sharedContactModal" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Button',
+                        eventAction: 'Contact',
+                        eventLabel: location.pathname
+                        }); setModalHeader('Get In Touch', 'Fill out the form and ')">
+                            SAVE $1,500
+                        </a>
+                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp mr-auto ml-2" href="./portfolio/" onclick="ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'CTA Button',
+                        eventAction: 'Portfolio',
+                        eventLabel: location.pathname
+                        });">
+                            Our Portfolio
+                        </a>
+                    </div>
+                    <div class="d-md-none" style="display: block; left: 0; right: 0;">
+                            <a data-toggle="modal" data-target="#sharedContactModal" onclick="ga('send', {
+                                hitType: 'event',
+                                eventCategory: 'Bottom Nav',
+                                eventAction: 'Email',
+                                eventLabel: location.pathname
+                            });"><button class="btn btn-v-blue btn-raised" style="width: 45%;">Send Message</button></a>
+                            <a href="tel:2155958457" onclick="ga('send', {
+                                hitType: 'event',
+                                eventCategory: 'Bottom Nav',
+                                eventAction: 'Call',
+                                eventLabel: location.pathname
+                            });"><button class="btn btn-blue-outline" style="width: 45%;">Call Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
         
     <div id="whats-vitris"></div>
 
@@ -113,11 +174,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section class="py-5 v-alt-bg">
-        <div class="mx-auto text-center" id="timer" style="color: white;
-        font-size: 2.5em;"></div>
     </section>
 
     <section class="home-product" style="background-color: rgb(255,255,255)">
@@ -779,34 +835,15 @@
     <div id="contact-modal"></div>
 
     <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("July 1, 2019 12:00:00").getTime();
+    
+    function setModalHeader(title, secTitle){
+        document.getElementById("modalTitle").innerHTML = title;
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result in an element with id="demo"
-    document.getElementById("timer").innerHTML = days + "days " + hours + "hours "
-    + minutes + "mins " + seconds + "s ";
-
-    // If the count down is finished, write some text
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "Let's Get Started";
+        if(secTitle === undefined){} else{
+            document.getElementById("secondModalTitle").innerHTML = secTitle;
+        }
     }
-    }, 1000);
+
     </script>
 
 
@@ -817,6 +854,7 @@
     <script src="./assets/venders/js/popper.min.js"></script>
     <script src="./assets/venders/js/bootstrap-material-design.min.js"></script>
     <script src="./assets/venders/js/wow.min.js"></script>
+    <script src="./assets/scripts/countdown-timer.js"></script>
     <script>
         new WOW().init();
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });        
