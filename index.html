@@ -81,9 +81,6 @@
                     })">
                         HOW IT WORKS
                     </a>
-                    <!-- <a class="btn btn-v-blue ml-md-2 mt-3 mx-auto" href="./contact/">
-                        CONTACT US
-                    </a> -->
                 </div>
             </div>
         </div>
@@ -119,31 +116,31 @@
                         eventCategory: 'CTA Button',
                         eventAction: 'Contact',
                         eventLabel: location.pathname
-                        }); setModalHeader('Get In Touch', 'Fill out the form and ')">
-                            SAVE $1,500
+                        }); setModalHeader('Let\'s Get Started', 'Fill out this form with as much detail as possible so we can get rolling asap.')">
+                            GET STARTED
                         </a>
-                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp mr-auto ml-2" href="./portfolio/" onclick="ga('send', {
+                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp mr-auto ml-2" href="./pricing/" onclick="ga('send', {
                         hitType: 'event',
                         eventCategory: 'CTA Button',
-                        eventAction: 'Portfolio',
+                        eventAction: 'Pricing',
                         eventLabel: location.pathname
                         });">
-                            Our Portfolio
+                            VIEW PRICING
                         </a>
                     </div>
                     <div class="d-md-none" style="display: block; left: 0; right: 0;">
                             <a data-toggle="modal" data-target="#sharedContactModal" onclick="ga('send', {
                                 hitType: 'event',
-                                eventCategory: 'Bottom Nav',
-                                eventAction: 'Email',
+                                eventCategory: 'CTA Button',
+                                eventAction: 'Contact',
                                 eventLabel: location.pathname
-                            });"><button class="btn btn-v-blue btn-raised" style="width: 45%;">Send Message</button></a>
-                            <a href="tel:2155958457" onclick="ga('send', {
+                            }); setModalHeader('Get In Touch', 'Fill out the form and ')"><button class="btn btn-v-blue btn-raised" style="width: 45%;">GET STARTED</button></a>
+                            <a href="./pricing/" onclick="ga('send', {
                                 hitType: 'event',
-                                eventCategory: 'Bottom Nav',
-                                eventAction: 'Call',
+                                eventCategory: 'CTA Button',
+                                eventAction: 'Pricing',
                                 eventLabel: location.pathname
-                            });"><button class="btn btn-blue-outline" style="width: 45%;">Call Now</button></a>
+                            });"><button class="btn btn-v-blue btn-raised" style="width: 45%;">VIEW PRICING</button></a>
                     </div>
                 </div>
             </div>
@@ -833,19 +830,6 @@
     <div id="footer"></div>
 
     <div id="contact-modal"></div>
-
-    <script>
-    
-    function setModalHeader(title, secTitle){
-        document.getElementById("modalTitle").innerHTML = title;
-
-        if(secTitle === undefined){} else{
-            document.getElementById("secondModalTitle").innerHTML = secTitle;
-        }
-    }
-
-    </script>
-
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="./assets/venders/css/webfonts/fontawesome-all.min.css">
