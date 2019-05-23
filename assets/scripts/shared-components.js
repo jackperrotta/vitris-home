@@ -6,10 +6,12 @@ $(function(){
 });
 
 // Contact form titles
-function setModalHeader(title, secTitle){
+function setModalHeader(title, secTitle = null){
     document.getElementById("modalTitle").innerHTML = title;
 
-    if(secTitle === undefined){} else{
+    if(secTitle === null){
+        document.getElementById("secondModalTitle").innerHTML = "";
+    } else{
         document.getElementById("secondModalTitle").innerHTML = secTitle;
     }
 }
