@@ -1,3 +1,24 @@
+<style>
+/* The side navigation menu */
+
+
+/* The navigation menu links */
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+/* .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+</style>
 <nav class="navbar fixed-top bg-light navbar-expand-md">
 
     <a class="navbar-brand" href="https://tryvitris.com/" onclick="ga('send', {
@@ -9,14 +30,27 @@
         <img src="https://tryvitris.com/assets/img/vitris-full.png" height="30px" alt="Vitris Logo">
     </a>
 
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto" type="button" onclick="openNav()">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav ml-auto">
+    <!-- <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div> -->
+
+    <!-- <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button> -->
+
+    <!-- <div class="collapse navbar-collapse" id="navbarToggler"> -->
+        <ul class="navbar-nav ml-auto" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn d-md-none" onclick="closeNav()">&times;</a>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="https://tryvitris.com/" onclick="ga('send', {
+                <a class="nav-link" href="https://tryvitris.com/" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'Navbar',
                     eventAction: 'Home',
@@ -24,7 +58,7 @@
                 })">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="https://tryvitris.com/pricing/" onclick="ga('send', {
+                <a class="nav-link" href="https://tryvitris.com/pricing/" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'Navbar',
                     eventAction: 'Pricing',
@@ -32,7 +66,7 @@
                 })">PRICING</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="https://tryvitris.com/agency-services/" onclick="ga('send', {
+                <a class="nav-link" href="https://tryvitris.com/agency-services/" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'Navbar',
                     eventAction: 'Services',
@@ -40,7 +74,7 @@
                 })">SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="https://tryvitris.com/portfolio/" onclick="ga('send', {
+                <a class="nav-link" href="https://tryvitris.com/portfolio/" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'Navbar',
                     eventAction: 'Portfolio',
@@ -48,7 +82,7 @@
                 })">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="https://tryvitris.com/about/" onclick="ga('send', {
+                <a class="nav-link" href="https://tryvitris.com/about/" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'Navbar',
                     eventAction: 'About',
@@ -56,7 +90,7 @@
                 })">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="https://tryvitris.com/blog/" onclick="ga('send', {
+                <a class="nav-link" href="https://tryvitris.com/blog/" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'Navbar',
                     eventAction: 'Blog',
@@ -84,7 +118,7 @@
               }
             );"><button class="btn btn-blue-outline my-2 my-sm-0">Login</button></a>
         </ul>
-    </div>
+    <!-- </div> -->
 </nav>
 
 <nav class="fixed fixed-bottom bg-light text-center d-md-none pt-2">
@@ -101,3 +135,15 @@
         eventLabel: location.pathname
     });"><button class="btn btn-blue-outline" style="width: 45%;">Call Now</button></a>
 </nav>
+
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>

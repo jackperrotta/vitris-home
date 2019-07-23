@@ -17,3 +17,4 @@ Disallow: /business
 Disallow: /tech
 Disallow: /assets/blog
 Disallow: /assets/html
+Disallow: /pricing-2/
