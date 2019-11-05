@@ -16,7 +16,7 @@
  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
- // Display the result in an element with id="demo"
+ // Display the result in an element
  // document.getElementById("timer").innerHTML = days + " days " + hours + " hours "
  // + minutes + " mins " + seconds + " s ";
 

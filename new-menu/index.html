@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <!-- Anti-flicker snippet (recommended)  -->
     <style>.async-hide { opacity: 0 !important} </style>
@@ -32,12 +32,13 @@
     <meta itemprop="description" content="Our platform makes running a small business easier than ever before. From building a website to managing appointments and inventory, we’ve got you covered.">
     <meta itemprop="image" content="https://tryvitris.com/assets/img/vitris-fav.png">
 
-    <link rel="icon" href="./assets/img/vitris-fav.png" type="image/gif">
+    <link rel="icon" href="../assets/img/vitris-fav.png" type="image/gif">
 
-    <link rel="stylesheet" href="./assets/venders/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="./assets/venders/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/venders/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="../assets/venders/css/animate.min.css">
 
-    <link href="./assets/styles/main.css" rel="stylesheet">
+    <link href="../assets/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/nav.css">
 
     <!-- Facebook/Social Meta Tags ***EDIT MOST DATA*** -->
     <meta property="og:url" content="https://www.tryvitris.com/" />
@@ -56,11 +57,86 @@
     <meta name="twitter:site" content="@tryvitris">
     <meta name="twitter:creator" content="@wildcard">
     <meta name="twitter:image:src" content="https://tryvitris.com/assets/img/vitris-full.png">
-
-</head>
-<body>
-    <!-- Navbar -->
-    <div id="nav"></div>
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a>
+            <ul>
+              <li><a href="#">School</a>
+                <ul>
+                  <li><a href="#">Lidership</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Locations</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Study</a>
+                <ul>
+                  <li><a href="#">Undergraduate</a></li>
+                  <li><a href="#">Masters</a></li>
+                  <li><a href="#">International</a></li>
+                  <li><a href="#">Online</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Research</a>
+                <ul>
+                  <li><a href="#">Undergraduate research</a></li>
+                  <li><a href="#">Masters research</a></li>
+                  <li><a href="#">Funding</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Something</a>
+                <ul>
+                  <li><a href="#">Sub something</a></li>
+                  <li><a href="#">Sub something</a></li>
+                  <li><a href="#">Sub something</a></li>
+                  <li><a href="#">Sub something</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">News</a>
+            <ul>
+              <li><a href="#">Today</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Sport</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a>
+            <ul>
+              <li><a href="#">School</a>
+                <ul>
+                  <li><a href="#">Lidership</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Locations</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Study</a>
+                <ul>
+                  <li><a href="#">Undergraduate</a></li>
+                  <li><a href="#">Masters</a></li>
+                  <li><a href="#">International</a></li>
+                  <li><a href="#">Online</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Study</a>
+                <ul>
+                  <li><a href="#">Undergraduate</a></li>
+                  <li><a href="#">Masters</a></li>
+                  <li><a href="#">International</a></li>
+                  <li><a href="#">Online</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Empty sub</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Head Section -->
     <div class="header-1">
@@ -73,15 +149,7 @@
                     <h4 class="mx-auto header-shadow">
                         We use artificial intelligence to build better websites for your small business.
                     </h4>
-                    <a class="btn btn-v-blue mt-3 mr-2" href="https://websites.builtbyval.com/" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Buttons',
-                        eventAction: 'try it free',
-                        eventLabel: location.pathname
-                    })">
-                        TRY IT FREE
-                    </a>
-                    <a class="btn btn-blue-alt-outline mt-3" href="./about/" onclick="ga('send', {
+                    <a class="btn btn-v-blue mt-3 mx-auto" href="./about/" onclick="ga('send', {
                         hitType: 'event',
                         eventCategory: 'CTA Buttons',
                         eventAction: 'how it works',
@@ -669,274 +737,14 @@
         </div>
     </section>
 
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-md-8 mx-auto text-center">
-                    <h3 class="bold-h">BUILT FOR SERVICE PROS BY SERVICE PROS</h3>
-                    <div class="how-hr mx-auto"></div>
-                    <p class="mt-2">
-                        We take great pride in our work and focus on converting our clients prospects into customers so they experience a significant return on investment. The results speak for thereself.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="d-row">
-            <div id="vitrisCarousel" class="carousel slide" data-pause="hover" data-interval="5000" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#vitrisCarousel" data-slide-to="0" class="slide-indicator active"></li>
-                    <li data-target="#vitrisCarousel" data-slide-to="1" class="slide-indicator"></li>
-                    <li data-target="#vitrisCarousel" data-slide-to="2" class="slide-indicator"></li>
-                    <li data-target="#vitrisCarousel" data-slide-to="3" class="slide-indicator"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-caption d-block testimonial-item mb-3">
-                            <div class="row mx-auto">
-                                <div class="col-md-8 mx-auto">
-                                    <img src="./assets/img/maleek-jackson.jpg" alt="Maleek Jackson" class="img-fluid rounded mb-3" style="height: 180px;">
-                                    <h5>Maleek Jackson</h5>
-                                    <h6>
-                                        <a href="https://www.maleekjacksonfitness.com/" target="_blank" onclick="ga('send', {
-                                            hitType: 'event',
-                                            eventCategory: 'Testimonial Slider',
-                                            eventAction: 'Maleek Jackson',
-                                            eventLabel: location.pathname
-                                        },{
-                                            'transport': 'beacon',
-                                            'hitCallback': function(){document.location = 'https:\/\/www.maleekjacksonfitness.com/';}
-                                          }
-                                        );">
-                                            Maleek Jackson Fitness Boxing Gym
-                                        </a>
-                                    </h6>
-                                    <p>Vitris is the best website development company in Philly, they've increased our sales over 40% in just a couple months. The team was extremely responsive and made a serious effort to bring my vison to life, I couldn't be happier.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-block testimonial-item mb-3">
-                            <div class="row mx-auto">
-                                <div class="col-md-8 mx-auto">
-                                    <img src="./assets/img/steam-logo.png" alt="steam powered marketing logo" class="img-fluid mb-3" style="height: 90px;">
-                                    <h5>James Walters</h5>
-                                    <h6>
-                                        <a href="https://www.steampoweredmarketing.com/" target="_blank" onclick="ga('send', {
-                                            hitType: 'event',
-                                            eventCategory: 'Testimonial Slider',
-                                            eventAction: 'Steam Powered',
-                                            eventLabel: location.pathname
-                                        },{
-                                            'transport': 'beacon',
-                                            'hitCallback': function(){document.location = 'https:\/\/www.steampoweredmarketing.com/';}
-                                          }
-                                        );">
-                                            Steam Powered Marketing
-                                        </a>
-                                    </h6>
-                                    <p>The Vitris team is fantastic, they went above and beyond when helping to build my website! The website they provided is top quality. I would highly recommend using them for your business!</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-block testimonial-item mb-3">
-                            <div class="row mx-auto">
-                                <div class="col-md-8 mx-auto">
-                                    <img src="./assets/img/FixiTLLC-logo.png" alt="fixit fishtown logo" class="img-fluid mb-3" style="height: 180px; width: 180px;">
-                                    <h5>Aimen Arrak</h5>
-                                    <h6>
-                                        <a href="https://fixitfishtown.com" target="_blank" onclick="ga('send', {
-                                            hitType: 'event',
-                                            eventCategory: 'Testimonial Slider',
-                                            eventAction: 'Fixit Fishtown',
-                                            eventLabel: location.pathname
-                                        },{
-                                            'transport': 'beacon',
-                                            'hitCallback': function(){document.location = 'https://fixitfishtown.com';}
-                                          }
-                                        );">
-                                            Fixit LLC
-                                        </a>
-                                    </h6>
-                                    <p>Great company, they get the job done, I been working with them for few months now and the results are amazing, I am happy to say I picked the right company to help me with my advertising. 6 stars I would recommend to anyone looking to give their business a boost... Great job guys.. Jack is my go to guy thank you.</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-block testimonial-item mb-3">
-                            <div class="row mx-auto">
-                                <div class="col-md-8 mx-auto">
-                                    <img src="./assets/img/nick-sharpe.jpeg" alt="nick sharpe headshot" class="img-fluid rounded-circle mb-3" style="height: 180px; width: 180px;">
-                                    <h5>Nick Sharpe</h5>
-                                    <p>Young, hungry and humble, that’s the best way to describe Vitris. Thank you Jack and everyone else at Vitris for providing a warm welcome and expert services. Would recommend to anyone that’s looking to take their website to the next level!</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" style="color: black" href="#vitrisCarousel" role="button" data-slide="prev">
-                    <i class="fas fa-chevron-left fa-2x"></i>
-                </a>
-                <a class="carousel-control-next" style="color: black" href="#vitrisCarousel" role="button" data-slide="next">
-                    <i class="fas fa-chevron-right fa-2x"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="d-md-block d-none v-alt-bg">
-        <div class="container py-4">
-            <div class="row text-white">
-                <div class="col-12 text-center header-shadow">
-                    <h3>Have you seen enough? We'd love to hear from you.</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp ml-auto mr-2" data-toggle="modal" data-target="#sharedContactModal" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Button',
-                        eventAction: 'Contact',
-                        eventLabel: location.pathname
-                        }); setModalHeader('Get In Touch');">
-                            Contact Us
-                        </a>
-                        <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp mr-auto ml-2" href="./portfolio/" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Button',
-                        eventAction: 'Portfolio',
-                        eventLabel: location.pathname
-                        });">
-                            Our Portfolio
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Philosophy -->
-    <section  class="py-5 home-phil">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 my-auto">
-                    <img class="img-fluid wow slideInUp" src="./assets/img/temple-byobb-pitche-2017.jpg" alt="jack giving pitch for byobb 2017">
-                </div>
-                <div class="col-lg-6 my-auto">
-                    <h3 class="wow slideInUp mt-3 bold-h" style="text-align: right;">OUR PHILOSOPHY</h3>
-                    <div class="how-hr ml-auto"></div>
-                    <p class="wow fadeInUp mt-2 text-justify" style="text-align-last: right">
-                        Our goal is to provide entrepreneurs with the tools they need make their dreams come true. We believe that being an entrepreneur is one of the most important jobs out there, so we strive to be an ongoing source of value for our users both on and off the screen.
-                        </p>
-                    <a class="btn btn-v-blue btn-raised wow fadeInUp float-right" href="./about/#our-team" onclick="ga('send', {
-                        hitType: 'event',
-                        eventCategory: 'CTA Buttons',
-                        eventAction: 'About Us',
-                        eventLabel: location.pathname
-                    })">
-                        ABOUT US
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <div id="footer"></div>
-
-    <div id="contact-modal"></div>
-
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/venders/css/webfonts/fontawesome-all.min.css">
-    <script src="./assets/venders/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="./assets/scripts/shared-components.js"></script>
-    <script src="./assets/venders/js/popper.min.js"></script>
-    <script src="./assets/venders/js/bootstrap-material-design.min.js"></script>
-    <script src="./assets/venders/js/wow.min.js"></script>
+    <link rel="stylesheet" href="../assets/venders/css/webfonts/fontawesome-all.min.css">
+    <script src="../assets/venders/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/scripts/shared-components.js"></script>
+    <script src="../assets/scripts/nav.js"></script>
+    <script src="../assets/venders/js/popper.min.js"></script>
+    <script src="../assets/venders/js/bootstrap-material-design.min.js"></script>
+    <script src="../assets/venders/js/wow.min.js"></script>
     
-    <script>
-        new WOW().init();
-        $(document).ready(function() { $('body').bootstrapMaterialDesign(); });        
-    </script>
-    <script src="./assets/scripts/smoothscroll.js"></script>
-
-    <!-- JSON structured data -->
-    <script type="application/ld+json">
-    {
-        "@context" : "http://schema.org",
-        "@graph":
-        [
-        {
-            "@type": "Organization",
-            "url": "https://tryvitris.com",
-            "logo": "https://tryvitris.com/assets/img/vitris-full.png",
-            "contactPoint": [{
-                "@type": "ContactPoint",
-                "telephone": "+1-215-595-8457",
-                "contactType": "Customer Service"
-            }],
-            "sameAs": [
-                "https://www.facebook.com/tryvitris",
-                "https://instagram.com/tryvitris",
-                "https://www.linkedin.com/company/vitris-wireless-llc/",
-                "https://twitter.com/tryvitris/"
-            ]
-        },
-        {
-            "@type": "LocalBusiness",
-            "@id": "https://tryvitris.com",
-            "name" : "Vitris",
-            "image" : "https://tryvitris.com/assets/img/vitris-full.png",
-            "telephone": "+1-215-595-8457",
-            "email": "jack@tryvitris.com",
-            "url": "https://tryvitris.com",
-            "priceRange": "$",
-            "address" : {
-                "@type" : "PostalAddress",
-                "streetAddress" : "1635 Market Street",
-                "addressLocality" : "Philadelphia",
-                "addressRegion": "PA",
-                "postalCode": "19103",
-                "addressCountry": "US"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "39.953300",
-                "longitude": "-75.168058"
-            },
-            "openingHoursSpecification": [
-                {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-                ],
-                "opens": "09:00",
-                "closes": "21:00"
-                }
-            ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://tryvitris.com"
-            }
-            ]
-        }
-        ]
-        
-    }
-    </script>
-</body>
+  </body>
 </html>
