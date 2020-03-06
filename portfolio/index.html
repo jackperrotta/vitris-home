@@ -195,14 +195,22 @@
             <div class="col-12 text-center header-shadow">
                 <h3>Ready to start winning online? We'd love to hear from you.</h3>
                 <div class="d-flex">
-                    <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp ml-auto mr-2" data-toggle="modal" data-target="#sharedContactModal" onclick="ga('send', {
+                    <!-- <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp ml-auto mr-2" data-toggle="modal" data-target="#sharedContactModal" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'CTA Button',
                     eventAction: 'Contact',
                     eventLabel: location.pathname
                     }); setModalHeader('Get In Touch');">
                         Contact Us
-                    </a>
+                    </a> -->
+                    <a class="btn btn-v-blue btn-raised wow fadeInUp ml-auto mr-2" href="../about/#our-team" onclick="ga('send', {
+                      hitType: 'event',
+                      eventCategory: 'CTA Buttons',
+                      eventAction: 'About Us',
+                      eventLabel: location.pathname
+                  })">
+                      ABOUT US
+                  </a>
                     <a class="btn btn-v-blue btn-raised mt-3 wow fadeInUp mr-auto ml-2" href="../pricing/" onclick="ga('send', {
                     hitType: 'event',
                     eventCategory: 'CTA Button',
